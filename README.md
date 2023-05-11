@@ -42,7 +42,7 @@ server_demo run with the following steps:
 3. run server_demo.py
 
 ## Acknowledgement
-The project is built upon Fastchat [https://chat.lmsys.org/] and open-source multi-modality models.
+The project is built upon [Fastchat](https://chat.lmsys.org/) and open-source multi-modality models.
 
 ## Term of Use
 The project is an experimental research tool for non-commercial purposes only. It has limited safeguards and may generate inappropriate content. It cannot be used for anything illegal, harmful, violent, racist or sexual. 
