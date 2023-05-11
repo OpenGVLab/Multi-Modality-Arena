@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gpt_icon</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GV4-图片缩放操作" transform="translate(-888.000000, -247.000000)">
+            <g id="编组-6" transform="translate(880.000000, 241.000000)">
+                <g id="编组-8" transform="translate(8.000000, 6.000000)">
+                    <path d="M6,5 L18,5 C19.1045695,5 20,5.8954305 20,7 L20,15 C20,16.1045695 19.1045695,17 18,17 L11,17 L11,17 L7,17 L4,19 L4,7 C4,5.8954305 4.8954305,5 6,5 Z" id="矩形" stroke="#9AA1AE" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <rect id="矩形" fill="#9AA1AE" x="7.51674455" y="8.76894826" width="9" height="1.5"></rect>
+                    <rect id="矩形备份-4" fill="#9AA1AE" x="7.51674455" y="11.7689483" width="9" height="1.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
