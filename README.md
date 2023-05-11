@@ -24,7 +24,7 @@ The following models are involving in randomized battles currently,
  - [**Facebook/OTTER-9B-hf**](https://github.com/facebookresearch/OTTER)
  - [**DeepMind/Flamingo**](https://github.com/mlfoundations/open_flamingo)
 
-We will try to schedule computing resources to host more multi-modality model sin the arena.
+We will try to schedule computing resources to host more multi-modality models in the arena.
 
 ## Installation
 
