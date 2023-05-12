@@ -12,7 +12,8 @@
 
 **Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on visual question answering task. We release the  [**Demo**](https://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
 
-  
+[**Demo**](https://vlarena.opengvlab.com)
+ <p  align="center"><img  src="./CVLAB/style/img/demo.jpg"  width="800"></p>
 
 ## Supported Multi-modality Models
 
