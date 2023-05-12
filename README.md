@@ -22,7 +22,7 @@ The following models are involving in randomized battles currently,
  - [**KAUST/MiniGPT-4**](https://github.com/Vision-CAIR/MiniGPT-4)
  - [**Salesforce/BLIP2**](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)
  - [**DAMO Academy/mPLUG-Owl**](https://github.com/X-PLUG/mPLUG-Owl)
- - [**NTU/OTTER-9B-hf**](https://slab.com/integrations/otter/)
+ - [**NTU/Otter**](https://github.com/Luodian/otter)
  - [**DeepMind/Flamingo**](https://github.com/mlfoundations/open_flamingo)
 
 We will try to schedule computing resources to host more multi-modality models in the arena.
