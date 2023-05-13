@@ -23,7 +23,7 @@ The following models are involving in randomized battles currently,
  - [**Salesforce/BLIP2**](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)
  - [**DAMO Academy/mPLUG-Owl**](https://github.com/X-PLUG/mPLUG-Owl)
  - [**NTU/Otter**](https://github.com/Luodian/otter)
- - [**OpenFlamingo**](https://github.com/mlfoundations/open_flamingo)
+ - [**LAION.AI/OpenFlamingo**](https://github.com/mlfoundations/open_flamingo)
 
 We will try to schedule computing resources to host more multi-modality models in the arena.
 
