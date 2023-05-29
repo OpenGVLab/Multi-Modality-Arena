@@ -35,11 +35,9 @@ def get_model(model_name):
         from .test_llava import TestLLaVA
         return TestLLaVA()
     elif model_name == 'llama_adapter_v2':
-        from .test_llama_adapter_v2 import TestLLamaAdapterV2
-        return TestLLamaAdapterV2()
-    elif model_name == 'mmgpt':
-        from .test_multimodel_gpt import TestMultiModelGPT
-        return TestMultiModelGPT()
+        #from .test_llama_adapter_v2_demo import TestLLamaAdapterV2
+        from .test_llama_adapter_v2 import TestLLaMAAdapterv2
+        return TestLLaMAAdapterv2()
     else:
         raise ValueError(f"Invalid model_name: {model_name}")
 

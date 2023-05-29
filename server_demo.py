@@ -32,11 +32,15 @@ enable_btn = gr.Button.update(interactive=True)
 disable_btn = gr.Button.update(interactive=False)
 
 model_info = {
-    'blip2': 'BLIP2-flan-t5-xl',
+    'blip2': 'BLIP2-flan-t5-xl-3B',
     'flamingo': 'OpenFlamingo-9B',
     'minigpt4': 'MiniGPT-4-7B',
-    'owl': 'mPLUG-Owl-Pretrained',
-    'otter': 'Otter-9B'
+    'owl': 'mPLUG-Owl-Pretrained-7B',
+    'otter': 'Otter-9B',
+    'instruct_blip': 'InstructBLIP-7B',
+    'vpgtrans': 'VPGTrans-7B',
+    'llava': 'LLava-7B',
+    'llama_adapter_v2': 'LLama-Adapter-V2-7B',
 }
 
 

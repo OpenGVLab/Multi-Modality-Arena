@@ -1,14 +1,42 @@
+import json
+import os
+import glob
+import sys
+import time
+from pathlib import Path
+from typing import Tuple
+import clip
+import cv2
+
+from PIL import Image
 import torch
-from gradio_client import Client
 
+from .llama_adapter_v2.models_mae import mae_vit_base_patch16
 
-class TestLLamaAdapterV2:
-    def __init__(self) -> None:
-        self.model = Client("http://106.14.127.192:8088/")
-        self.max_length = 64
-        self.temperature = 0.1
-        self.top_p = 0.75
+os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
+PROMPT_DICT = {
+    "prompt_input": (
+        "Below is an instruction that describes a task, paired with an input that provides further context. "
+        "Write a response that appropriately completes the request.\n\n"
+        "### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:"
+    ),
+    "prompt_no_input": (
+        "Below is an instruction that describes a task. "
+        "Write a response that appropriately completes the request.\n\n"
+        "### Instruction:\n{instruction}\n\n### Response:"
+    ),
+}
+
+class TestLLaMAAdapterv2:
+    def __init__(self, model_path):
+        _, self.img_transform = clip.load("ViT-L/14")
+        self.model = mae_vit_base_patch16().cuda()     
+        ckpt = torch.load(model_path, map_location='cpu') # llama-adapter-v2_7B_Lora
+        ckpt_model = ckpt['model']
+        msg = self.model.load_state_dict(ckpt_model, strict=False)
+        # print(msg)
+    
     def move_to_device(self, device=None):
         if device is not None and 'cuda' in device.type:
             dtype = torch.float16
@@ -18,14 +46,23 @@ class TestLLamaAdapterV2:
         
         return device, dtype
 
-    def generate(self, question, raw_image, device=None, keep_in_device=False):
+    def generate(self, text_input, image=None, device=None,
+                # model,
+                max_gen_len=256, temperature: float = 0.1, top_p: float = 0.75,
+                ):
         try:
-            device, dtype = self.move_to_device(device)
-            image_name = '.llama_adapter_v2_inference.png'
-            raw_image.save(image_name)
-            output = self.model.predict(image_name, question, self.max_length, self.temperature, self.top_p, fn_index=1)
-            
-            return output
+            device, _ = self.move_to_device(device)   
+            imgs = [image]
+            imgs = [self.img_transform(x) for x in imgs]
+            imgs = torch.stack(imgs, dim=0).cuda().half()
+
+            prompts = [PROMPT_DICT['prompt_no_input'].format_map({'instruction': text_input})]
+
+            prompts = [self.model.tokenizer.encode(x, bos=True, eos=False) for x in prompts]
+            # with torch.cuda.amp.autocast():
+            results = self.generate(imgs, prompts, max_gen_len=max_gen_len, temperature=temperature, top_p=top_p)
+            result = results[0].strip()
+            return result
         except Exception as e:
             return getattr(e, 'message', str(e))
-    
+        
