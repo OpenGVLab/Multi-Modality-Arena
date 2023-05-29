@@ -1,8 +1,9 @@
 import torch
 from transformers import CLIPImageProcessor
 from .otter.modeling_otter import OtterForConditionalGeneration
+from peng_utils import DATA_DIR
 
-CKPT_PATH='/nvme/data1/VLP_web_data/otter-9b-hf'
+CKPT_PATH=f'{DATA_DIR}/otter-9b-hf'
 
 
 class TestOtter:

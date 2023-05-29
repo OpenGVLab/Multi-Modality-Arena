@@ -10,9 +10,8 @@ class TestBlip2:
 
     def move_to_device(self, device):
         if device is not None and 'cuda' in device.type:
-            dtype = torch.float16
+            dtype = torch.float32
             self.model = self.model.to(device, dtype=dtype)
-            self.model.ln_vision = self.model.ln_vision.to(device, dtype=torch.float32)
         else:
             dtype = torch.float32
             self.model = self.model.to('cpu', dtype=dtype)

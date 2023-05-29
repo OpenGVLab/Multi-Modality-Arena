@@ -6,9 +6,9 @@ model:
   max_txt_len: 160
   end_sym: "###"
   low_resource: False
-  prompt_path: "/nvme/data1/VLP_web_data/MiniGPT-4/alignment.txt"
+  prompt_path: "/root/VLP_web_data/MiniGPT-4/alignment.txt"
   prompt_template: '###Human: {} ###Assistant: '
-  ckpt: '/nvme/data1/VLP_web_data/MiniGPT-4/pretrained_minigpt4_7b.pth'
+  ckpt: '/root/VLP_web_data/MiniGPT-4/pretrained_minigpt4_7b.pth'
 
 
 preprocess:

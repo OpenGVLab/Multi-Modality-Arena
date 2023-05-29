@@ -164,7 +164,6 @@ class LlavaLlamaModel(LlamaModel):
                     cur_image_features = image_features[cur_image_idx]
                     num_patches = cur_image_features.shape[0]
                     if (cur_input_ids == vision_tower.config.im_patch_token).sum() != num_patches:
-                        print(f'Debug: num_patches: {num_patches}')
                         raise ValueError("The number of image patch tokens should be the same as the number of image patches.")
                     masked_indices = torch.where(cur_input_ids == vision_tower.config.im_patch_token)[0]
                     mask_index_start = masked_indices[0]

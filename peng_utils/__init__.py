@@ -1,12 +1,3 @@
-from .test_blip2 import TestBlip2
-from .test_llava import TestLLaVA
-from .test_minigpt4 import TestMiniGPT4
-from .test_mplug_owl import TestMplugOwl
-from .test_multimodel_gpt import TestMultimodelGPT
-from .test_otter import TestOtter
-from .test_flamingo import TestFlamingo
-
-
 import gc
 import torch
 import numpy as np
@@ -18,18 +9,37 @@ torch.nn.init.kaiming_uniform_ = skip
 torch.nn.init.uniform_ = skip
 torch.nn.init.normal_ = skip
 
+DATA_DIR = '/root/VLP_web_data'
+
 
 def get_model(model_name):
     if model_name == 'blip2':
+        from .test_blip2 import TestBlip2
         return TestBlip2()
     elif model_name == 'minigpt4':
+        from .test_minigpt4 import TestMiniGPT4
         return TestMiniGPT4()
     elif model_name == 'owl':
+        from .test_mplug_owl import TestMplugOwl
         return TestMplugOwl()
     elif model_name == 'otter':
+        from .test_otter import TestOtter
         return TestOtter()
-    elif model_name == 'flamingo':
-        return TestFlamingo()
+    elif model_name == 'instruct_blip':
+        from .test_instructblip import TestInstructBLIP
+        return TestInstructBLIP()
+    elif model_name == 'vpgtrans':
+        from .test_vpgtrans import TestVPGTrans
+        return TestVPGTrans()
+    elif model_name == 'llava':
+        from .test_llava import TestLLaVA
+        return TestLLaVA()
+    elif model_name == 'llama_adapter_v2':
+        from .test_llama_adapter_v2 import TestLLamaAdapterV2
+        return TestLLamaAdapterV2()
+    elif model_name == 'mmgpt':
+        from .test_multimodel_gpt import TestMultiModelGPT
+        return TestMultiModelGPT()
     else:
         raise ValueError(f"Invalid model_name: {model_name}")
 

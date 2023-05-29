@@ -2,7 +2,8 @@ import torch
 from transformers import CLIPImageProcessor
 from .flamingo.modeling_flamingo import FlamingoForConditionalGeneration
 
-CKPT_PATH='/nvme/data1/VLP_web_data/openflamingo-9b-hf'
+from peng_utils import DATA_DIR
+CKPT_PATH=f'{DATA_DIR}/openflamingo-9b-hf'
 
 
 class TestFlamingo:
