@@ -29,7 +29,9 @@ The following models are involving in randomized battles currently,
  - [**NUS/VPGTrans**](https://github.com/VPGTrans/VPGTrans)
 
 More details about these models can be found at ```./model_detail/.model.jpg```. We will try to schedule computing resources to host more multi-modality models in the arena.
-
+## Contact US at Wechat
+If you are interested in any pieces of our VLarena platform, feel free to join the Wechat group.
+ <p  align="left"><img  src="./CVLAB/style/img/Wechat.jpeg"  width="200"></p>
 ## Installation
 1. Create conda environment
 ```bash
