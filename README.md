@@ -28,10 +28,7 @@ The following models are involving in randomized battles currently,
  - [**Shanghai AI Lab/llama_adapter_v2**](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/llama_adapter_v2_chat65b)
  - [**NUS/VPGTrans**](https://github.com/VPGTrans/VPGTrans)
 
-
-
-
-We will try to schedule computing resources to host more multi-modality models in the arena.
+More details about these models can be found at ```./model_detail/.model.jpg```. We will try to schedule computing resources to host more multi-modality models in the arena.
 
 ## Installation
 1. Create conda environment
