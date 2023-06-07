@@ -1525,6 +1525,7 @@ class MplugOwlForConditionalGeneration(MplugOwlPreTrainedModel):
                 )
                 query_output = query_outputs["last_hidden_state"]
                 image_embeds = query_output
+                # print(f'Check the shape of image embeds: {image_embeds.shape}')
             img_seq_length = image_embeds.shape[1]
 
             # ===================

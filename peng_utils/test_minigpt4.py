@@ -8,12 +8,14 @@ from .minigpt4.conversation.conversation import Chat, CONV_VISION
 from .minigpt4.models import *
 from .minigpt4.processors import *
 
-CFG_PATH = 'peng_utils/minigpt4/minigpt4_eval.yaml'
+from . import get_image
+
+CFG_PATH = 'models/minigpt4/minigpt4_eval.yaml'
 
 
 class TestMiniGPT4:
-    def __init__(self, cfg_path=CFG_PATH):
-        cfg = Config(cfg_path)
+    def __init__(self, device=None):
+        cfg = Config(CFG_PATH)
         model_config = cfg.model_cfg
         model_cls = registry.get_model_class(model_config.arch)
         model = model_cls.from_config(model_config).to('cpu')
@@ -23,36 +25,38 @@ class TestMiniGPT4:
         self.model.llama_model = self.model.llama_model.float().to('cpu')
         self.chat = Chat(model, vis_processor, device='cpu')
 
+        # print(f'Check the number of trainable parameters: {sum(p.numel() for p in self.model.parameters() if p.requires_grad)}')
+
+        if device is not None:
+            self.move_to_device(device)
+
     def move_to_device(self, device):
         if device is not None and 'cuda' in device.type:
-            dtype = torch.float16
+            self.dtype = torch.float16
+            self.device = device
             self.chat.device = device
-            self.model = self.model.to(device, dtype=dtype)
-            self.chat.move_stopping_criteria_device(device, dtype=dtype)
         else:
-            dtype = torch.float32
-            device = 'cpu'
+            self.dtype = torch.float32
+            self.device = 'cpu'
             self.chat.device = 'cpu'
-            self.model = self.model.to('cpu', dtype=dtype)
-            self.chat.move_stopping_criteria_device('cpu', dtype=dtype)
-        
-        return device, dtype
+        self.model = self.model.to(self.device, dtype=self.dtype)
+        self.chat.move_stopping_criteria_device(self.device, dtype=self.dtype)
     
-    def generate(self, text, image=None, device=None, keep_in_device=False):
-        try:
-            device, dtype = self.move_to_device(device)
-            chat_state = CONV_VISION.copy()
-            img_list = []
-            if image is not None:
-                self.chat.upload_img(image, chat_state, img_list)
-            self.chat.ask(text, chat_state)
-            llm_message = self.chat.answer(conv=chat_state, img_list=img_list)[0]
-            
-            if not keep_in_device:
-                self.chat.device = 'cpu'
-                self.model = self.model.to('cpu', dtype=torch.float32)
-                self.chat.move_stopping_criteria_device('cpu', dtype=torch.float32)
+    @torch.no_grad()
+    def generate(self, image, question):
+        chat_state = CONV_VISION.copy()
+        img_list = []
+        if image is not None:
+            image = get_image(image)
+            self.chat.upload_img(image, chat_state, img_list)
+        self.chat.ask(question, chat_state)
+        llm_message = self.chat.answer(conv=chat_state, img_list=img_list)[0]
 
-            return llm_message
-        except Exception as e:
-            return getattr(e, 'message', str(e))
+        return llm_message
+    
+    @torch.no_grad()
+    def batch_generate(self, image_list, question_list):
+        image_list = [get_image(image) for image in image_list]
+        chat_list = [CONV_VISION.copy() for _ in range(len(image_list))]
+        batch_outputs = self.chat.batch_answer(image_list, question_list, chat_list)
+        return batch_outputs

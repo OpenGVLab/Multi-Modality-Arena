@@ -871,6 +871,7 @@ class OtterForConditionalGeneration(OtterPreTrainedModel):
 
         dtype = self.lang_encoder.lm_head.weight.dtype
         vision_x = self.perceiver(vision_x.to(self.lang_encoder.device, dtype=dtype))  # reshapes to (b, T, n, d)
+        # print(f'Check the shape of vision x: {vision_x.shape}')
 
         for layer in self.lang_encoder._get_decoder_layers():
             layer.condition_vis_x(vision_x)

@@ -100,7 +100,7 @@ class Blip2Vicuna(Blip2Base):
             layer.intermediate = None
 
         # freeze ln_vision and qformer
-        if only_proj:
+        if only_proj: # use False to calculate the trainable parameters of VPGTrans
             for name, param in self.ln_vision.named_parameters():
                 param.requires_grad = False
             self.ln_vision.eval()

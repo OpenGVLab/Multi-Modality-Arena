@@ -137,6 +137,7 @@ class LlavaMPTModel(MPTModel):
                 if vision_tower.config.use_im_start_end:
                     cur_image_features = image_features[cur_image_idx]
                     num_patches = cur_image_features.shape[0]
+                    # print(f'Check the shape of cur_image_features: {cur_image_features.shape}')
                     if (cur_input_ids == vision_tower.config.im_start_token).sum() != (cur_input_ids == vision_tower.config.im_end_token).sum():
                         raise ValueError("The number of image start tokens and image end tokens should be the same.")
                     image_start_tokens = torch.where(cur_input_ids == vision_tower.config.im_start_token)[0]

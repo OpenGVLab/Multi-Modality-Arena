@@ -69,6 +69,8 @@ class Blip2VicunaInstruct(Blip2Base):
             num_query_token, self.visual_encoder.num_features
         )
 
+        # print(f"Check num query token: {num_query_token}")
+
         if not qformer_text_input:
             self.Qformer.bert.embeddings.word_embeddings = None
             self.Qformer.bert.embeddings.position_embeddings = None
@@ -322,6 +324,7 @@ class Blip2VicunaInstruct(Blip2Base):
             with self.maybe_autocast():
                 image_embeds = self.ln_vision(self.visual_encoder(image))
             image_atts = torch.ones(image_embeds.size()[:-1], dtype=torch.long).to(image.device)
+            # print(f'Check the shape of image embeds: {image_embeds.shape}')
 
             if self.qformer_text_input:
                 query_output = self.Qformer.bert(
@@ -339,6 +342,7 @@ class Blip2VicunaInstruct(Blip2Base):
                     encoder_attention_mask=image_atts,
                     return_dict=True,
                 )
+
 
             inputs_llm = self.llm_proj(query_output.last_hidden_state[:,:query_tokens.size(1),:])
             atts_llm = torch.ones(inputs_llm.size()[:-1], dtype=torch.long).to(image.device)

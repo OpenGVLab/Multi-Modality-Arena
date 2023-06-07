@@ -14,6 +14,11 @@ from torch import nn
 import torch.nn.functional as F
 from torch.nn import Embedding, Linear
 
+from .. import DATA_DIR
+
+tokenizer_path = f'{DATA_DIR}/llama_checkpoints/tokenizer.model'
+llama_7b_dir = f'{DATA_DIR}/llama_checkpoints/7B'
+
 
 @dataclass
 class ModelArgs:
@@ -127,10 +132,10 @@ class Attention(nn.Module):
 
         self.cache_k = torch.zeros(
             (args.max_batch_size, args.max_seq_len, self.n_local_heads, self.head_dim)
-        ).cuda()
+        ) # .cuda()
         self.cache_v = torch.zeros(
             (args.max_batch_size, args.max_seq_len, self.n_local_heads, self.head_dim)
-        ).cuda()
+        ) # .cuda()
         
         self.gate = torch.nn.Parameter(torch.zeros(1, self.n_local_heads, 1, 1))
         self.new_gate = torch.nn.Parameter(torch.ones(1, 1, 1, 1))
@@ -377,41 +382,50 @@ class MaskedAutoencoderViT(nn.Module):
 
         # --------------------------------------------------------------------------
         # MAE encoder specifics
-        self.patch_embed = PatchEmbed(img_size, patch_size, in_chans, embed_dim)
+        self.patch_embed = PatchEmbed(img_size, patch_size, in_chans, embed_dim).to('cpu')
         num_patches = self.patch_embed.num_patches
 
-        self.cls_token = nn.Parameter(torch.zeros(1, 1, embed_dim))
-        self.pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, embed_dim), requires_grad=False)  # fixed sin-cos embedding
+        self.cls_token = nn.Parameter(torch.zeros(1, 1, embed_dim)).to('cpu')
+        self.pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, embed_dim), requires_grad=False).to('cpu')  # fixed sin-cos embedding
+
+        print('Get encoder specifics')
 
         # --------------------------------------------------------------------------
         # MAE decoder specifics
-        self.decoder_embed = nn.Linear(embed_dim, decoder_embed_dim, bias=True)
+        self.decoder_embed = nn.Linear(embed_dim, decoder_embed_dim, bias=True).to('cpu')
 
-        self.mask_token = nn.Parameter(torch.zeros(1, 1, decoder_embed_dim))
+        self.mask_token = nn.Parameter(torch.zeros(1, 1, decoder_embed_dim)).to('cpu')
 
-        self.decoder_pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, decoder_embed_dim), requires_grad=False)  # fixed sin-cos embedding
+        self.decoder_pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, decoder_embed_dim), requires_grad=False).to('cpu')  # fixed sin-cos embedding
         self.blocks = nn.ModuleList([
-            Block(768, 16, 4, qkv_bias=True, qk_scale=None, norm_layer=norm_layer)
+            Block(768, 16, 4, qkv_bias=True, qk_scale=None, norm_layer=norm_layer).to('cpu')
             for i in range(8)])
+        
+        print('Get decoder specifics')
+
         # --------------------------------------------------------------------------
 
         self.norm_pix_loss = norm_pix_loss
         self.criterion = torch.nn.CrossEntropyLoss(ignore_index=0)
 
-        tokenizer_path = '/nvme/share/LLaMA-Adapter-v2/' + 'LLaMA-7B/tokenizer.model'
-        llama_7b_dir = '/nvme/share/LLaMA-Adapter-v2/' + 'LLaMA-7B'
         # self.initialize_weights()
         checkpoint = torch.load(os.path.join(llama_7b_dir, 'consolidated.00.pth'), map_location="cpu")
 ###        adapter_weight = torch.load('llama_adapter_len10_layer30_release.pth', map_location="cpu")
         with open(os.path.join(llama_7b_dir, "params.json"), "r") as f:
             params = json.loads(f.read())
         model_args: ModelArgs = ModelArgs(
-            max_seq_len=512, max_batch_size=1, **params
+            max_seq_len=256, max_batch_size=64, **params
         )
         self.tokenizer = Tokenizer(model_path=tokenizer_path)
         model_args.vocab_size = self.tokenizer.n_words
-        torch.set_default_tensor_type(torch.cuda.HalfTensor)
+        # torch.set_default_tensor_type(torch.cuda.HalfTensor)
+
+        print('Load checkpoint and prepare tokenizer')
+
         model = Transformer(model_args)
+
+        print('Get the transformer model')
+
         torch.set_default_tensor_type(torch.FloatTensor)
         model.load_state_dict(checkpoint, strict=False)
 #        model.load_state_dict(adapter_weight, strict=False)
@@ -436,6 +450,8 @@ class MaskedAutoencoderViT(nn.Module):
             if '.0.' in name:
                 para.data = para.data.half()
                 para.requires_grad = False
+        
+        print('Freeze model weight')
 
         self.visual_query = nn.Embedding(10, 768)
         self.prefix_query = nn.Embedding(10 * self.prompt_layer, model_args.dim)
@@ -443,6 +459,9 @@ class MaskedAutoencoderViT(nn.Module):
         self.gpt_embedding_size = model_args.dim
         self.prefix_projector = nn.Linear(768, model_args.dim)
         self.clip, _ = clip.load("ViT-L/14", device='cpu')
+
+        print('Get clip model')
+
         self.clip_proj = nn.Linear(768, 768)
         self.clip_proj_norm = nn.LayerNorm(768)
         for name, para in self.clip.named_parameters():
@@ -458,9 +477,9 @@ class MaskedAutoencoderViT(nn.Module):
         self.prefix_projector.bias.requires_grad = False
         for name, para in self.blocks.named_parameters():
             para.requires_grad = False
-        for name, param in self.named_parameters():
-            if param.requires_grad:
-               print(f"Trainable param: {name}, {param.shape}, {param.dtype}") 
+        # for name, param in self.named_parameters():
+        #     if param.requires_grad:
+        #        print(f"Trainable param: {name}, {param.shape}, {param.dtype}") 
     
         
     def encode_image(self, x):
@@ -522,9 +541,11 @@ class MaskedAutoencoderViT(nn.Module):
         total_len = min(params.max_seq_len, max_gen_len + max_prompt_size)
 
         tokens = torch.full((bsz, total_len), self.tokenizer.pad_id).long().to(visual_feats.device)
-        
         for k, t in enumerate(prompt_prefix):
-            tokens[k, : len(t)] = torch.tensor(t).cuda().long()
+            tokens[k, : len(t)] = torch.tensor(t).long().to(visual_feats.device)
+
+        get_result = [False for _ in range(bsz)]
+
         input_text_mask = tokens != self.tokenizer.pad_id
         start_pos = min_prompt_size
         prev_pos = 0
@@ -542,13 +563,15 @@ class MaskedAutoencoderViT(nn.Module):
                 input_text_mask[:, cur_pos], tokens[:, cur_pos], next_token
             )
             tokens[:, cur_pos] = next_token
-            if next_token[0] == self.tokenizer.eos_id:
+            for idx in range(len(next_token)):
+                if next_token[idx] == self.tokenizer.eos_id:
+                    get_result[idx] = True
+            if all(get_result):
                 break
             prev_pos = cur_pos
-        
+ 
         decoded = []
         for i, t in enumerate(tokens.tolist()):
-
             # cut to max gen len
             t = t[len(prompt_prefix[i]) : len(prompt_prefix[i]) + max_gen_len]
             # cut to eos tok if any
@@ -556,8 +579,11 @@ class MaskedAutoencoderViT(nn.Module):
                 t = t[: t.index(self.tokenizer.eos_id)]
             except ValueError:
                 pass
-            decoded.append(self.tokenizer.decode(t))
-        
+            if -1 in t:
+                t.remove(-1)
+            result = self.tokenizer.decode(t)
+            decoded.append(result)
+
         return decoded
 
 

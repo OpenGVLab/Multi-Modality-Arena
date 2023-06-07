@@ -3,6 +3,7 @@ import time
 from PIL import Image
 
 import torch
+import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaTokenizer
 from transformers import StoppingCriteria, StoppingCriteriaList
 
@@ -138,9 +139,13 @@ class Chat:
         self.device = device
         self.model = model
         self.vis_processor = vis_processor
-        stop_words_ids = [torch.tensor([835]).to(self.device),
+        self.stop_words_ids = [torch.tensor([835]).to(self.device),
                           torch.tensor([2277, 29937]).to(self.device)]  # '###' can be encoded in two different ways.
-        self.stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
+        self.stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=self.stop_words_ids)])
+
+    def move_stopping_criteria_device(self, device, dtype=torch.float32):
+        self.stop_words_ids = [stop_tensor.to(device, dtype=dtype) for stop_tensor in self.stop_words_ids]
+        self.stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=self.stop_words_ids)])
 
     def ask(self, text, conv):
         if len(conv.messages) > 0 and conv.messages[-1][0] == conv.roles[0] \
@@ -152,10 +157,6 @@ class Chat:
     def answer(self, conv, img_list, max_new_tokens=300, num_beams=5, min_length=1, top_p=0.9,
                repetition_penalty=1.0, length_penalty=1, temperature=1.0, max_length=2000):
         conv.append_message(conv.roles[1], None)
-        # prompt = conv.get_prompt().replace("###Human: <Img><ImageHere></Img> ", "")
-        # output_text, outputs = self.model.generate(samples={"image": img_list[0], "prompt": prompt}, stop_criteria=True)
-        # output_text = output_text[0]
-        # print(output_text)
         embs = self.get_context_emb(conv, img_list)
 
         current_max_len = embs.shape[1] + max_new_tokens
@@ -183,7 +184,6 @@ class Chat:
         if output_token[0] == 1:  # some users find that there is a start token <s> at the beginning. remove it
             output_token = output_token[1:]
         output_text = self.model.llama_tokenizer.decode(output_token, add_special_tokens=False)
-        print(output_text)
         output_text = output_text.split('###')[0]  # remove the stop sign '###'
         output_text = output_text.split('Assistant:')[-1].strip()
         conv.messages[-1][1] = output_text
@@ -224,3 +224,40 @@ class Chat:
         mixed_embs = torch.cat(mixed_embs, dim=1)
         return mixed_embs
 
+    def batch_answer(self, image_list, question_list, chat_list, max_new_tokens=300, num_beams=1, min_length=1, top_p=0.9, repetition_penalty=1.0, length_penalty=1, temperature=1.0, max_length=2000):
+        embs_list = []
+        for image, question, conv in zip(image_list, question_list, chat_list):
+            img_list = []
+            self.upload_img(image, conv, img_list)
+            self.ask(question, conv)
+            conv.append_message(conv.roles[1], None)
+            embs = self.get_context_emb(conv, img_list)
+            embs_list.append(embs)
+        max_emb_token = max([x.shape[1] for x in embs_list])
+        embs_list = torch.cat([F.pad(x, (0, 0, max_emb_token - x.shape[1], 0, 0, 0), value=0) for x in embs_list], dim=0)
+
+        assert max_emb_token + max_new_tokens < max_length
+        outputs = self.model.llama_model.generate(
+            inputs_embeds=embs_list,
+            max_new_tokens=max_new_tokens,
+            stopping_criteria=self.stopping_criteria,
+            num_beams=num_beams,
+            # do_sample=True,
+            min_length=min_length,
+            top_p=top_p,
+            repetition_penalty=repetition_penalty,
+            length_penalty=length_penalty,
+            temperature=temperature,
+        )
+
+        batch_outputs = []
+        for output_token in outputs:
+            if output_token[0] == 0:  # the model might output a unknow token <unk> at the beginning. remove it
+                output_token = output_token[1:]
+            if output_token[0] == 1:  # some users find that there is a start token <s> at the beginning. remove it
+                output_token = output_token[1:]
+            output_text = self.model.llama_tokenizer.decode(output_token, add_special_tokens=False)
+            output_text = output_text.split('###')[0]  # remove the stop sign '###'
+            output_text = output_text.split('Assistant:')[-1].strip()
+            batch_outputs.append(output_text)
+        return batch_outputs

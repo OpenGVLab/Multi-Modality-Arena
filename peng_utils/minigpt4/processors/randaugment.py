@@ -5,7 +5,7 @@
  For full license text, see the LICENSE_Lavis file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 
-import cv2
+# import cv2
 import numpy as np
 
 import torch
@@ -16,7 +16,7 @@ def identity_func(img):
     return img
 
 
-def autocontrast_func(img, cutoff=0):
+# def autocontrast_func(img, cutoff=0):
     """
     same output as PIL.ImageOps.autocontrast
     """
@@ -49,7 +49,7 @@ def autocontrast_func(img, cutoff=0):
     return out
 
 
-def equalize_func(img):
+# def equalize_func(img):
     """
     same output as PIL.ImageOps.equalize
     PIL's implementation is different from cv2.equalize
@@ -73,7 +73,7 @@ def equalize_func(img):
     return out
 
 
-def rotate_func(img, degree, fill=(0, 0, 0)):
+# def rotate_func(img, degree, fill=(0, 0, 0)):
     """
     like PIL, rotate by degree, not radians
     """
@@ -135,7 +135,7 @@ def brightness_func(img, factor):
     return out
 
 
-def sharpness_func(img, factor):
+# def sharpness_func(img, factor):
     """
     The differences the this result and PIL are all on the 4 boundaries, the center
     areas are same
@@ -156,7 +156,7 @@ def sharpness_func(img, factor):
     return out
 
 
-def shear_x_func(img, factor, fill=(0, 0, 0)):
+# def shear_x_func(img, factor, fill=(0, 0, 0)):
     H, W = img.shape[0], img.shape[1]
     M = np.float32([[1, factor, 0], [0, 1, 0]])
     out = cv2.warpAffine(
@@ -165,7 +165,7 @@ def shear_x_func(img, factor, fill=(0, 0, 0)):
     return out
 
 
-def translate_x_func(img, offset, fill=(0, 0, 0)):
+# def translate_x_func(img, offset, fill=(0, 0, 0)):
     """
     same output as PIL.Image.transform
     """
@@ -177,7 +177,7 @@ def translate_x_func(img, offset, fill=(0, 0, 0)):
     return out
 
 
-def translate_y_func(img, offset, fill=(0, 0, 0)):
+# def translate_y_func(img, offset, fill=(0, 0, 0)):
     """
     same output as PIL.Image.transform
     """
@@ -197,7 +197,7 @@ def posterize_func(img, bits):
     return out
 
 
-def shear_y_func(img, factor, fill=(0, 0, 0)):
+# def shear_y_func(img, factor, fill=(0, 0, 0)):
     H, W = img.shape[0], img.shape[1]
     M = np.float32([[1, 0, 0], [factor, 1, 0]])
     out = cv2.warpAffine(
@@ -287,19 +287,19 @@ def rotate_level_to_args(MAX_LEVEL, replace_value):
 
 func_dict = {
     "Identity": identity_func,
-    "AutoContrast": autocontrast_func,
-    "Equalize": equalize_func,
-    "Rotate": rotate_func,
+    # "AutoContrast": autocontrast_func,
+    # "Equalize": equalize_func,
+    # "Rotate": rotate_func,
     "Solarize": solarize_func,
     "Color": color_func,
     "Contrast": contrast_func,
     "Brightness": brightness_func,
-    "Sharpness": sharpness_func,
-    "ShearX": shear_x_func,
-    "TranslateX": translate_x_func,
-    "TranslateY": translate_y_func,
+    # "Sharpness": sharpness_func,
+    # "ShearX": shear_x_func,
+    # "TranslateX": translate_x_func,
+    # "TranslateY": translate_y_func,
     "Posterize": posterize_func,
-    "ShearY": shear_y_func,
+    # "ShearY": shear_y_func,
 }
 
 translate_const = 10
