@@ -15,6 +15,9 @@
 [**Demo**](http://vlarena.opengvlab.com)
  <p  align="center"><img  src="./CVLAB/style/img/demo1.jpg"  width="800"></p>
 
+## Update
+- Jun. 8, 2023. Thanks Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues with replicating VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
+- May. 22, 2023. Thanks Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.
 ## Supported Multi-modality Models
 
 The following models are involving in randomized battles currently,
@@ -29,6 +32,7 @@ The following models are involving in randomized battles currently,
  - [**NUS/VPGTrans**](https://github.com/VPGTrans/VPGTrans)
 
 More details about these models can be found at ```./model_detail/.model.jpg```. We will try to schedule computing resources to host more multi-modality models in the arena.
+
 ## Contact US at Wechat
 If you are interested in any pieces of our VLarena platform, feel free to join the Wechat group.
  <p  align="left"><img  src="./CVLAB/style/img/Wechat.jpeg"  width="200"></p>
