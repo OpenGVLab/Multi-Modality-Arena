@@ -41,6 +41,7 @@ More details about these models can be found at ```./model_detail/.model.jpg```.
 ## Contact US at Wechat
 If you are interested in any pieces of our VLarena platform, feel free to join the Wechat group.
  <p  align="left"><img  src="./CVLAB/style/img/Wechat.jpeg"  width="200"></p>
+
 ## Installation
 1. Create conda environment
 ```bash
