@@ -12,10 +12,15 @@
 
 **Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on visual question answering task. We release the  [**Demo**](http://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
 
-[**Demo**](http://vlarena.opengvlab.com)
+[**[Demo]**](http://vlarena.opengvlab.com) [**[Paper]**](https://arxiv.org/abs/2306.09265)
  <p  align="center"><img  src="./CVLAB/style/img/demo1.jpg"  width="800"></p>
 
+## LVLM-eHub - A Evaluation Benckmark for Large Vision-Language Models
+LVLM-eHub is a comprehensive evaluation benckmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
+ <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
+
 ## Update
+- Jun. 15, 2023. We release [**[LVLM-eHub]**](https://arxiv.org/abs/2306.09265), a evaluation benckmark for large vision-language models.
 - Jun. 8, 2023. Thanks Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues when re-implementing VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
 - May. 22, 2023. Thanks Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.
 ## Supported Multi-modality Models
