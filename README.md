@@ -10,19 +10,19 @@
 
 <!-- ## Description -->
 
-**Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on visual question answering task. We release the  [**Demo**](http://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
+**Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on a visual question-answering task. We release the  [**Demo**](http://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
 
 [**[Demo]**](http://vlarena.opengvlab.com) [**[Paper]**](https://arxiv.org/abs/2306.09265)
  <p  align="center"><img  src="./CVLAB/style/img/demo1.jpg"  width="800"></p>
 
-## LVLM-eHub - An Evaluation Benckmark for Large Vision-Language Models
-LVLM-eHub is a comprehensive evaluation benckmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
+## LVLM-eHub - An Evaluation Benchmark for Large Vision-Language Models
+LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
  <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
 
 ## Update
-- Jun. 15, 2023. We release [**[LVLM-eHub]**](https://arxiv.org/abs/2306.09265), an evaluation benckmark for large vision-language models. The code is coming soon.
-- Jun. 8, 2023. Thanks Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues when re-implementing VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
-- May. 22, 2023. Thanks Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.
+- Jun. 15, 2023. We release [**[LVLM-eHub]**](https://arxiv.org/abs/2306.09265), an evaluation benchmark for large vision-language models. The code is coming soon.
+- Jun. 8, 2023. Thanks, Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues when re-implementing VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
+- May. 22, 2023. Thanks, Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.
 ## Supported Multi-modality Models
 
 The following models are involving in randomized battles currently,
@@ -49,12 +49,12 @@ conda create -n arena python=3.10
 conda activate arena
 ```
 
-2. Install Packages required to run controller and server
+2. Install Packages required to run the controller and server
 ```bash
 pip install numpy gradio uvicorn fastapi
 ```
 
-3. Then for each model, they may require conflict version of python packages, we recommend to create specific environment for each model based on their github repo.
+3. Then for each model, they may require conflicting versions of python packages, we recommend creating a specific environment for each model based on their GitHub repo.
 
 
 ## Launch a Demo
@@ -89,4 +89,4 @@ If the models do not show up, try to reboot the gradio web server.
 The project is built upon [Fastchat](https://chat.lmsys.org/) and open-source multi-modality models.
 
 ## Term of Use
-The project is an experimental research tool for non-commercial purposes only. It has limited safeguards and may generate inappropriate content. It cannot be used for anything illegal, harmful, violent, racist or sexual. 
+The project is an experimental research tool for non-commercial purposes only. It has limited safeguards and may generate inappropriate content. It cannot be used for anything illegal, harmful, violent, racist, or sexual. 
