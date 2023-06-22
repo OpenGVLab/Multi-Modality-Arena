@@ -33,7 +33,7 @@ The following models are involving in randomized battles currently,
  - [**DAMO Academy/mPLUG-Owl**](https://github.com/X-PLUG/mPLUG-Owl)
  - [**NTU/Otter**](https://github.com/Luodian/otter)
  - [**University of Wisconsin-Madison/LLaVA**](https://github.com/haotian-liu/LLaVA)
- - [**Shanghai AI Lab/llama_adapter_v2**](https://github.com/ZrrSkywalker/LLaMA-Adapter/tree/main/llama_adapter_v2_chat65b)
+ - [**Shanghai AI Lab/llama_adapter_v2**](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/llama_adapter_v2_multimodal)
  - [**NUS/VPGTrans**](https://github.com/VPGTrans/VPGTrans)
 
 More details about these models can be found at ```./model_detail/.model.jpg```. We will try to schedule computing resources to host more multi-modality models in the arena.
