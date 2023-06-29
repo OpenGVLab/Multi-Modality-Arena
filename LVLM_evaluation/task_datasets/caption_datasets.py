@@ -107,7 +107,7 @@ class FlickrDataset(Dataset):
 class COCOCaptionDataset(Dataset):
 
     def __init__(self):
-        self.data_root = '/nvme/data1/MSCOCO_Val2014/val2014'
+        self.data_root = f'{DATA_DIR}/MSCOCO/val2014'
         self.image_list = []
         self.answer_list = []
         dataset = self.prepare_dataset()
@@ -123,7 +123,7 @@ class COCOCaptionDataset(Dataset):
         #     self.answer_list.append(sample_info)
 
     def prepare_dataset(self):
-        dataset_file = '/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main2/COCO2014_caption/caption_val1.json'
+        dataset_file = 'COCO2014_caption/caption_val1.json'
         if os.path.exists(dataset_file):
             dataset = json.load(open(dataset_file, 'r'))
         else:
@@ -157,7 +157,7 @@ class COCOCaptionDataset(Dataset):
 class COCOCaptionDatasetTest(Dataset):
 
     def __init__(self):
-        self.data_root = '/nvme/data1/MSCOCO_Val2014/val2014'
+        self.data_root = f'{DATA_DIR}/MSCOCO/val2014'
         self.image_list = []
         self.answer_list = []
         dataset = self.prepare_dataset()
@@ -173,7 +173,7 @@ class COCOCaptionDatasetTest(Dataset):
         #     self.answer_list.append(sample_info)
 
     def prepare_dataset(self):
-        dataset_file = '/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main2/COCO2014_caption/caption_val1.json'
+        dataset_file = 'COCO2014_caption/caption_val1.json'
         if os.path.exists(dataset_file):
             dataset = json.load(open(dataset_file, 'r'))
             dataset = dataset[:2]

@@ -2,9 +2,11 @@ import os
 import json
 from torch.utils.data import Dataset
 
+from . import DATA_DIR
+
 
 class EmbodiedDataset(Dataset):
-    data_root = '/home/huangsiyuan/holistic_evaluation/EmbodiedEvaluation'
+    data_root = f"{DATA_DIR}/Embodied_Datasets" # '/home/huangsiyuan/holistic_evaluation/EmbodiedEvaluation'
     dataset_list = ["MetaWorld", "FrankaKitchen", "Minecraft", "VirtualHome", "MinecraftPolicy"]
     
     def __init__(self, dataset_name):

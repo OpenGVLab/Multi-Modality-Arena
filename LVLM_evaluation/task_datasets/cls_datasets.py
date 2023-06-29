@@ -8,9 +8,11 @@ from torchvision.datasets import CIFAR10, ImageNet
 from torchvision.datasets.vision import VisionDataset
 from torchvision.datasets.utils import check_integrity, download_and_extract_archive, download_url, verify_str_arg
 
+from . import DATA_DIR
+
 
 class CIFAR10Dataset(CIFAR10):
-    def __init__(self, root: str='datasets', train: bool=False, **kwargs: Any):
+    def __init__(self, root: str=f"{DATA_DIR}/CLS_Datasets", train: bool=False, **kwargs: Any):
         super().__init__(root, train, **kwargs)
 
     def __getitem__(self, index: int) -> Tuple[str, Sequence[str]]:
@@ -90,7 +92,7 @@ class Flowers102(VisionDataset):
 
     def __init__(
         self,
-        root: str = 'datasets',
+        root: str = f"{DATA_DIR}/CLS_Datasets",
         split: str = "test",
         transform: Optional[Callable] = None,
         target_transform: Optional[Callable] = None,
@@ -162,7 +164,7 @@ class Flowers102(VisionDataset):
 
 
 class ImageNetDataset(ImageNet):
-    def __init__(self, root: str='datasets/ImageNet', split: str = "val", **kwargs: Any):
+    def __init__(self, root: str=f"{DATA_DIR}/ImageNet", split: str = "val", **kwargs: Any):
         super().__init__(root, split, **kwargs)
 
     def __getitem__(self, index: int) -> Tuple[str, Sequence[str]]:
@@ -217,7 +219,7 @@ class OxfordIIITPet(VisionDataset):
 
     def __init__(
         self,
-        root: str = 'datasets',
+        root: str = f"{DATA_DIR}/CLS_Datasets",
         split: str = "test",
         target_types: Union[Sequence[str], str] = "category",
         transforms: Optional[Callable] = None,

@@ -13,13 +13,13 @@ python eval.py --model_name $model_name --device $device --batch_size $batch_siz
 # VQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name TextVQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name DocVQA
-python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name STVQA --sample_num 5000
+python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name STVQA --sample_num 4000
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name ScienceQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name OKVQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name GQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name VizWiz
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name IconQA
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name VSR
-python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name OCRVQA --sample_num 5000
+python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_vqa --dataset_name OCRVQA
 # MRR
 python eval.py --model_name $model_name --device $device --batch_size $batch_size --eval_mrr --dataset_name Visdial

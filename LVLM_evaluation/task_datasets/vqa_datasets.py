@@ -422,15 +422,11 @@ class VSRDataset(Dataset):
             "gt_answers": answers}
 
 
-########################
-# NOTE: VCR, POPE part #
-########################
-
 class MSCOCO_POPEDataset_adversarial(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/MSCOCO_Val2014/val2014",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main2/MSCOCO_POPE/coco_pope_adversarial1.json"
+        image_dir_path=f"{DATA_DIR}/MSCOCO/val2014",
+        ann_path= "utils_data/MSCOCO_POPE/coco_pope_adversarial1.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -458,8 +454,8 @@ class MSCOCO_POPEDataset_adversarial(Dataset):
 class MSCOCO_POPEDataset_popular(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/MSCOCO_Val2014/val2014",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main2/MSCOCO_POPE/coco_pope_popular1.json"
+        image_dir_path=f"{DATA_DIR}/MSCOCO/val2014",
+        ann_path= "utils_data/MSCOCO_POPE/coco_pope_popular1.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -482,12 +478,13 @@ class MSCOCO_POPEDataset_popular(Dataset):
         else:
             print(img_path, 'not exist!!!')
             return self.__getitem__((idx + 1) % len(self))
+
 
 class MSCOCO_POPEDataset(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/MSCOCO_Val2014/val2014",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main2/MSCOCO_POPE/coco_pope_random1.json"
+        image_dir_path=f"{DATA_DIR}/MSCOCO/val2014",
+        ann_path= "utils_data/MSCOCO_POPE/coco_pope_random1.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -510,38 +507,13 @@ class MSCOCO_POPEDataset(Dataset):
         else:
             print(img_path, 'not exist!!!')
             return self.__getitem__((idx + 1) % len(self))
-
-
-class WHOOPSDataset(Dataset):
-    def __init__(
-        self,
-        image_dir_path= "/nvme/data1/whoops/whoops_images",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main/whoops/vqa.json"
-    ):
-        self.data = json.load(open(ann_path, "r"))
-        self.image_dir_path = image_dir_path
-
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        question = self.data[idx]['question']
-        answers = self.data[idx]['answer']
-        # COCO_val2014_000000007991.jpg
-        # name = 'COCO_val2014_' + str(self.data[idx]['image_id']).zfill(len('000000007991')) + '.jpg'
-        img_path = os.path.join(self.image_dir_path, self.data[idx]['image_name'])
-        # img_path = os.path.join(self.image_dir_path,name)
-        return {
-            "image_path": img_path,
-            "question": question,
-            "gt_answers": answers}
 
 
 class VCR1_OCDataset(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/vcr1/vcr1images",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main/GVT/vcr1_oc.json"
+        image_dir_path=f"{DATA_DIR}/VCR/vcr1images",
+        ann_path= "utils_data/GVT/vcr1_oc.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -565,11 +537,12 @@ class VCR1_OCDataset(Dataset):
             print(img_path, 'not exist!!!')
             return self.__getitem__((idx + 1) % len(self))
 
+
 class VCR1_MCIDataset(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/vcr1/vcr1images",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main/GVT/vcr1_mci.json"
+        image_dir_path=f"{DATA_DIR}/VCR/vcr1images",
+        ann_path= "utils_data/GVT/vcr1_mci.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -597,8 +570,8 @@ class VCR1_MCIDataset(Dataset):
 class MSCOCO_MCIDataset(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/MSCOCO_Val2014/val2014",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main/GVT/coco_mci.json"
+        image_dir_path=f"{DATA_DIR}/MSCOCO/val2014",
+        ann_path= "utils_data/GVT/coco_mci.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -626,8 +599,8 @@ class MSCOCO_MCIDataset(Dataset):
 class MSCOCO_OCDataset(Dataset):
     def __init__(
         self,
-        image_dir_path= "/nvme/data1/MSCOCO_Val2014/val2014",
-        ann_path= "/home/mengfanqing/NIPS_benchmark/holistic_evaluation-main/GVT/coco_oc.json"
+        image_dir_path=f"{DATA_DIR}/MSCOCO/val2014",
+        ann_path="utils_data/GVT/coco_oc.json"
     ):
         self.data = json.load(open(ann_path, "r"))
         self.image_dir_path = image_dir_path
@@ -647,175 +620,3 @@ class MSCOCO_OCDataset(Dataset):
             "question": question,
             "gt_answers": answers}
 
-
-class textVQADataset(Dataset):
-    def __init__(
-        self,
-        image_dir_path= "/nvme/share/VQA_Datasets/TextVQA/train_images",
-        ann_path= "/nvme/share/VQA_Datasets/TextVQA/TextVQA_0.5.1_val.json"
-    ):
-        self.data = json.load(open(ann_path, "r"))["data"]
-        self.image_dir_path = image_dir_path
-
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        question = self.data[idx]['question']
-        answers = self.data[idx]['answers']
-        img_path = os.path.join(self.image_dir_path, f"{self.data[idx]['image_id']}.jpg")
-        if os.path.isfile(img_path):
-            return {
-                "image_path": img_path,
-                "question": question,
-                "gt_answers": answers}
-        else:
-            print(img_path, 'not exist!!!')
-            return self.__getitem__((idx + 1) % len(self))
-
-
-class docVQADataset(Dataset):
-    def __init__(
-        self,
-        image_dir_path= "./data/docVQA/val",
-        ann_path= "./data/docVQA/val/val_v1.0.json",
-    ):
-        self.data = json.load(open(ann_path, "r"))["data"]
-        self.image_dir_path = image_dir_path
-
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        question = self.data[idx]['question']
-        answers = self.data[idx]['answers']
-        img_path = os.path.join(self.image_dir_path, self.data[idx]['image'])
-        return {
-            "image_path": img_path,
-            "question": question,
-            "gt_answers": answers}
-
-
-class ocrVQADataset(Dataset):
-    def __init__(
-        self,
-        image_dir_path= "./data/ocrVQA/images",
-        ann_path= "./data/ocrVQA/dataset.json",
-    ):
-        self.image_list = []
-        self.question_list = []
-        self.answer_list = []
-        dataset = json.load(open(ann_path, "r"))
-        import pdb;pdb.set_trace()
-        for idx, data in enumerate(dataset):
-            questions =  dataset[data]['questions']
-            for index, question in enumerate(questions):
-                image_file = os.path.join(image_dir_path, f'{data}.jpg')
-                gt_answers = dataset[data]['answers'][index]
-                self.image_list.append(image_file)
-                self.answer_list.append(gt_answers)
-                self.question_list.append(question)
-
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        question = self.question_list[idx]
-        answers = self.answer_list[idx]
-        img_path = self.image_list[idx]
-        return {
-            "image_path": img_path,
-            "question": question,
-            "gt_answers": answers}
-
-
-class STVQADataset(Dataset):
-    def __init__(
-        self,
-        image_dir_path= "/nvme/share/VQA_Datasets/STVQA/train_imgs",
-        ann_path= "/nvme/share/VQA_Datasets/STVQA/train_task_3.json",
-    ):
-        self.image_list = []
-        self.question_list = []
-        self.answer_list = []
-        data = json.load(open(ann_path, "r"))['data']
-        for i in range(len(data)):
-            image_path = image_dir_path + '/' + data[i]['dataset'] + '/' + data[i]['file_name']
-            self.image_list.append(image_path)
-            self.answer_list.append(data[i]['answers'])
-            self.question_list.append(data[i]['question'])
-
-    def __len__(self):
-        return len(self.image_list)
-
-    def __getitem__(self, idx):
-        question = self.question_list[idx]
-        answers = self.answer_list[idx]
-        img_path = self.image_list[idx]
-        return {
-            "image_path": img_path,
-            "question": question,
-            "gt_answers": answers}
-    
-
-class ScienceQADataset(Dataset):
-    split='test'
-    options = ["A", "B", "C", "D", "E", "F", "G", "H"]
-    data_root = '/nvme/share/VQA_Datasets/ScienceQA'
-
-    def __init__(self):
-        self.image_list = []
-        self.question_list = []
-        self.answer_list = []
-
-        ann_path = f"{self.data_root}/{self.split}_anns.json"
-        if os.path.exists(ann_path):
-            dataset = json.load(open(ann_path, "r"))
-            for sample in dataset:
-                self.image_list.append(sample['image_path'])
-                self.question_list.append(sample['question'])
-                self.answer_list.append(sample['answer'])
-        else:
-            self.load_save_dataset()
-    
-    def load_save_dataset(self):
-        # load dataset
-        data = datasets.load_dataset('derek-thomas/ScienceQA', self.split)
-        for sample in data[self.split]:
-            if sample['image'] is None:
-                continue
-            # question = f"Question: {sample['question']}\n" \
-            #            f"Options: {' '.join([f'({x}) {y}' for x, y in zip(self.options, sample['choices'])])}\n"
-            question = f"Question: {sample['question']}\n" \
-                       f"Options: {' '.join(sample['choices'])}\n"
-
-            self.question_list.append(question)
-            self.image_list.append(sample['image'].convert('RGB'))
-            self.answer_list.append(sample['choices'][sample['answer']])
-
-        # save dataset
-        dataset = []
-        for i in range(len(self.image_list)):
-            img_file_name = f'{self.data_root}/{self.split}_imgs/{i:04d}.png'
-            if not os.path.exists(img_file_name):
-                self.image_list[i].save(img_file_name)
-            self.image_list[i] = img_file_name
-            dataset.append({
-                'answer': self.answer_list[i],
-                'image_path': self.image_list[i],
-                'question': self.question_list[i]
-            })
-        with open(f"{self.data_root}/{self.split}_anns.json", "w") as f:
-            f.write(json.dumps(dataset, indent=4))
-
-    def __len__(self):
-        return len(self.question_list)
-
-    def __getitem__(self, idx):
-        question = self.question_list[idx]
-        answers = self.answer_list[idx]
-        img_path = self.image_list[idx]
-        return {
-            "image_path": img_path,
-            "question": question,
-            "gt_answers": answers}

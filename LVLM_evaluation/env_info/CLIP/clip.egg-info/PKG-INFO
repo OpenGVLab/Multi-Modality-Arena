@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: clip
+Version: 1.0
+Author: OpenAI
+Provides-Extra: dev
+License-File: LICENSE

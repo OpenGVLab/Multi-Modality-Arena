@@ -249,29 +249,3 @@ class TestLLaVA:
                     outputs[i] = outputs[i][:pos]
         
         return outputs
-    
-    @torch.no_grad()
-    def forward_lm(self, image, prompt, start_loc):
-        image = get_image(image)
-        conv = self.conv.copy()
-        text = prompt + '\n<image>'
-        text = (text, image, self.image_process_mode)
-        conv.append_message(conv.roles[0], text)
-        conv.append_message(conv.roles[1], None)
-        prompt = conv.get_prompt()
-
-        images, input_ids, batch_size = self.get_images_input_ids([image], [prompt])
-        out = self.model(
-            torch.as_tensor(input_ids).to(self.model.device),
-            use_cache=True,
-            images=images)
-        logits = out.logits
-        targets = input_ids
-        targets[0, :start_loc] = -100
-        targets[0,start_loc+1:]=-100
-        shift_logits = logits[...,:-1,:].contiguous()
-        shift_labels = targets[...,1:].contiguous()
-        loss_fct = torch.nn.CrossEntropyLoss(reduction="mean")
-        loss = loss_fct(shift_logits.view(-1, 50282), shift_labels.view(-1))
-
-        return loss

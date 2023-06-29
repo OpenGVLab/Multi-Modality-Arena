@@ -73,27 +73,3 @@ class TestOtter:
             total_output.append(output)
 
         return total_output
-
-    def forward_lm(self, image, prompt, start_loc):
-        image = get_image(image)
-        vision_x = (self.image_processor.preprocess([image], return_tensors="pt")["pixel_values"].unsqueeze(1).unsqueeze(0))
-        lang_x = self.model.text_tokenizer([f"<image> User: {prompt} GPT: <answer>"], return_tensors="pt")
-        outputs = self.model.forward(
-            vision_x=vision_x.to(self.model.device, dtype=self.dtype),
-            lang_x=lang_x["input_ids"].to(self.model.device),
-            attention_mask=lang_x["attention_mask"].to(self.model.device, dtype=self.dtype)
-        )
-        logits = outputs.logits                          
-
-        targets = lang_x["input_ids"].to(self.model.device)
-        targets[0, :start_loc] = -100
-        targets[0, start_loc + 1:] = -100
-        l_s = logits.size(1)
-        t_s = targets.size(1)
-        dif = t_s - l_s 
-        shift_labels = targets[..., dif:].contiguous()
-
-        loss_fct = torch.nn.CrossEntropyLoss(reduction="mean")                
-        loss = loss_fct(logits.view(-1, 32004), shift_labels.view(-1))
-
-        return loss
