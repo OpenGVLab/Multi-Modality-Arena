@@ -1,4 +1,4 @@
-### Multi-Modality Arena
+### Multi-Modality Arena 🚀
 
   
 
@@ -12,10 +12,14 @@
 
 **Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on a visual question-answering task. We release the  [**Demo**](http://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
 
-[**[Demo]**](http://vlarena.opengvlab.com) [**[Paper]**](https://arxiv.org/abs/2306.09265)
+[![⚔️ LVLM Arena](https://img.shields.io/badge/LVLM%20Arena-blue.svg?label=%E2%9A%94%EF%B8%8F)](http://vlarena.opengvlab.com)
+[![arXiv](https://img.shields.io/badge/arXiv-2306.09265-b31b1b.svg)](https://arxiv.org/abs/2306.09265)
+[![GitHub Stars](https://img.shields.io/github/stars/OpenGVLab/Multi-modality-Arena.svg?style=social&label=Star&maxAge=60)](https://github.com/OpenGVLab/Multi-modality-Arena)🔥🔥🔥
+                
+
  <p  align="center"><img  src="./CVLAB/style/img/demo1.jpg"  width="800"></p>
 
-## LVLM-eHub - An Evaluation Benchmark for Large Vision-Language Models
+## LVLM-eHub - An Evaluation Benchmark for Large Vision-Language Models 🚀
 LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
  <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
 
@@ -86,7 +90,7 @@ If the models do not show up, try to reboot the gradio web server.
 
 
 ## Acknowledgement
-The project is built upon [Fastchat](https://chat.lmsys.org/) and open-source multi-modality models.
+We express our gratitude to the esteemed team at [ChatBot Arena](https://arena.lmsys.org/) and their paper [Judging LLM-as-a-judge](https://arxiv.org/abs/2306.05685) for their influential work, which served as inspiration for our LVLM evaluation endeavors. We would also like to extend our sincere appreciation to the providers of LVLMs, whose valuable contributions have significantly contributed to the progress and advancement of large vision-language models. Finally, we thank the providers of datasets used in our LVLM-eHub.
 
 ## Term of Use
 The project is an experimental research tool for non-commercial purposes only. It has limited safeguards and may generate inappropriate content. It cannot be used for anything illegal, harmful, violent, racist, or sexual. 
