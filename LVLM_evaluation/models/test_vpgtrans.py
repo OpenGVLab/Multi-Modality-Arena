@@ -13,7 +13,7 @@ CFG_PATH = 'models/vpgtrans/vpgtrans_demo.yaml'
 
 
 class TestVPGTrans:
-    def __init__(self, device=None):
+    def __init__(self):
         cfg = Config(CFG_PATH, DATA_DIR)
         model_config = cfg.model_cfg
         model_cls = registry.get_model_class(model_config.arch)
@@ -23,17 +23,12 @@ class TestVPGTrans:
         self.model, self.vis_processor = model, vis_processor
         self.model.llama_model = self.model.llama_model.float().to('cpu')
         self.chat = Chat(model, vis_processor, device='cpu')
+        self.move_to_device()
 
-        # print(f'Check the number of trainable parameters: {sum(p.numel() for p in self.model.parameters() if p.requires_grad)}')
-        # print(f'Check the number of whole parameters: {sum(p.numel() for p in self.model.parameters())}')
-
-        if device is not None:
-            self.move_to_device(device)
-
-    def move_to_device(self, device):
-        if device is not None and 'cuda' in device.type:
+    def move_to_device(self):
+        if torch.cuda.is_available():
             self.dtype = torch.float16
-            self.device = device
+            self.device = 'cuda'
         else:
             self.dtype = torch.float32
             self.device = 'cpu'

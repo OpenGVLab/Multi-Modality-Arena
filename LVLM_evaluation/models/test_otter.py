@@ -8,20 +8,18 @@ CKPT_PATH=f'{DATA_DIR}/otter-9b-hf'
 
 
 class TestOtter:
-    def __init__(self, device=None) -> None:
+    def __init__(self) -> None:
         model_path=CKPT_PATH
         self.model = OtterForConditionalGeneration.from_pretrained(model_path)
         self.tokenizer = self.model.text_tokenizer
         self.image_processor = CLIPImageProcessor()
         self.tokenizer.padding_side = "left"
+        self.move_to_device()
 
-        if device is not None:
-            self.move_to_device(device)
-
-    def move_to_device(self, device=None):
-        if device is not None and 'cuda' in device.type:
+    def move_to_device(self):
+        if torch.cuda.is_available():
             self.dtype = torch.float16
-            self.device = device
+            self.device = 'cuda'
             convert_weights_to_fp16(self.model.vision_encoder)
         else:
             self.dtype = torch.float32
@@ -46,7 +44,7 @@ class TestOtter:
         output = [x for x in output.split(' ') if not x.startswith('<')]
         out_label = output.index('GPT:')
         output = ' '.join(output[out_label + 1:])
-        
+
         return output
     
     @torch.no_grad()

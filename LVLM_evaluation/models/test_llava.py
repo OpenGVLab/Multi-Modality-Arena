@@ -108,20 +108,19 @@ def load_model(model_path, model_name, dtype=torch.float16, device='cpu'):
 
 
 class TestLLaVA:
-    def __init__(self, device=None):
+    def __init__(self):
         model_path="liuhaotian/LLaVA-Lightning-MPT-7B-preview"
         model_name = get_model_name(model_path)
         self.tokenizer, self.model, self.image_processor, self.context_len = load_model(model_path, model_name)
         self.conv = get_conv(model_name)
         self.image_process_mode = "Resize" # Crop, Resize, Pad
 
-        if device is not None:
-            self.move_to_device(device)
+        self.move_to_device()
         
-    def move_to_device(self, device=None):
-        if device is not None and 'cuda' in device.type:
+    def move_to_device(self):
+        if torch.cuda.is_available():
             self.dtype = torch.float16
-            self.device = device
+            self.device = 'cuda'
         else:
             self.dtype = torch.float32
             self.device = 'cpu'

@@ -1,8 +1,7 @@
 import torch
 
 from .mplug_owl.processing_mplug_owl import MplugOwlProcessor, MplugOwlImageProcessor
-from .mplug_owl.modeling_mplug_owl import MplugOwlForConditionalGeneration, get_media_indices
-from .mplug_owl.tokenization_mplug_owl import MplugOwlTokenizer
+from .mplug_owl.modeling_mplug_owl import MplugOwlForConditionalGeneration
 from transformers import AutoTokenizer
 from . import get_image
 
@@ -11,33 +10,18 @@ prompt_template = "The following is a conversation between a curious human and A
 
 
 class TestMplugOwl:
-    def __init__(self, device=None):
+    def __init__(self):
         model_path='MAGAer13/mplug-owl-llama-7b'
         self.model = MplugOwlForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.float32)
         self.image_processor = MplugOwlImageProcessor.from_pretrained(model_path)
-        # self.tokenizer = MplugOwlTokenizer.from_pretrained(model_path)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.processor = MplugOwlProcessor(self.image_processor, self.tokenizer)
-        
-        # from peft import LoraConfig, get_peft_model
-        # peft_config = LoraConfig(
-        #     target_modules=r'.*language_model.*\.(q_proj|v_proj)', 
-        #     inference_mode=False, 
-        #     r=8,
-        #     lora_alpha=32, 
-        #     lora_dropout=0.05
-        # )
-        # self.model = get_peft_model(self.model, peft_config)
-        # self.model.print_trainable_parameters()
-        # exit()
-
         self.model.eval()
-        if device is not None:
-            self.move_to_device(device)
+        self.move_to_device()
         
-    def move_to_device(self, device=None):
-        if device is not None and 'cuda' in device.type:
-            self.device = device
+    def move_to_device(self):
+        if torch.cuda.is_available():
+            self.device = 'cuda'
             if torch.cuda.is_bf16_supported():
                 self.dtype = torch.bfloat16
             else:

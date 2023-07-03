@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from PIL import Image
 
-DATA_DIR = '/nvme/share/VLP_web_data'
+DATA_DIR = '' # Replace it with your model checkpoints save dir
 
 def skip(*args, **kwargs):
     pass
@@ -31,39 +31,30 @@ def get_BGR_image(image):
     return image
 
 
-def get_model(model_name, device=None):
+def get_model(model_name):
     if model_name == 'BLIP2':
         from .test_blip2 import TestBlip2
-        return TestBlip2(device)
-    elif model_name == 'MiniGPT-4':
-        from .test_minigpt4 import TestMiniGPT4
-        return TestMiniGPT4(device)
-    elif model_name == 'mPLUG-Owl':
-        from .test_mplug_owl import TestMplugOwl
-        return TestMplugOwl(device)
-    elif model_name == 'Otter':
-        from .test_otter import TestOtter
-        return TestOtter(device)
+        return TestBlip2()
     elif model_name == 'InstructBLIP':
         from .test_instructblip import TestInstructBLIP
-        return TestInstructBLIP(device)
-    elif model_name == 'VPGTrans':
-        from .test_vpgtrans import TestVPGTrans
-        return TestVPGTrans(device)
-    elif model_name == 'LLaVA':
-        from .test_llava import TestLLaVA
-        return TestLLaVA(device)
+        return TestInstructBLIP()
     elif model_name == 'LLaMA-Adapter-v2':
         from .test_llama_adapter_v2 import TestLLamaAdapterV2, TestLLamaAdapterV2_web
-        return TestLLamaAdapterV2(device)
-    elif model_name == 'Multimodal-GPT':
-        from .test_multimodel_gpt import TestMultiModelGPT # Web version
-        return TestMultiModelGPT(device)
-    elif model_name == 'ImageBind':
-        from .test_imagebind import TestImageBind
-        return TestImageBind()
-    elif 'LLaMA-Adapter-v3' in model_name:
-        from .test_llama_adapter_v3 import TestLLamaAdapterV3
-        return TestLLamaAdapterV3(model_name, device)
+        return TestLLamaAdapterV2()
+    elif model_name == 'LLaVA':
+        from .test_llava import TestLLaVA
+        return TestLLaVA()
+    elif model_name == 'MiniGPT-4':
+        from .test_minigpt4 import TestMiniGPT4
+        return TestMiniGPT4()
+    elif model_name == 'mPLUG-Owl':
+        from .test_mplug_owl import TestMplugOwl
+        return TestMplugOwl()
+    elif model_name == 'Otter':
+        from .test_otter import TestOtter
+        return TestOtter()
+    elif model_name == 'VPGTrans':
+        from .test_vpgtrans import TestVPGTrans
+        return TestVPGTrans()
     else:
         raise ValueError(f"Invalid model_name: {model_name}")

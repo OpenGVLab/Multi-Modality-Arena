@@ -1,16 +1,49 @@
 # holistic_evaluation
 
-Here are some details about environment, model checkpoints and the how to perform evaluation.
-
 ## Environments
 
-In env_info folder, there are two yaml files: llama_adapter.yaml is the environment used for running the LLaMA-Adapter-v2 while VLP_web.yaml is used for running the rest models. Specifically, the CLIP and timm library shown in llama_adapter.yaml are customized, which are also be provided in env_info folder.
+* Setup a new conda env for LLaMA-Adapter-v2
+```bash
+cd env_info
+conda create -n llama_adapter_v2 python=3.8 -y
+pip install -r llama_requirements.txt
+```
+
+* Setup a new conda env for the rest models
+```bash
+cd env_info
+conda env create -f VLP_web.yaml
+```
+
 
 ## Model checkpoints
+Most weights and checkpoint files will be downloaded automatically when initialing the corresponding testers. However, there are some files you should download personally and put in a directory. Then please replace the variable `DATA_DIR` in the `models/__init__.py` with the directory you save these files. Please note that the downloaded files should be organized as follows:
 
-The model checkpoints used in BLIP2, InstructBLIP, LLaVA, mPLUG-Owl and Otter will be downloaded automatically when initialing the corresponding testers. However, some files should be downloaded previously when running MiniGPT-4, VPGTrans and LLaMA-Adapter-v2. For these files, we recommand you to put them in the same directory and replace variable `DATA_DIR` in the `models/__init__.py` with it.
+```bash
+/path/to/DATA_DIR
+├── llama_checkpoints
+│   ├── 7B
+│   │   ├── checklist.chk
+│   │   ├── consolidated.00.pth
+│   │   └── params.json
+│   └── tokenizer.model
+├── MiniGPT-4
+│   ├── alignment.txt
+│   └── pretrained_minigpt4_7b.pth
+├── VPGTrans_Vicuna
+└── otter-9b-hf
+```
 
-For MiniGPT-4, please download its [7B-ckpt](https://drive.google.com/file/d/1RY9jV0dyqLX-o38LrumkKRh6Jtaop58R/view?usp=sharing) and put it in `DATA_DIR/MiniGPT-4/pretrained_minigpt4_7b.pth`. Then for VPGTrans, you need download its [Vicuna model](https://drive.google.com/drive/folders/1YpBaEBNL-2a5DrU3h2mMtvqkkeBQaRWp?usp=sharing) and put int in `DATA_DIR/VPGTrans_Vicuna`. Finally, for LLaMA-Adapter-v2, we will update our code for using its huggingface version as soon as possible.
+* For LLaMA-Adapter-v2, please obtain the LLaMA backbone weights using [this form](https://forms.gle/jk851eBVbX1m5TAv5).
+
+* For MiniGPT-4, please download [alignment.txt](https://github.com/Vision-CAIR/MiniGPT-4/blob/22d8888ca2cf0aac862f537e7d22ef5830036808/prompts/alignment.txt#L3) and [pretrained_minigpt4_7b.pth](https://drive.google.com/file/d/1RY9jV0dyqLX-o38LrumkKRh6Jtaop58R/view?usp=sharing).
+
+* For VPGTrans, please download [VPGTrans_Vicuna](https://drive.google.com/drive/folders/1YpBaEBNL-2a5DrU3h2mMtvqkkeBQaRWp?usp=sharing).
+
+
+## Datasets
+
+
 
 ## Evaluation
 
