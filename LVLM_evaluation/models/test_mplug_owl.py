@@ -32,7 +32,7 @@ class TestMplugOwl:
         self.model.to(device=self.device, dtype=self.dtype)
 
     @torch.no_grad()
-    def generate(self, image, question, max_new_tokens=256):
+    def generate(self, image, question, max_new_tokens=128):
         prompts = [prompt_template.format(question)]
         image = get_image(image)
         inputs = self.processor(text=prompts, images=[image], return_tensors='pt')
@@ -52,7 +52,7 @@ class TestMplugOwl:
         return generated_text
 
     @torch.no_grad()
-    def batch_generate(self, image_list, question_list, max_new_tokens=256):
+    def batch_generate(self, image_list, question_list, max_new_tokens=128):
         images = [get_image(image) for image in image_list]
         images = [self.image_processor(image, return_tensors='pt').pixel_values for image in images]
         images = torch.cat(images, dim=0).to(self.device, dtype=self.dtype)

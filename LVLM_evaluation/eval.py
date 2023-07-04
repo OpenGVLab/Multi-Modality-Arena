@@ -2,6 +2,7 @@ import os
 import json
 import argparse
 import datetime
+from functools import partial
 
 import torch
 import numpy as np
@@ -18,6 +19,7 @@ def parse_args():
     parser.add_argument("--model_name", type=str, default="LLaMA-Adapter-v2")
     parser.add_argument("--device", type=int, default=-1)
     parser.add_argument("--batch_size", type=int, default=1)
+    parser.add_argument("--max_new_tokens", type=int, default=-1)
 
     # datasets
     parser.add_argument("--ocr_dataset_name", type=str, default="IIIT5K SVT IC13 IC15 SVTP CUTE80 COCO-Text Total-Text WordArt CTW HOST WOST")
@@ -56,19 +58,24 @@ def sample_dataset(dataset, max_sample_num=5000, seed=0):
 
 def get_eval_function(args):
     if args.eval_vqa:
-        return evaluate_VQA
-    if args.eval_caption:
-        return evaluate_Caption
-    if args.eval_kie:
-        return evaluate_KIE
-    if args.eval_mrr:
-        return evaluate_MRR
-    if args.eval_embod:
-        return evaluate_embodied
-    if args.eval_cls:
-        return evaluate_zero_shot_image_classification
+        eval_func = evaluate_VQA
+    elif args.eval_caption:
+        eval_func = evaluate_Caption
+    elif args.eval_kie:
+        eval_func = evaluate_KIE
+    elif args.eval_mrr:
+        eval_func = evaluate_MRR
+    elif args.eval_embod:
+        eval_func = evaluate_embodied
+    elif args.eval_cls:
+        eval_func = evaluate_zero_shot_image_classification
+    else:
+        raise NotImplementedError("Invalid choice of evaluation function")
 
-    return None
+    if args.max_new_tokens == -1:
+        return eval_func
+    else:
+        return partial(eval_func, max_new_tokens=args.max_new_tokens)
 
 
 def main(args):

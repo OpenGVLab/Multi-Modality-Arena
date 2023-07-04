@@ -38,7 +38,7 @@ class TestMiniGPT4:
         self.chat.move_stopping_criteria_device(self.device, dtype=self.dtype)
 
     @torch.no_grad()
-    def generate(self, image, question, max_new_tokens=256):
+    def generate(self, image, question, max_new_tokens=128):
         chat_state = CONV_VISION.copy()
         img_list = []
         if image is not None:
@@ -50,7 +50,7 @@ class TestMiniGPT4:
         return llm_message
 
     @torch.no_grad()
-    def batch_generate(self, image_list, question_list, max_new_tokens=256):
+    def batch_generate(self, image_list, question_list, max_new_tokens=128):
         image_list = [get_image(image) for image in image_list]
         chat_list = [CONV_VISION.copy() for _ in range(len(image_list))]
         batch_outputs = self.chat.batch_answer(image_list, question_list, chat_list, max_new_tokens=max_new_tokens)

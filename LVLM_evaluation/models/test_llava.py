@@ -129,7 +129,7 @@ class TestLLaVA:
         self.model.to(device=self.device, dtype=self.dtype)
     
     @torch.no_grad()
-    def generate(self, image, question, max_new_tokens=256):
+    def generate(self, image, question, max_new_tokens=128):
         image = get_image(image)
         conv = self.conv.copy()
         text = question + '\n<image>'
@@ -143,7 +143,7 @@ class TestLLaVA:
         return output
     
     @torch.no_grad()
-    def batch_generate(self, image_list, question_list, max_new_tokens=256):
+    def batch_generate(self, image_list, question_list, max_new_tokens=128):
         images, prompts = [], []
         for image, question in zip(image_list, question_list):
             image = get_image(image)

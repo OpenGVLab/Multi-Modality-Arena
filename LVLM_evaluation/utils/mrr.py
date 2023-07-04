@@ -13,12 +13,13 @@ def evaluate_MRR(
     dataset_name,
     time,
     batch_size=1,
-    answer_path='./answers'
+    answer_path='./answers',
+    max_new_tokens=256
 ):
     predictions=[]
     dataloader = DataLoader(dataset, batch_size=batch_size, collate_fn=lambda batch: {key: [dict[key] for dict in batch] for key in batch[0]})
     for batch in tqdm(dataloader, desc="Running inference"):
-        outputs = model.batch_generate(batch['image_path'], batch['question'])
+        outputs = model.batch_generate(batch['image_path'], batch['question'], max_new_tokens=max_new_tokens)
         for image_path, question, gt_answer, output in zip(batch['image_path'], batch['question'], batch['gt_answers'], outputs):
             answer_dict={'question': question, 'answer': output,
             'gt_answers': gt_answer, 'image_path': image_path,
