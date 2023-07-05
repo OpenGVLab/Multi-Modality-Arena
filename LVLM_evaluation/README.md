@@ -40,8 +40,40 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 
 * For VPGTrans, please download [VPGTrans_Vicuna](https://drive.google.com/drive/folders/1YpBaEBNL-2a5DrU3h2mMtvqkkeBQaRWp?usp=sharing).
 
+* For Otter, you can download the version we used in our evaluation from [this repo](https://huggingface.co/BellXP/otter-9b-hf). However, please note that the authors of Otter have updated their model, which is better than the version we used in evaluations, please check their [github repo](https://github.com/Luodian/Otter/tree/main) for the newest version.
+
 
 ## Datasets
+For dataset preparation, you can download and process the datasets we use personally or use the version we provided in [here](A cloud disk link). Then please organize the datasets as follows and then replace the variable `DATA_DIR` in the `task_datasets/__init__.py` with the directory you save these datasets.
+
+```bash
+/path/to/DATA_DIR
+├── Caption_Datasets
+│   ├── Flickr_30k
+│   │   ├── flickr30k-images
+│   │   └── results_20130124.token
+│   └── NoCaps
+│       ├── nocaps_val_4500_captions.json
+│       └── val_imgs
+├── CLS_Datasets
+├── Embodied_Datasets
+├── ImageNet
+├── ImageNetVC
+├── KIE_Datasets
+│   ├── FUNSD
+│   │   └── testing_data
+│   └── SROIE
+│       ├── gt_answers
+│       └── images
+├── MSCOCO
+├── OCR_Datasets
+├── VCR
+└── VQA_Datasets
+```
+
+* For Caption datasets,
+    - Flickr_30k, please obtain the [flickr30k-images](https://uofi.box.com/s/1cpolrtkckn4hxr1zhmfg0ln9veo6jpl) and get the [results_20130124.token](http://shannon.cs.illinois.edu/DenotationGraph/data/flickr30k.tar.gz).
+    - NoCaps, please download [nocaps_val_4500_captions.json](https://nocaps.s3.amazonaws.com/nocaps_val_4500_captions.json) at first and then download the images from the urls provided in nocaps_val_4500_captions.json and save them in `DATA_DIR/Caption_Datasets/NoCaps/val_imgs` with the filename provided in nocaps_val_4500_captions.json.
 
 
 
