@@ -43,6 +43,34 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 * For Otter, you can download the version we used in our evaluation from [this repo](https://huggingface.co/BellXP/otter-9b-hf). However, please note that the authors of Otter have updated their model, which is better than the version we used in evaluations, please check their [github repo](https://github.com/Luodian/Otter/tree/main) for the newest version.
 
 
+## Evaluation
+
+```bash
+python eval.py \
+--model_name $MODEL
+--device $CUDA_DEVICE_INDEX \
+--batch_size $EVAL_BATCH_SIZE \
+--dataset_name $DATASET \
+--question $QUESTION \
+--max_new_tokens $MAX_NEW_TOKENS \
+--answer_path $SAVE_DIR
+--eval_(ocr/vqa/caption/kie/mrr/embod/cls) \
+# please check the name of models/datasets in (models/task_datasets)/__init__.py
+# do not need to specific question and max_new_tokens in default
+```
+
+For the evalution tasks can not using the default settings, here is the list:
+
+| Dataset        | task             | `--dataset_name` | `--max_new_tokens` | `--question`                                                  | download                                           |
+|----------------|------------------|------------------|--------------------|---------------------------------------------------------------|----------------------------------------------------|
+| ImageNet1K     | `--eval_cls`     | ImageNet         | 64                 | The photo of the                                              | https://image-net.org/download.php                 |
+| CIFAR10        | `--eval_cls`     | CIFAR10          | 64                 | The photo of the                                              | https://www.cs.toronto.edu/~kriz/cifar.html        |
+| Pets37         | `--eval_cls`     | OxfordIIITPet    | 64                 | What is the specific category of the dog or cat in the image? | https://www.robots.ox.ac.uk/~vgg/data/pets/        |
+| Flowers102     | `--eval_cls`     | Flowers102       | 64                 | What is the specific category of the flower in the image?     | https://www.robots.ox.ac.uk/~vgg/data/flowers/102/ |
+| WHOOPS Caption | `--eval_caption` | WHOOPSCaption    | 16                 | A photo of                                                    | https://huggingface.co/datasets/nlphuji/whoops     |
+| WHOOPS VQA     | `--eval_vqa`     | WHOOPSVQA        | 16                 | -                                                             | https://huggingface.co/datasets/nlphuji/whoops     |
+
+
 ## Datasets
 For dataset preparation, you can download and process the datasets we use personally or use the version we provided in [here](A cloud disk link). Then please organize the datasets as follows and then replace the variable `DATA_DIR` in the `task_datasets/__init__.py` with the directory you save these datasets.
 
@@ -56,6 +84,8 @@ For dataset preparation, you can download and process the datasets we use person
 │       ├── nocaps_val_4500_captions.json
 │       └── val_imgs
 ├── CLS_Datasets
+│   ├── flowers-102
+│   └── oxford-iiit-pet
 ├── Embodied_Datasets
 ├── ImageNet
 ├── ImageNetVC
@@ -145,31 +175,3 @@ For dataset preparation, you can download and process the datasets we use person
     WordArt/test_image/2097.png INDIE
     WordArt/test_image/2100.png adventure
     ```
-
-
-## Evaluation
-
-```bash
-python eval.py \
---model_name $MODEL
---device $CUDA_DEVICE_INDEX \
---batch_size $EVAL_BATCH_SIZE \
---dataset_name $DATASET \
---question $QUESTION \
---max_new_tokens $MAX_NEW_TOKENS \
---answer_path $SAVE_DIR
---eval_(ocr/vqa/caption/kie/mrr/embod/cls) \
-# please check the name of models/datasets in (models/task_datasets)/__init__.py
-# do not need to specific question and max_new_tokens in default
-```
-
-For the evalution tasks can not using the default settings, here is the list:
-
-| Dataset        | task             | `--dataset_name` | `--max_new_tokens` | `--question`                                                  |
-|----------------|------------------|------------------|--------------------|---------------------------------------------------------------|
-| ImageNet1K     | `--eval_cls`     | ImageNet         | 64                 | The photo of the                                              |
-| CIFAR10        | `--eval_cls`     | CIFAR10          | 64                 | The photo of the                                              |
-| Pets37         | `--eval_cls`     | OxfordIIITPet    | 64                 | What is the specific category of the dog or cat in the image? |
-| Flowers102     | `--eval_cls`     | Flowers102       | 64                 | What is the specific category of the flower in the image?     |
-| WHOOPS Caption | `--eval_caption` | WHOOPSCaption    | 16                 | A photo of                                                    |
-| WHOOPS VQA     | `--eval_vqa`     | WHOOPSVQA        | 16                 | -                                                             |
