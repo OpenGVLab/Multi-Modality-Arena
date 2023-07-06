@@ -20,7 +20,7 @@ def evaluate_Caption(
     time,
     batch_size=1,
     answer_path='./answers',
-    question='Generate caption of this image:',
+    question='what is described in the image?',
     max_new_tokens=16,
 ):
     predictions=[]

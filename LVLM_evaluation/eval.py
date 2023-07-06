@@ -31,6 +31,7 @@ def parse_args():
     parser.add_argument("--answer_path", type=str, default="./answers")
 
     # eval choices
+    parser.add_argument("--question", type=str, default=None)
     parser.add_argument("--eval_ocr", action="store_true", help="Whether to evaluate on ocr.")
     parser.add_argument("--eval_vqa", action="store_true", help="Whether to evaluate on vqa.")
     parser.add_argument("--eval_caption", action="store_true", help="Whether to evaluate on caption.")
@@ -72,10 +73,13 @@ def get_eval_function(args):
     else:
         raise NotImplementedError("Invalid choice of evaluation function")
 
-    if args.max_new_tokens == -1:
-        return eval_func
-    else:
-        return partial(eval_func, max_new_tokens=args.max_new_tokens)
+    if args.max_new_tokens != -1:
+        eval_func = partial(eval_func, max_new_tokens=args.max_new_tokens)
+    
+    if args.question is not None:
+        eval_func = partial(eval_func, question=args.question)
+    
+    return eval_func
 
 
 def main(args):

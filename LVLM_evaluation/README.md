@@ -155,7 +155,21 @@ python eval.py \
 --device $CUDA_DEVICE_INDEX \
 --batch_size $EVAL_BATCH_SIZE \
 --dataset_name $DATASET \
---eval_(ocr/vqa/caption/kie/mrr/embod/cls) \
+--question $QUESTION \
+--max_new_tokens $MAX_NEW_TOKENS \
 --answer_path $SAVE_DIR
+--eval_(ocr/vqa/caption/kie/mrr/embod/cls) \
 # please check the name of models/datasets in (models/task_datasets)/__init__.py
+# do not need to specific question and max_new_tokens in default
 ```
+
+For the evalution tasks can not using the default settings, here is the list:
+
+| Dataset        | task             | `--dataset_name` | `--max_new_tokens` | `--question`                                                  |
+|----------------|------------------|------------------|--------------------|---------------------------------------------------------------|
+| ImageNet1K     | `--eval_cls`     | ImageNet         | 64                 | The photo of the                                              |
+| CIFAR10        | `--eval_cls`     | CIFAR10          | 64                 | The photo of the                                              |
+| Pets37         | `--eval_cls`     | OxfordIIITPet    | 64                 | What is the specific category of the dog or cat in the image? |
+| Flowers102     | `--eval_cls`     | Flowers102       | 64                 | What is the specific category of the flower in the image?     |
+| WHOOPS Caption | `--eval_caption` | WHOOPSCaption    | 16                 | A photo of                                                    |
+| WHOOPS VQA     | `--eval_vqa`     | WHOOPSVQA        | 16                 | -                                                             |
