@@ -87,6 +87,11 @@ For dataset preparation, you can download and process the datasets we use person
 │   ├── flowers-102
 │   └── oxford-iiit-pet
 ├── Embodied_Datasets
+│   ├── FrankaKitchen
+│   ├── MetaWorld
+│   ├── Minecraft
+│   ├── MinecraftPolicy
+│   └── VirtualHome
 ├── ImageNet
 ├── ImageNetVC
 ├── KIE_Datasets
@@ -97,7 +102,6 @@ For dataset preparation, you can download and process the datasets we use person
 │       └── images
 ├── MSCOCO
 ├── OCR_Datasets
-├── VCR
 │   ├── COCO-Text
 │   ├── CTW
 │   ├── CUTE80
@@ -110,6 +114,8 @@ For dataset preparation, you can download and process the datasets we use person
 │   ├── Total-Text
 │   ├── WordArt
 │   └── WOST
+├── SNLI-VE
+├── VCR
 └── VQA_Datasets
     ├── DocVQA
     │   ├── val
@@ -175,3 +181,10 @@ For dataset preparation, you can download and process the datasets we use person
     WordArt/test_image/2097.png INDIE
     WordArt/test_image/2100.png adventure
     ```
+
+* Then there are five individual datasets, which are ImageNet, ImageNetVC, MSCOCO, SNLI-VE and VCR.
+    - ImageNet, please request to download ImageNet 2012 in [this website](https://image-net.org/download.php).
+    - ImageNetVC, please download in from [its official github repo](https://github.com/hemingkx/ImageNetVC/tree/main/VaLM/BLIP-2).
+    - MSCOCO, please download the [2014 val images](http://images.cocodataset.org/zips/val2014.zip) and put it in `MSCOCO/val2014`.
+    - SNLI-VE, please download it from [this website](https://github.com/necla-ml/SNLI-VE).
+    - VCR, please first download the VCR dataset in [this website](https://visualcommonsense.com/download/) and then rename it from `vcr1` to `VCR`.
