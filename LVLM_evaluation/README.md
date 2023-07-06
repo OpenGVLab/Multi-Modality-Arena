@@ -68,16 +68,83 @@ For dataset preparation, you can download and process the datasets we use person
 ├── MSCOCO
 ├── OCR_Datasets
 ├── VCR
+│   ├── COCO-Text
+│   ├── CTW
+│   ├── CUTE80
+│   ├── HOST
+│   ├── IC13
+│   ├── IC15
+│   ├── IIIT5K
+│   ├── SVT
+│   ├── SVTP
+│   ├── Total-Text
+│   ├── WordArt
+│   └── WOST
 └── VQA_Datasets
+    ├── DocVQA
+    │   ├── val
+    │   └── val.json
+    ├── GQA
+    │   ├── images
+    │   └── questions
+    │       └── testdev_balanced_questions.json
+    ├── IconQA
+    │   └── datasets
+    │       └── test
+    ├── OCRVQA
+    │   ├── dataset.json
+    │   └── loadDataset.py
+    ├── OKVQA
+    │   ├── mscoco_val2014_annotations.json
+    │   ├── OpenEnded_mscoco_val2014_questions.json
+    │   └── val2014
+    ├── ScienceQA
+    ├── STVQA
+    │   ├── train_imgs
+    │   └── train_task_3.json
+    ├── TextVQA
+    │   ├── TextVQA_0.5.1_val.json
+    │   └── train_images
+    ├── Visdial
+    │   ├── images_val2018
+    │   └── visdial_1.0_val.json
+    ├── VizWiz
+    │   ├── val
+    │   └── val_grounding.json
+    └── VSR
+        ├── all_vsr_validated_data.jsonl
+        └── images
 ```
 
 * For Caption datasets,
     - Flickr_30k, please obtain the [flickr30k-images](https://uofi.box.com/s/1cpolrtkckn4hxr1zhmfg0ln9veo6jpl) and get the [results_20130124.token](http://shannon.cs.illinois.edu/DenotationGraph/data/flickr30k.tar.gz).
     - NoCaps, please download [nocaps_val_4500_captions.json](https://nocaps.s3.amazonaws.com/nocaps_val_4500_captions.json) at first and then download the images from the urls provided in nocaps_val_4500_captions.json and save them in `DATA_DIR/Caption_Datasets/NoCaps/val_imgs` with the filename provided in nocaps_val_4500_captions.json.
 
+* For KIE datasets,
+    - FUNSD, please download the [datasets of FUNSD](https://guillaumejaume.github.io/FUNSD/dataset.zip) and the extract the compressed file and organize it as the aforementioned directory tree.
+    - SROIE, please download the test set images of task 3 from [SROIE's Github repo](https://github.com/zzzDavid/ICDAR-2019-SROIE) and then process then by following the process in [there](https://github.com/zzzDavid/ICDAR-2019-SROIE/tree/master/task3). After that, you will get the gt answers of each image. Then please put these images and gt answers in the `images` and `gt_answers` folder. Notably, we change the format of gt answer files from .json to .txt.
+
 * For Embodied datasets.
     - We select some representive frames from [MetaWorld](https://github.com/Farama-Foundation/Metaworld), [FrankaKitchen](https://robotics.farama.org/envs/franka_kitchen/franka_kitchen/), [VirtualHome](http://virtual-home.org/) and [MineDojo](https://github.com/MineDojo/MineDojo). Please follow the instructions respectively to get the datasets.
 
+* For VQA datasets,
+    - DocVQA, please download the validation set of task 1 in the website of [robust reading competition](https://rrc.cvc.uab.es/?ch=17) as then put the data into the dataset directory organized as previous mentiond.
+    - GQA, please download the [images](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip) and [questions](https://downloads.cs.stanford.edu/nlp/data/gqa/questions1.2.zip) and make sure the file `testdev_balanced_questions.json` is placed in the correct directory.
+    - IconQA, please first follow the instructions provided in [IconQA's github repo](https://github.com/lupantech/IconQA/tree/main) and then move the `IconQA/data/iconqa_data/iconqa` into `DATA_DIR/VQA_Datasets/IconQA/datasets`.
+    - OCRVQA, please first download the `dataset.json` and `loadDataset.py` provided in this [google drive link](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_) and then download the images used in OCRVQA by running the `loadDataset.py`.
+    - OKVQA, please first download the [questions](https://okvqa.allenai.org/static/data/OpenEnded_mscoco_val2014_questions.json.zip) and [annotations](https://okvqa.allenai.org/static/data/mscoco_val2014_annotations.json.zip) and then put the images of MSCOCO2014 validation set in the directroy shown above.
+    - ScienceQA, in initialing the ScienceQA dataset, the python script will download the test split of ScienceQA from huggingface directly and then saving the samples with image provided in `DATA_DIR/VQA_Datasets/ScienceQA`.
+    - STVQA, we use the end-to-end task 3 of STVQA, the dataset can be downloaded in [robust reading competition](https://rrc.cvc.uab.es/?ch=11). Please note that as the gt answers are not provided in the test set of STVQA's task 3, the split we use is the train set.
+    - TextVQA, please download the [TextVQA_0.5.1_val.json](https://dl.fbaipublicfiles.com/textvqa/data/TextVQA_0.5.1_val.json) and the [train_images](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip).
+    - Visdial, please download the [visdial_1.0_val](https://www.dropbox.com/s/ibs3a0zhw74zisc/visdial_1.0_val.zip?dl=0) and [VisualDialog_val2018](https://www.dropbox.com/s/twmtutniktom7tu/VisualDialog_val2018.zip?dl=0). Then rename the `VisualDialog_val2018` as `images_val2018`.
+    - VizWiz, please download the [val images](https://vizwiz.cs.colorado.edu/VizWiz_final/images/val.zip) and [val annotations](https://vizwiz.cs.colorado.edu/VizWiz_final/VizWiz_grounding/annotations.zip) and then organize them as the directory tree shown above.
+    - VSR, please first download the [all_vsr_validated_data.jsonl](https://github.com/cambridgeltl/visual-spatial-reasoning/blob/master/data/data_files/all_vsr_validated_data.jsonl) and then download the images from the `image_link` and save it as the `image` provided in `all_vsr_validated_data.jsonl`.
+
+* For VQA datasets, most of them can be obtained by following the instructions shown in [MMOCR's text recognition dataset preperation page](https://mmocr.readthedocs.io/en/v0.6.1/datasets/recog.html), which is inclusive of COCO-Text, CUTE80, ICDAR 13 (IC13), ICDAR 15 (IC15), IIIT5K, SVT, SVTP and Total-Text. Then for WordArt dataset, it is available at [this google drive link](https://drive.google.com/file/d/1SanxRwTxd2q7UrQxlbC3BmP3nhFXwZ3g/view). For CTW dataset, please download its test set in [this link](https://ctwdataset.github.io/downloads.html). Finally, HOST and WOST are the heavy and weakly categories of occlusion scene text dataset, which can be downloaded from its [official github repo](https://github.com/wangyuxin87/VisionLAN). Notably, after getting these OCR datasets, please prepare a `test_label.txt` file for each of them. In each line of the `test_label.txt`, the relative path of the image file and its text label should be provided as follow (take the WordArt dataset as the example):
+    ```bash
+    WordArt/test_image/2097.png INDIE
+    WordArt/test_image/2100.png adventure
+    ```
 
 
 ## Evaluation
