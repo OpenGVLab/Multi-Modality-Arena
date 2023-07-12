@@ -1,0 +1,558 @@
+category,question,answer
+tench,What's the color of a tench?,green
+goldfish,What is the color of a goldfish?,orange
+tiger shark,What color is the tiger shark?,gray
+stingray,What is the color of the stingray?,gray
+cock,What is the color of the cock's comb?,red
+cock,What is the common color of a cock's body?,brown
+hen,What is the color of the beak of the hen?,orange
+hen,What color is the comb of a hen?,red
+ostrich,What is the color of the ostrich?,brown
+ostrich,What is the color of the neck of the ostrich?,white
+brambling,What color is the breast of the brambling?,orange
+brambling,What color is the underbelly of the brambling?,white
+brambling,What is the color of the brambling's head?,brown
+goldfinch,What's the color of a goldfinch's beak?,orange
+goldfinch,What is the color of the abdomen of the goldfinch?,yellow
+goldfinch,What color is a goldfinch tail?,black
+house finch,What is the color of the house finch at its head?,red
+house finch,What is the color of the house finch’s beak?,orange
+junco,What color are the junco's feathers?,gray
+junco,What color is the junco's head?,gray
+indigo bunting,What is the color of the indigo bunting?,blue
+indigo bunting,What is the color of the lower beak of the indigo bunting?,white
+robin,What is the color of the beak of the robin?,yellow
+robin,What is the color of the belly of the robin?,orange
+robin,What is the color of the wings of the robin?,gray
+robin,What is the head color of most robins?,black
+robin,What color are the legs of the robin?,black
+bulbul,What is the most common color of a bulbul's beak?,black
+jay,What is the color of the tail feathers of a jay?,blue
+jay,What color is the feather on a jay's belly?,white
+jay,What color are most jays' wings?,blue
+jay,What is the color of the legs of a jay?,black
+magpie,What is the color of the head of most magpies?,black
+chickadee,What is the color of most chickadees’ beaks?,black
+water ouzel,What is the color of the water ouzel’s beak?,gray
+kite,What is the color of the kite?,brown
+bald eagle,What is the color of the bald eagle's head?,white
+bald eagle,What is the color of the bald eagle's beak?,yellow
+bald eagle,What is the color of the bald eagle's body?,black
+vulture,What is the color of a vulture's wings?,gray
+great grey owl,What is the beak color of the great grey owl?,yellow
+European fire salamander,What is the color of the spot of most European fire salamanders?,yellow
+eft,What is the color of the eft mostly?,orange
+spotted salamander,What is the color of the spots of a spotted salamander?,yellow
+bullfrog,What is the color of the bullfrog?,green
+tree frog,What color is the tree frog's skin?,green
+common iguana,What color is the common iguana usually?,gray
+American chameleon,What is the color of the American chameleon?,green
+frilled lizard,What is the color of the frilled lizard?,brown
+African chameleon,What is the color of the African chameleon?,green
+Komodo dragon,What is the color of a Komodo dragon?,gray
+African crocodile,What is the color of the African crocodile?,gray
+American alligator,What is the color of the American alligator?,brown
+thunder snake,What is the color of the thunder snake?,brown
+ringneck snake,What is the common color of the ringneck snake?,gray
+green snake,What is the color of the green snake?,green
+green snake,What color is the green snake's underbelly?,green
+garter snake,What color is the line on the garter snake?,yellow
+water snake,What common color is a water snake?,brown
+vine snake,What is the color of the vine snake?,green
+boa constrictor,What is the predominant color of the boa constrictor?,brown
+rock python,What is the color of most of the rock python?,brown
+rock python,What is the blotches color in rock python?,black
+Indian cobra,What is the main color of the Indian cobra?,brown
+green mamba,What color is a green mamba?,green
+sidewinder,What is the color of the sidewinder?,brown
+trilobite,What is the most common color of the trilobite?,brown
+black and gold garden spider,What is the color of the black and gold garden spider's web?,white
+garden spider,What is the primary color of the garden spider?,brown
+black widow,What is the color of the black widow?,black
+black widow,What color is the sign on the black widow's body?,red
+tarantula,What color is a tarantula's body?,brown
+wolf spider,What's the color of the wolf spider?,brown
+tick,What is the color of ticks?,brown
+centipede,What is the color of the centipede?,brown
+centipede,What color are the legs of the centipede?,brown
+black grouse,What is the color of the comb of the black grouse?,red
+black grouse,What color are the tails of most black grouses?,black
+ptarmigan,What is the color of the beak of the ptarmigan?,black
+ruffed grouse,What is the color of the ruffed grouse?,brown
+prairie chicken,What is the color of the prairie chicken?,brown
+peacock,What's the color of a peacock's body?,blue
+peacock,What is the color of the neck of a peacock?,blue
+quail,What is the color of the quail?,gray
+partridge,What is the color of the partridge?,brown
+African grey,What's the color of the African grey?,gray
+African grey,What is the color of the African grey's head?,white
+macaw,What color are the macaw's talons?,black
+sulphur-crested cockatoo,What color are the wings of the sulphur-crested cockatoo?,white
+sulphur-crested cockatoo,What is the color of the feathers on the top of the sulphur-crested cockatoo?,yellow
+sulphur-crested cockatoo,What is the beak color of the sulphur-crested cockatoo?,black
+sulphur-crested cockatoo,What is the common color of the sulphur-crested cockatoo?,white
+lorikeet,What's the color of a lorikeet's beak?,red
+lorikeet,What is the color of the head of a lorikeet?,blue
+lorikeet,What is the color of the lorikeet's wings?,green
+coucal,What color are the mantle and wings of the coucal?,brown
+coucal,What's the color of a coucal's eyes?,red
+coucal,What is the feather color of coucal?,brown
+bee eater,What color is the bee eater's beak?,black
+hornbill,What is the color of the hornbill's wings?,black
+hornbill,What is the color of the hornbill's beak?,yellow
+hummingbird,What's the color of a hummingbird's beak?,black
+jacamar,What color are the wings of most jacamars?,green
+toucan,What color is the toucan's body?,black
+toucan,What is the color of the beak of the toucan?,yellow
+drake,What color is the drake's head?,green
+drake,What is the color of the drake's beak?,yellow
+drake,What is the color of the drake's legs?,yellow
+red-breasted merganser,What is the color of the red-breasted merganser's long and thin bill?,orange
+red-breasted merganser,What is the head color of the red-breasted merganser?,black
+goose,What is the primary colour of the goose's neck?,black
+goose,What's the color of the goose’s beak mostly?,black
+black swan,What color is the black swan?,black
+tusker,What is the color of the ivory of the tusker?,white
+echidna,What color is the echidna?,brown
+echidna,What color are the spines of the echidna?,brown
+platypus,What's the color of a platypus's mouth?,black
+platypus,What is the primary colour of the platypus?,brown
+wallaby,What is the color of the wallaby?,brown
+koala,What is the color of the koala?,brown
+wombat,What is the color of the wombat?,gray
+nematode,What color do most nematodes glow under a black light?,green
+conch,What are the typical colors of a conch?,yellow
+chambered nautilus,What is the color of the chambered nautilus?,white
+king crab,What is the color of a king crab?,red
+American lobster,What color is the American lobster?,red
+spiny lobster,What is the main color of a spiny lobster?,orange
+crayfish,What color is the crayfish?,red
+hermit crab,What is the common color of the hermit crab?,brown
+white stork,What color are the feathers on the bottom of the white stork wings?,black
+white stork,What color is the white stork's beak?,orange
+black stork,What is the color of the abdomen of a black stork?,white
+black stork,What is the color of the legs of a black stork?,yellow
+black stork,What is the color of the beak of a black stork?,red
+flamingo,What's the color of a flamingo?,pink
+flamingo,What is the color of the flamingo's beak tip?,black
+flamingo,What are some of the colors that provide the muted appearance of the flamingo’s feathers?,pink
+little blue heron,What color is the little blue heron?,blue
+American egret,What is the color of the American egret's beak?,yellow
+American egret,What color are the feathers of an American egret?,white
+bittern,What color are the feathers of the bittern?,brown
+limpkin,What is the colour of the limpkin?,brown
+European gallinule,What color is the European gallinule?,blue
+European gallinule,What's the color of the European gallinule's beak?,red
+American coot,What is the color of the American coot?,black
+American coot,What is the color of the beak of the American coot?,white
+bustard,What color is the bustard?,gray
+ruddy turnstone,What color is the belly of a ruddy turnstone?,white
+ruddy turnstone,What is the color of the beak of the ruddy turnstone?,black
+ruddy turnstone,What is the color of a ruddy turnstone's legs?,orange
+red-backed sandpiper,What color is the beak of the red-backed sandpiper?,black
+red-backed sandpiper,What color Is the belly of red-backed sandpiper?,white
+red-backed sandpiper,What is the color of the red-backed sandpiper’s back?,brown
+redshank,What is the color of the legs of a redshank?,orange
+redshank,What is the color of a redshank?,brown
+redshank,What is the color of the beak of a redshank?,orange
+dowitcher,What color is the dowitcher?,brown
+oystercatcher,What's the color of an oystercatcher's beak?,orange
+oystercatcher,What color is the oystercatcher's underbelly?,white
+pelican,What is the main color of the pelican?,white
+king penguin,What's the color of the king penguin's abdomen?,white
+king penguin,What is the color of a king penguin's head?,black
+king penguin,What color is a king penguin's back?,black
+albatross,What is the color of the albatross around its neck and chest?,white
+albatross,What color are the wings of the albatross?,black
+grey whale,What is the color of the grey whale?,black
+dugong,What is the color of the back of the dugong?,gray
+sea lion,What is the color of most sea lions?,black
+Japanese spaniel,What is the color of the ears of most Japanese spaniels?,black
+Maltese dog,What color is the Maltese dog?,white
+papillon,What is the color of the papillon?,white
+Rhodesian ridgeback,What is the color of a Rhodesian ridgeback?,brown
+Afghan hound,What color is the Afghan hound's fur?,brown
+beagle,What color are the beagle's underside and legs?,white
+bloodhound,What is the color of a bloodhound?,brown
+bluetick,What is the color of the bluetick?,gray
+bluetick,What's the color of a bluetick's snout?,black
+black-and-tan coonhound,What color is the back of the black-and-tan coonhound?,black
+black-and-tan coonhound,What is the common color of the black-and-tan coonhound?,black
+Walker hound,What is the color of the Walker hound?,brown
+Walker hound,What is the color of the tail of the Walker hound?,white
+English foxhound,Which is the color of the legs of English foxhounds?,white
+English foxhound,What is the colour of the spots of English foxhounds?,brown
+redbone,What is the color of a redbone?,brown
+Irish wolfhound,What is the color of the body of the Irish wolfhound?,brown
+Italian greyhound,What color are the most Italian greyhounds are?,brown
+whippet,What color is the belly of the whippet?,white
+Norwegian elkhound,What is the color of the Norwegian elkhound?,gray
+Norwegian elkhound,What is the color of the legs of the Norwegian elkhound?,white
+Scottish deerhound,What is the most common color of the Scottish deerhounds?,gray
+Weimaraner,What is the color of the Weimaraner?,brown
+Staffordshire bullterrier,What is the color of the Staffordshire bullterrier?,black
+Bedlington terrier,What is the color of the Bedlington terrier?,white
+Border terrier,What is the color of the fur of the Border terrier?,brown
+Kerry blue terrier,What is the color of the Kerry blue terrier?,black
+Irish terrier,What is the general color of the Irish terrier?,brown
+Norfolk terrier,What color is the Norfolk terrier?,brown
+Norwich terrier,What is the color of the Norwich terrier?,brown
+Yorkshire terrier,What is the color of a Yorkshire terrier?,brown
+Lakeland terrier,What is the color of the Lakeland Terrier?,brown
+Sealyham terrier,What is the primary colour of most Sealyham terriers?,white
+cairn,What is the color of a cairn?,brown
+Australian terrier,What is the color of the Australian terrier?,brown
+Dandie Dinmont,What's the color of a Dandie Dinmont's fur?,white
+Dandie Dinmont,What color can Dandie Dinmont dogs be besides white?,brown
+giant schnauzer,What color is the giant schnauzer's fur?,black
+standard schnauzer,What is the color of the standard schnauzer?,gray
+soft-coated wheaten terrier,What is the color of the soft-coated wheaten terrier?,brown
+West Highland white terrier,What is the color of a West Highland white terrier?,white
+Lhasa,What is the colour of the fur of a Lhasa?,white
+flat-coated retriever,What color is the flat-coated retriever hound?,black
+curly-coated retriever,What is the color of a curly-coated retriever?,black
+golden retriever,What is the color of the golden retriever?,brown
+Labrador retriever,What is the color of the Labrador retrievers?,brown
+Chesapeake Bay retriever,What color is a Chesapeake Bay retriever?,brown
+vizsla,What is the color of a vizsla?,brown
+vizsla,What is the color of the ear of the vizsla?,brown
+Irish setter,What is the color of Irish setters?,brown
+Gordon setter,What color is the Gordon setter?,black
+Gordon setter,What color are the feet of the Gordon setter?,brown
+Brittany spaniel,What is the color of the Brittany spaniel ears?,brown
+clumber,What is the color of the fur on the body of most clumbers?,white
+English springer,What color are the feet of the English springer?,white
+Welsh springer spaniel,What colour are the feet of a Welsh springer spaniel?,white
+cocker spaniel,What is the common color of a cocker spaniel?,brown
+Sussex spaniel,What color are most Sussex spaniels?,brown
+Irish water spaniel,What is the color of the Irish water spaniel?,brown
+kuvasz,What is the color of a kuvasz's body?,white
+kuvasz,What colour is the kuvasz's snout?,black
+schipperke,What is the colour of the schipperke?,black
+groenendael,What is the color of the groenendael?,black
+kelpie,What is the body color of the kelpie?,black
+komondor,What color is the komondor's fur?,white
+Old English sheepdog,What color is the belly of the Old English sheepdog?,white
+collie,What color is the face of the collie?,brown
+Bouvier des Flandres,What is the color of a Bouvier des Flandres?,black
+Rottweiler,What color are the feet of a Rottweiler?,brown
+German shepherd,What color is the mouth of a German shepherd?,black
+miniature pinscher,What's the color of a miniature pinscher's snout?,black
+Greater Swiss Mountain dog,What is the most common color of a Greater Swiss Mountain dog?,black
+Bernese mountain dog,What color is the chest of the Bernese mountain dog?,white
+Appenzeller,What color is the chest of the Appenzeller?,white
+Appenzeller,What color are the paws of the Appenzeller?,white
+Appenzeller,What color are the ears of the Appenzeller?,black
+Appenzeller,What color is the Appenzeller?,black
+boxer,What is the color of the boxer?,brown
+bull mastiff,What color is the bull mastiff's face?,brown
+Tibetan mastiff,What is the color of the Tibetan mastiff?,black
+Tibetan mastiff,What is the color of the legs of the Tibetan mastiff?,brown
+Saint Bernard,What color is a Saint Bernard dog's tongue?,pink
+Saint Bernard,What color are Saint Bernard's legs?,white
+Eskimo dog,What is the fur color of the Eskimo dog?,white
+Eskimo dog,What is the common color of the Eskimo dog?,white
+dalmatian,What color are the dots in dalmatian?,black
+affenpinscher,What is the color of the affenpinscher?,black
+Leonberg,What is the color of the Leonberg?,brown
+Leonberg,What is the color of the Leonberg's face?,black
+Newfoundland,What color are a Newfoundland's ears?,black
+Newfoundland,What is the main color of the Newfoundland?,black
+Great Pyrenees,What color is the fur of a Great Pyrenees?,white
+Samoyed,What is the color of the Samoyed's body?,white
+Pomeranian,What is the most common color of the Pomeranian?,brown
+Brabancon griffon,What color is the mouth of the Brabancon griffon?,black
+toy poodle,What color is the snout of most toy poodles?,black
+Mexican hairless,What is the color of the Mexican hairless?,black
+Mexican hairless,What color is the ear of a Mexican hairless?,black
+timber wolf,What is the colour of the timber wolf?,brown
+white wolf,What is the color of the white wolf?,white
+red wolf,What is the color of the red wolf?,brown
+coyote,What is the color of the coyote?,brown
+dingo,What's the color of a dingo?,brown
+dhole,What's the color of a dhole?,brown
+African hunting dog,What color does the African hunting dog have on the tip fur of the tail?,white
+hyena,What is the color of the hyena?,brown
+kit fox,What is the color of the kit fox?,brown
+Arctic fox,What is the color of the Arctic fox?,white
+Arctic fox,What color is the tip of the Arctic fox's tail?,white
+grey fox,What color is the grey fox?,brown
+tabby,What is the strip color of the tabby?,black
+Siamese cat,what is the color of the Siamese cat's whiskers?,white
+Egyptian cat,What is the colour of an Egyptian cat?,gray
+cougar,What is the color of the cougar?,brown
+cougar,What is the color of the cougar's fur near the mouth?,white
+cougar,What's the color of the cougar's nose?,pink
+lynx,What is the color of the lynx?,brown
+leopard,What color are the spots on the belly of the leopard?,black
+snow leopard,What color is the snow leopard?,gray
+snow leopard,What is the colour of the snow leopard's spots on their body?,black
+lion,What color is the lion?,brown
+tiger,What color are the stripes of the tiger?,black
+tiger,What's the color of a tiger's whiskers?,white
+tiger,What is the primary color of a tiger?,brown
+cheetah,What is the cheetahs' skin color?,brown
+cheetah,What is the color of the cheetah's spots?,black
+ice bear,What is the color of the ice bear?,white
+sloth bear,What color is the sloth bear?,black
+mongoose,What is the color of the mongoose?,brown
+ladybug,What color is the back of the ladybug?,orange
+ladybug,What color is the shell of the ladybug?,orange
+ground beetle,What's the color of a ground beetle?,black
+long-horned beetle,What color is the body of the long-horned beetle?,black
+dung beetle,What is the most common color of a dung beetle?,black
+rhinoceros beetle,What color is usually a rhinoceros beetle?,black
+ant,What is the color of the ants?,brown
+grasshopper,What's the color of a grasshopper?,green
+cricket,What is the usual color of a cricket?,green
+cockroach,What is the primary color of cockroaches?,brown
+mantis,What is the color of the mantis?,green
+leafhopper,What is the color of the leafhopper?,green
+ringlet,What is the color of the ringlet?,brown
+monarch,What color are the circles in the monarch's wings?,white
+monarch,What is the color of the monarch's legs?,black
+monarch,What is the major color of the monarch's wings?,orange
+cabbage butterfly,What color are the wings of the cabbage butterfly?,white
+sulphur butterfly,What color are the wings of the sulphur butterfly?,yellow
+sulphur butterfly,What color is the body of the sulphur butterfly?,yellow
+wood rabbit,What is the color of the wood rabbit?,brown
+hare,What is the skin color of the hare?,brown
+Angora,What is the color of the Angora?,white
+hamster,What is the color of the nose of the hamster?,pink
+porcupine,What color is common on a porcupine?,black
+fox squirrel,What is the color of a fox squirrel?,brown
+marmot,What color is the marmot?,brown
+beaver,What is the color of the beaver?,brown
+sorrel,What color are sorrels predominantly?,brown
+wild boar,What is the common color of the wild boar?,brown
+warthog,What is the color of warthogs?,gray
+hippopotamus,What color is the hippopotamus?,brown
+water buffalo,What is the color of a water buffalo?,black
+bison,What color are bisons?,brown
+bighorn,What is the color of the bighorn?,brown
+ibex,What color of fur does the ibex have?,brown
+hartebeest,What's the color of a hartebeest?,brown
+hartebeest,What color are hartebeests horns?,brown
+impala,What is the main color of the impala's fur?,brown
+gazelle,What color is the gazelle's belly?,white
+Arabian camel,What is the color of an Arabian camel?,brown
+weasel,What is the common color of a weasel?,brown
+mink,What is the color of mink generally?,brown
+polecat,What color is the face of most polecats?,white
+black-footed ferret,What is the common color of the black-footed ferret?,brown
+otter,What is the color of an otter?,brown
+badger,What is the nail color of a badger?,black
+armadillo,What is the color of an armadillo?,gray
+three-toed sloth,What is the color of the three-toed sloth?,brown
+orangutan,What color is the hair of the orangutan?,brown
+orangutan,What is the colour of the face of the orangutan?,black
+gorilla,What color is the hair of the gorilla?,black
+chimpanzee,What is the body color of the chimpanzee?,black
+gibbon,What is the color of most gibbons' faces?,black
+siamang,What is the color of the siamang?,black
+guenon,What is the color of a guenon?,black
+patas,What is the colour of the patas?,brown
+baboon,What is the common color of the baboon?,brown
+macaque,What is the color of a macaque's face?,red
+langur,What is the usual color of the langur's face?,black
+colobus,What is the color of the outline around the colobus's face?,white
+proboscis monkey,What is the colour of the proboscis monkey?,orange
+marmoset,What is the most fur colour of the marmoset seen?,brown
+capuchin,What color is the fur on the top of the capuchin's head?,black
+capuchin,What color is the back of the capuchin?,black
+capuchin,What color is the face of the capuchin?,white
+titi,What is the color of the mouth of the titi?,black
+titi,What color is the titi's body hair?,brown
+spider monkey,What is the color of the spider monkey?,brown
+squirrel monkey,What color is the fur around the eyes of the squirrel monkey?,white
+squirrel monkey,What color is a squirrel monkey?,brown
+Indian elephant,What color is the tusk of the Indian elephant?,white
+Indian elephant,What color is the body of the Indian elephant?,gray
+African elephant,What is the color of the African elephants?,gray
+African elephant,What color is the tusk of the African elephant?,white
+African elephant,What color is the trunk of the African elephants?,gray
+lesser panda,What is the main colour of a lesser panda?,brown
+giant panda,What color are a giant panda's ears?,black
+barracouta,What color are the spots on the sides of a barracouta?,white
+coho,What's the color of a coho?,gray
+rock beauty,What is the color of a rock beauty?,yellow
+sturgeon,What colour is a sturgeon's underbelly?,white
+puffer,What's the color of a puffer's belly?,white
+abaya,What is the color of the abaya?,black
+academic gown,What color is an academic gown?,black
+acoustic guitar,What is the common color of this acoustic guitar?,brown
+airliner,What is the colour of most airliners?,white
+ambulance,What color is the shell of the ambulance in most cases?,white
+assault rifle,What is the color of the assault rifle generally?,black
+bakery,What is the color of the bread in a bakery?,brown
+Band Aid,What is the color of the band aids?,brown
+barbell,What is the color of most of the weights of the barbell?,black
+barrel,What is the color of barrels?,brown
+baseball,What is the color of most baseballs?,white
+basketball,What color is a basketball?,brown
+bathtub,What color are bathtubs generally?,white
+beach wagon,What is the color of the alloys of the wheels of the beach wagon?,silver
+beach wagon,What is the color of the beach wagon wheels?,black
+beacon,What color is the beacon usually?,white
+bearskin,What color are the traditional bearskins?,black
+bearskin,What is the color of the bearskin lace?,yellow
+binoculars,What color are the binoculars?,black
+bullet train,What is the color of the bullet train?,white
+butcher shop,What's the color of the butcher shop meat?,red
+caldron,What is the color of most caldrons?,gray
+candle,What color is the wick part of the candle?,white
+candle,What is the colour of the candle light?,orange
+cannon,What is the color of most cannons?,black
+canoe,What's the color of the canoe?,brown
+car wheel,What is the color of the tyre of the car wheel?,black
+cello,What's the color of the cello?,brown
+chainlink fence,What color is the chainlink fence?,gray
+chain mail,What color is the chain mail?,silver
+chiffonier,What is the colour of most chiffoniers?,red
+Christmas stocking,What is the general color of the Christmas stocking?,red
+cleaver,What is the colour of a cleaver blade?,silver
+cowboy boot,What are the common colors of a cowboy boot?,brown
+cradle,What color is the cradle generally?,white
+crate,What is the color of crates typically?,brown
+dam,What color is the outside of a dam?,white
+dining table,What color is the dining table?,brown
+fire engine,What color are fire engines typically?,red
+French horn,What is the color of the French horn?,yellow
+frying pan,What is the color of most of the frying pans?,black
+golf ball,What color is the golf ball?,white
+grand piano,What is the color of the grand piano?,black
+grille,What is the general color of the grille?,silver
+guillotine,What is the colour of most of the guillotines?,brown
+hamper,What is the colour of most hampers?,brown
+holster,What is the common color of a holster?,black
+honeycomb,What color is the honeycomb?,brown
+jack-o'-lantern,What color are most jack-o'-lanterns?,orange
+jean,What color are most jeans?,blue
+lab coat,What color are lab coats typically?,white
+lawn mower,What is the wheel color of the lawn mower?,black
+lens cap,What is the color of most lens caps?,black
+lifeboat,What color are most lifeboats?,orange
+liner,What color are most liners?,white
+lotion,What is typically a lotion’s color?,white
+loudspeaker,What is the color of most loudspeakers?,black
+matchstick,What is the color of the fire in the matchstick?,yellow
+matchstick,What is the colour of the tip of the matchstick?,red
+megalith,What color is the megalith?,gray
+minivan,What is the color of the minivan tires?,black
+mortarboard,What is the color of most mortarboards?,black
+mosquito net,What color are most mosquito nets?,white
+motor scooter,What color are the wheels of most motor scooters?,black
+mountain bike,What is the color of the wheels of a mountain bike?,black
+muzzle,What color are most muzzles?,black
+nail,What is the color of the nail?,black
+oboe,What is the common color of the oboe?,black
+paddlewheel,What color are most paddlewheels?,red
+paper towel,What color are most paper towels?,white
+photocopier,What color is the photocopier?,white
+potter's wheel,What color are most potter's wheels?,white
+projector,What is the color of the projector lens?,black
+puck,What is the color of the puck?,black
+radiator,What is the color of the radiator?,white
+radio telescope,What is the color of the radio telescope?,white
+recreational vehicle,What is the color of recreational vehicles generally?,white
+recreational vehicle,What is the general color of recreational vehicles?,white
+reflex camera,What color are most reflex cameras?,black
+refrigerator,What is the color of the outer surface of the refrigerator?,white
+revolver,What color is the material of the revolver barrel?,silver
+rubber eraser,What is the general color of the rubber eraser?,white
+rugby ball,What color is always on a rugby ball?,white
+safe,What color are most safes?,white
+saltshaker,What color is the saltshaker cap usually?,silver
+sax,What is the colour of the sax mouthpiece?,black
+sax,What color is the body of the sax?,yellow
+school bus,What is the color of most school buses?,yellow
+screen,What color is the screen when it is off?,black
+shoji,What color are most shoji frames?,brown
+slide rule,What color is used for the units in the slide rule?,black
+speedboat,What is the majority color of the speedboat?,white
+spindle,What's the color of the spindle?,brown
+steam locomotive,What is the color of the steam locomotive usually?,black
+steel drum,What is the color of the steel drum?,silver
+stone wall,What colour is the stone wall?,gray
+submarine,What is the color of the submarine?,gray
+sunscreen,What color is the sunscreen?,white
+syringe,What color are most syringes?,white
+tennis ball,What color are tennis balls?,green
+tennis ball,What color are the lines on a tennis ball?,white
+thatch,What is the color of the thatch's roof mostly?,brown
+theater curtain,What color is the most theater curtain?,red
+tile roof,What is the most common color of a tile roof?,red
+toilet seat,What colour are the toilet seats?,white
+trailer truck,What color are the tires of the trailer trucks?,black
+tub,What are the common tub colors?,white
+turnstile,What color are most turnstiles?,silver
+unicycle,What is colour of the unicycle wheel?,black
+upright,What color is an upright piano?,brown
+wardrobe,What is the color of the wardrobe?,brown
+washbasin,What color is the washbasin in general?,white
+washer,What is the classic color of the washer?,white
+wine bottle,What color are most wine bottles?,green
+wing,What colour are the wings of an airplane?,gray
+wok,What is the common color of a wok?,black
+wooden spoon,What is the color of a wooden spoon?,brown
+crossword puzzle,What color of squares have words written on them in a crossword puzzle?,white
+menu,What color is the background of the menu?,white
+guacamole,What is the color of the guacamole?,green
+French loaf,What is the color of a French loaf?,brown
+bagel,What is the color of the bagel?,brown
+pretzel,What is the color of a pretzel?,brown
+cheeseburger,What is the color of the bun in the cheeseburger?,yellow
+mashed potato,What is the color of the mashed potato?,yellow
+head cabbage,What is the colour of the head cabbage?,green
+broccoli,What color is the broccoli?,green
+broccoli,What color is the stem of the broccoli?,green
+zucchini,What color typically is the zucchini?,green
+zucchini,What color is a zucchini flower?,yellow
+spaghetti squash,What is the colour of the spaghetti squash?,yellow
+acorn squash,What color is the inside of the acorn squash?,orange
+acorn squash,What color is the surface of the acorn squash?,green
+butternut squash,What color is the flesh of the butternut squash?,yellow
+cucumber,What color are cucumbers?,green
+cucumber,What color is the stem of a cucumber?,green
+artichoke,What is the color of the artichoke?,green
+cardoon,What color is the stem of the cardoon?,green
+cardoon,What color is the leaf of the cardoon?,green
+Granny Smith,What is the color of the Granny Smith?,green
+strawberry,What color is the strawberry?,red
+strawberry,What color are the seeds on the surface of the strawberry?,yellow
+strawberry,What color are the leaves of the strawberry?,green
+orange,What is the color of the orange?,orange
+orange,What color is the flesh inside the orange?,orange
+fig,What is the color of the flesh of the fig?,red
+fig,What color is the outside of the fig?,green
+pineapple,What is the color of the pineapple?,yellow
+pineapple,What is the color of the top of the pineapple?,green
+banana,What colour is the banana?,yellow
+banana,What color are the spots on the bananas?,brown
+jackfruit,What is the colour of the jackfruit inside?,yellow
+jackfruit,What is the colour of the jackfruit outside?,green
+custard apple,What color is the custard apple?,green
+custard apple,What is the color of the custard apple seed?,black
+pomegranate,What is the color of the seeds of the pomegranate?,red
+hay,What color is the hay?,yellow
+carbonara,What colour is the carbonara?,yellow
+chocolate sauce,What color is the chocolate sauce?,brown
+pizza,What is the prominent color on top of the pizza?,red
+red wine,What color is the red wine?,red
+eggnog,What is the color of the eggnog?,yellow
+alp,What color is the snow covering the alps?,white
+cliff,What colour is the surface of a cliff?,brown
+geyser,What colour is the geyser?,white
+sandbar,What color is a sandbar?,brown
+seashore,What color does the water on the seashore look like?,blue
+seashore,What color is the sand on the seashore?,brown
+groom,What color does the groom wear?,black
+rapeseed,What color is the rapeseed?,yellow
+daisy,What is the color of the daisy?,white
+yellow lady's slipper,What is the color of yellow lady's slippers?,yellow
+corn,What color is the corn?,yellow
+hip,What color are hips usually?,red
+agaric,What is the color of most of the agaric?,red
+gyromitra,What is the color of the gyromitra?,brown
+toilet tissue,What is the color of the toilet tissue?,white
+basset,What color are ears of the basset?,brown

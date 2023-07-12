@@ -1,0 +1,1115 @@
+category,question,answer
+tench,Does a tench have scales?,yes
+tench,Does a tench have fur?,no
+great white shark,Does a great white shark have fur?,no
+tiger shark,Do tiger sharks have pointy fins?,yes
+electric ray,Does the electric ray have tough skin?,no
+stingray,Does a stingray have a tail?,yes
+stingray,Does a stingray have a beak?,no
+cock,Does the cock have wings?,yes
+cock,Does the cock have claws?,no
+hen,Does a hen have feathers?,yes
+hen,Does a hen have legs?,yes
+hen,Does a hen have a blue head?,no
+hen,Does a hen have droopy ears?,no
+brambling,Does the brambling have wings?,yes
+brambling,Does the brambling have shells?,no
+house finch,Does the house finch have wings?,yes
+junco,Does the junco have feathers?,yes
+junco,Does the junco have four legs?,no
+indigo bunting,Does an indigo bunting have wings?,yes
+indigo bunting,Does an indigo bunting have a beak?,yes
+indigo bunting,Does an indigo bunting have shells?,no
+indigo bunting,Does an indigo bunting have claws?,no
+magpie,Does a magpie have wings?,yes
+magpie,Does the magpie have two legs?,yes
+magpie,Does a magpie have a shell?,no
+magpie,Does a magpie have downward ears?,no
+water ouzel,Does the water ouzel have a beak?,yes
+vulture,Does a vulture have a beak?,yes
+vulture,Do vultures have a sharp beak?,yes
+vulture,Do vultures have paws?,no
+vulture,Do vultures have a shell?,no
+great grey owl,Does the great grey owl have wings?,yes
+great grey owl,Does the great grey owl appear to have a sharp beak?,yes
+great grey owl,Does the great grey owl have spikes?,no
+common newt,Does a common newt have spotted skin?,yes
+common newt,Does a common newt have fur?,no
+eft,Does an eft have a tail?,yes
+eft,Does the eft have four legs?,yes
+eft,Does the eft have a spotted pattern on its body?,no
+eft,Does the eft have fur on its body?,no
+eft,Does the eft have wings?,no
+axolotl,Does the axolotl have a caudal fin behind the head?,yes
+axolotl,Does the axolotl have fur?,no
+bullfrog,Does the bullfrog have furs?,no
+loggerhead,Does the loggerhead have a shell?,yes
+loggerhead,Does the loggerhead have fur?,no
+leatherback turtle,Does the leatherback turtle have a protective shell?,yes
+leatherback turtle,Do leatherback turtles have feathers?,no
+mud turtle,Does a mud turtle have a shell?,yes
+mud turtle,Does a mud turtle only have two legs?,no
+terrapin,Does the terrapin have shells?,yes
+terrapin,Does the terrapin have fur?,no
+terrapin,Does the terrapin have floppy ears?,no
+banded gecko,Does the banded gecko have a beak?,no
+American chameleon,Does the American chameleon have a tail or not?,yes
+American chameleon,Does the American chameleon have wings?,no
+American chameleon,Does the American chameleon have fur?,no
+whiptail,Does the whiptail have feathers?,no
+green lizard,Does the skin of the green lizard have spikes?,yes
+green lizard,Does the green lizard have black tails?,no
+African crocodile,Do African crocodiles have feathers?,no
+American alligator,Does the American alligator have a tail?,yes
+American alligator,Does the American alligator have feathers?,no
+American alligator,Does the American alligator have a furry tail?,no
+thunder snake,Does the thunder snake have legs?,no
+ringneck snake,Does the ringneck snake have scales?,yes
+ringneck snake,Does the ringneck snake have a sharp beak?,no
+hognose snake,Does the hognose snake have fur?,no
+king snake,Does the king snake have scales?,yes
+water snake,Does the water snake have stripes?,yes
+water snake,Does the water snake have legs?,no
+vine snake,Does a vine snake have legs?,no
+night snake,Does the night snake have spots on its skin?,yes
+night snake,Does the night snake have fur?,no
+boa constrictor,Do boa constrictors have wings?,no
+Indian cobra,Does the Indian cobra have wings?,no
+sea snake,Does the sea snake have lines on its body?,yes
+horned viper,Does a horned viper have scales?,yes
+horned viper,Do horned vipers have horns?,yes
+horned viper,Do horned vipers have feathers?,no
+horned viper,Do horned vipers have legs?,no
+diamondback,Does the diamondback have spots on the skin?,yes
+diamondback,Does a diamondback have wings?,no
+scorpion,Does a scorpion have a tail?,yes
+scorpion,Does a scorpion have fur?,no
+black and gold garden spider,Does the black and gold garden spider have fur?,no
+black and gold garden spider,Does the black and gold garden spider have a tail?,no
+black and gold garden spider,Does the black and gold garden spider have stripes and spots on it?,yes
+garden spider,Do garden spiders have spots on their back?,yes
+black widow,Does a black widow have a tail or not?,no
+tarantula,Does a tarantula have eight legs?,yes
+tarantula,Does a tarantula have six legs?,no
+tarantula,Does a tarantula have a tail?,no
+tick,Does a tick have legs?,yes
+tick,Does a tick have fur?,no
+tick,Does a tick have a tail?,no
+centipede,Does the centipede have fur?,no
+ruffed grouse,Does the ruffed grouse have feathers?,yes
+ruffed grouse,Does the ruffed grouse have two wings?,yes
+ruffed grouse,Does the ruffed grouse have downward ears?,no
+ruffed grouse,Does the ruffed grouse have paws?,no
+prairie chicken,Does a prairie chicken have wings?,yes
+prairie chicken,Does the prairie chicken have stripes on its body?,yes
+prairie chicken,Does a prairie chicken have a white tail?,no
+peacock,Does the peacock have a beak?,yes
+peacock,Does the peacock have fins?,no
+quail,Does the quail have wings?,yes
+quail,Does the quail have eight legs?,no
+partridge,Does a partridge have a plump body?,yes
+African grey,Does an African grey have feathers?,yes
+African grey,Does the African grey have a spotted pattern?,no
+lorikeet,Does the lorikeet have a black mouth?,no
+hornbill,Does the hornbill have feathers?,yes
+hornbill,Does the hornbill have a yellow beak?,yes
+hornbill,Does the hornbill have hanging ears?,no
+hornbill,Does the hornbill have spots on the skin?,no
+hummingbird,Does the hummingbird have a sharp beak?,yes
+hummingbird,Does the hummingbird have spotted skin?,no
+drake,Does the drake have a flat mouth?,yes
+drake,Do drakes have feathers?,yes
+drake,Do drakes have stripes on its body?,no
+drake,Do drakes have a sharp beak?,no
+red-breasted merganser,Does a red-breasted merganser have four legs?,no
+goose,Does the goose have feathers?,yes
+goose,Does the goose have scales?,no
+black swan,Does the black swan have four legs?,no
+black swan,Does the black swan have a tail?,no
+echidna,Do echidnas have quills?,yes
+echidna,Do echidnas have curly fur?,no
+platypus,Does the platypus have earlobes or not?,no
+platypus,Does a platypus have wings?,no
+platypus,Does the platypus have a beak?,yes
+wallaby,Does the wallaby have two wings?,no
+koala,Does the koala have a slim body?,no
+koala,Does the koala have a tail?,no
+wombat,Does the wombat have a tail?,no
+jellyfish,Does the jellyfish have tentacles?,yes
+jellyfish,Does the jellyfish have tails?,no
+sea anemone,Does a sea anemone have tentacles?,yes
+sea anemone,Does a sea anemone have tails?,no
+conch,Does the conch have a green body?,no
+snail,Does the snail have antennas?,yes
+snail,Does a snail have fur?,no
+slug,Does the slug have fur?,no
+slug,Does the slug have legs?,no
+sea slug,Do sea slugs have legs?,no
+sea slug,Does the sea slug have a patterned body?,yes
+sea slug,Do sea slugs have wings?,no
+Dungeness crab,Does the Dungeness crab have claws?,yes
+Dungeness crab,Does the Dungeness crab have legs?,yes
+Dungeness crab,Does the Dungeness crab have a tail?,no
+Dungeness crab,Does the Dungeness crab have feathers?,no
+rock crab,Does the rock crab have wings?,no
+rock crab,Do rock crabs have shells?,yes
+rock crab,Do rock crabs have fur?,no
+fiddler crab,Does the fiddler crab have a blue tail?,no
+king crab,Does the king crab have fur?,no
+king crab,Does the king crab have a tail?,no
+American lobster,Does the American lobster have antennas?,yes
+American lobster,Does the American lobster have a furry tail?,no
+flamingo,Does a flamingo have feathers?,yes
+flamingo,Does a flamingo have spots on its skin?,no
+spiny lobster,Do spiny lobsters have antennas?,yes
+spiny lobster,Does a spiny lobster have shells?,yes
+spiny lobster,Does a spiny lobster have fur?,no
+crayfish,Does the crayfish have antennas?,yes
+crayfish,Does the crayfish only have one claw?,no
+crayfish,Does the crayfish have a flat mouth?,no
+hermit crab,Does the hermit crab have legs?,yes
+hermit crab,Does the hermit crab have claws?,yes
+hermit crab,Does the hermit crab have wings?,no
+hermit crab,Does the hermit crab have scales?,no
+isopod,Does the isopod have fur?,no
+isopod,Does the isopod have antennae?,yes
+white stork,Does a white stork have a pointed beak?,yes
+white stork,Does the white stork have thick legs?,no
+spoonbill,Does the spoonbill have feathers?,yes
+spoonbill,Does a spoonbill have a beak?,yes
+spoonbill,Does the spoonbill have a tail?,no
+spoonbill,Does a spoonbill have lines on its body?,no
+American egret,Do American egrets have horns?,no
+American egret,Does the American egret have scales?,no
+crane(bird),Does the crane(bird) have wings?,yes
+European gallinule,Does the European gallinule have wings?,yes
+European gallinule,Does the European gallinule have scales?,no
+bustard,Does the bustard have skinny legs?,yes
+red-backed sandpiper,Does the red-backed sandpiper have a pointed beak?,yes
+redshank,Does a redshank have wings?,yes
+redshank,Does a redshank have a ring curled tail?,no
+dowitcher,Does a dowitcher have a beak?,yes
+dowitcher,Does the dowitcher have feathers?,yes
+dowitcher,Does the dowitcher have 4 legs?,no
+pelican,Does the pelican have a beak?,yes
+pelican,Does a pelican have wings to fly?,yes
+pelican,Does the pelican have horns?,no
+king penguin,Does a king penguin have a beak?,yes
+king penguin,Does a king penguin have many spines on the body?,no
+albatross,Does an albatross have wings?,yes
+albatross,Does an albatross have a black nose?,no
+grey whale,Does a grey whale have fins?,yes
+grey whale,Does the grey whale have furs?,no
+grey whale,Does the grey whale have wings?,no
+killer whale,Does the killer whale have fins?,yes
+killer whale,Does the killer whale have fur?,no
+killer whale,Does the killer whale have a red dorsal fin?,no
+dugong,Does the dugong have a beak?,no
+Japanese spaniel,Does the Japanese spaniel have a beak?,no
+Shih-Tzu,Does the Shih-Tzu have fur?,yes
+Blenheim spaniel,Does the Blenheim spaniel have fur?,yes
+Blenheim spaniel,Does the Blenheim spaniel have a beak?,no
+papillon,Does the papillon have fur?,yes
+papillon,Does the papillon have a green tail?,no
+papillon,Does the papillon have red spots on the body?,no
+toy terrier,Does the toy terrier have a sharp beak?,no
+Rhodesian ridgeback,Does the Rhodesian ridgeback have antennas?,no
+Afghan hound,Does the Afghan hound have a ring curled tail?,yes
+bloodhound,Does the bloodhound have a black nose?,yes
+bloodhound,Does the bloodhound have a protective shell?,no
+bluetick,Does a bluetick have four legs?,yes
+black-and-tan coonhound,Does the black-and-tan coonhound have a drooping ear?,yes
+black-and-tan coonhound,Does the black-and-tan coonhound have a pointy fin?,no
+English foxhound,Do most English foxhounds have a white chest?,yes
+English foxhound,Do most English foxhounds have stripes and spots on it?,no
+borzoi,Do borzois have tails?,yes
+Irish wolfhound,Does the Irish wolfhound have an erect ear?,no
+Irish wolfhound,Does the Irish wolfhound have fur?,yes
+whippet,Does the whippet have feathers?,no
+Ibizan hound,Does the Ibizan hound have a tail?,yes
+otterhound,Does the otterhound have wings?,no
+otterhound,Does the otterhound have human-like ears?,no
+Scottish deerhound,Do the Scottish deerhounds have a tail?,yes
+American Staffordshire terrier,Does the American Staffordshire terrier have a tail?,yes
+Border terrier,Does the Border terrier have fur?,yes
+Border terrier,Does the Border terrier have wings?,no
+Norwich terrier,Does the Norwich Terrier have a white nose?,no
+wire-haired fox terrier,Does the Wire-Haired fox terrier have a lot of hair in its body?,yes
+wire-haired fox terrier,Does the wire-haired fox terrier have a stripe of white usually?,no
+Lakeland terrier,Does the Lakeland terrier have paws?,yes
+Lakeland terrier,Does the Lakeland terrier have curly fur?,yes
+Sealyham terrier,Does the Sealyham terrier have lots of hair on the face?,yes
+Sealyham terrier,Does a Sealyham terrier have black stripes?,no
+Airedale,Does the Airedale have curly hair?,yes
+Airedale,Does the Airedale have a pink nose?,no
+Airedale,Does the Airedale have a yellow beak?,no
+miniature schnauzer,Does the miniature schnauzer dog have hair on its body?,yes
+standard schnauzer,Does the standard schnauzer have fur?,yes
+Scotch terrier,Does the Scotch terrier have two legs?,no
+Tibetan terrier,Does the Tibetan terrier have a drooping ear?,yes
+silky terrier,Does the silky terrier have red fur?,no
+West Highland white terrier,Does the West Highland white terrier have fur on the body?,yes
+Lhasa,Does the Lhasa have erect ears?,no
+curly-coated retriever,Does a curly-coated retriever have black eyes?,yes
+curly-coated retriever,Does the curly-coated retriever have wings?,no
+English setter,Does the English setter have a beak?,no
+Brittany spaniel,Does a Brittany spaniel have red hair?,no
+Brittany spaniel,Does a Brittany spaniel have green paws?,no
+clumber,Does the clumber have paws?,yes
+English springer,Does the English springer have fur?,yes
+English springer,Does the English springer have wings?,no
+Welsh springer spaniel,Does the Welsh springer spaniel have a tail?,yes
+Welsh springer spaniel,Does a Welsh springer spaniel have erect ears?,no
+kuvasz,Is a kuvasz furry?,yes
+Old English sheepdog,Is the Old English sheepdog furry?,yes
+Old English sheepdog,Does the Old English sheepdog have stripes on its body?,no
+Irish water spaniel,Can an Irish water spaniel have curly fur?,yes
+Irish water spaniel,Does the Irish water spaniel have a white chest?,no
+malinois,Do the malinoises have feathers?,no
+malinois,Do the malinoises have fur?,yes
+komondor,Does the komondor have fur on the body?,yes
+komondor,Does the komondor have a slim body?,no
+Shetland sheepdog,Does the Shetland sheepdog have furs on legs?,yes
+Shetland sheepdog,Does the Shetland sheepdog have dots on its back?,no
+collie,Does the collie have tails?,yes
+Border collie,Does the Border collie have a black nose?,yes
+Border collie,Does the Border collie have stripes?,no
+EntleBucher,Does the EntleBucher have a black tail?,yes
+boxer,Does a boxer have legs?,yes
+boxer,Does a boxer have wings?,no
+bull mastiff,Does the bull mastiff have white spots on its body?,no
+Great Dane,Does the Great Dane have thick hair?,no
+dalmatian,Does the dalmatian have a black tail?,no
+basenji,Does the basenji have wings?,no
+Newfoundland,Does the Newfoundland have fur?,yes
+Great Pyrenees,Does the Great Pyrenees have black fur?,no
+Great Pyrenees,Does the Great Pyrenees have a black nose?,yes
+Samoyed,Does the Samoyed have fur?,yes
+Samoyed,Does the Samoyed have a spotted pattern on its back?,no
+Samoyed,Does the Samoyed have paws?,yes
+Samoyed,Does the Samoyed have wings to fly?,no
+Pomeranian,Does a Pomeranian have a red nose?,no
+Pomeranian,Does the Pomeranian have a furry tail?,yes
+Brabancon griffon,Does a Brabancon griffon have erect ears?,no
+Pembroke,Does the Pembroke have fur?,yes
+toy poodle,Does the toy poodle have a pink nose?,no
+toy poodle,Does the toy poodle have a beak?,no
+miniature poodle,Does the miniature poodle have lots of tail fur?,yes
+Mexican hairless,Does the Mexican hairless have furry ears?,no
+timber wolf,Does a timber wolf have a green mouth?,no
+white wolf,Does the white wolf have 4 legs?,yes
+red wolf,Does the red wolf have a spotted pattern on its body?,no
+dhole,Does the dhole have a tail?,yes
+dhole,Does the dhole have black hair in the tail?,yes
+dhole,Does the dhole have a green tail?,no
+dhole,Does the dhole have green hair in the tail?,no
+red fox,Does the red fox have a fluffy tail?,yes
+red fox,Does the red fox have wings?,no
+red fox,Does the red fox have two legs?,no
+kit fox,Does the kit fox have a snout?,yes
+kit fox,Does the kit fox have a red nose?,no
+kit fox,Does the kit fox have green ears?,no
+Arctic fox,Does the Arctic fox have a white tail?,yes
+tabby,Does a tabby have fur?,yes
+tabby,Does a tabby have wings?,no
+tiger cat,Do tiger cats have stripes?,yes
+tiger cat,Do tiger cats have red skin?,no
+Persian cat,Does the Persian cat have red hair?,no
+Egyptian cat,Do Egyptian cats have black eyes?,no
+lynx,Does the lynx have paws?,yes
+leopard,Does the leopard have paws?,yes
+tiger,Does the tiger have black stripes?,yes
+tiger,Does the tiger have green stripes?,no
+cheetah,Do cheetahs have spots?,yes
+cheetah,Do cheetahs have white body furs?,no
+brown bear,Does the brown bear have fur?,yes
+American black bear,Does the American black bear have antennas?,no
+ice bear,Does the ice bear have fur?,yes
+ice bear,Does the ice bear have four legs?,yes
+ice bear,Does the ice bear have a drooping ear?,no
+sloth bear,Does the sloth bear have fur?,yes
+sloth bear,Does the sloth bear have antennas?,no
+sloth bear,Does the sloth bear have stripes?,no
+meerkat,Do meerkats have huge ears?,no
+ladybug,Does a ladybug have dots on its back?,yes
+ladybug,Does a ladybug have yellow dots on its back?,no
+leaf beetle,Does leaf beetle have spotted skin?,yes
+dung beetle,Do dung beetles have antennae?,yes
+dung beetle,Do dung beetles have yellow legs?,no
+weevil,Does the weevil have many legs?,yes
+weevil,Does the weevil have a tail?,no
+fly,Does a fly have translucent wings?,yes
+fly,Does a fly have feathers?,no
+fly,Does a fly have a tail?,no
+bee,Does a bee have wings?,yes
+mantis,Does the mantis have antennas?,yes
+mantis,Does the mantis have blue eyes?,no
+cicada,Does the cicada have wings?,yes
+cicada,Does the cicada have antennas?,no
+lacewing,Do lacewings have wings?,yes
+lacewing,Do lacewings have antennae?,yes
+lacewing,Do lacewings have furs?,no
+lacewing,Do lacewings have paws?,no
+dragonfly,Does a dragonfly have translucent wings?,yes
+damselfly,Does a damselfly have wings?,yes
+damselfly,Does the damselfly have fur?,no
+damselfly,Does the damselfly have paws?,no
+cabbage butterfly,Does a cabbage butterfly have antennas?,yes
+cabbage butterfly,Does a cabbage butterfly have a tail?,no
+cabbage butterfly,Does a cabbage butterfly have floppy ears?,no
+lycaenid,Does the lycaenid have tails?,no
+lycaenid,Does the lycaenid have antennae?,yes
+sea urchin,Does the sea urchin have many spines on the body?,yes
+hare,Does a hare have eyes?,yes
+hare,Does a hare have wings?,no
+hare,Does a hare have a beak?,no
+hare,Does a hare have stripes?,no
+Angora,Does an Angora rabbit have black furs?,no
+hamster,Does the hamster have four legs?,yes
+porcupine,Does the porcupine have floppy ears?,no
+porcupine,Does the porcupine have a pointed beak?,no
+fox squirrel,Does the fox squirrel have antennas?,no
+beaver,Does the beaver have paws?,yes
+beaver,Does the beaver have a tail?,yes
+beaver,Does a beaver only have two legs?,no
+beaver,Do beavers have red furs?,no
+warthog,Do warthogs have horns?,yes
+warthog,Do warthogs have antennae?,no
+warthog,Does a warthog have a drooping ear?,no
+bison,Does the bison have horns?,yes
+ibex,Does the ibex have tails?,yes
+ibex,Does the ibex have wings?,no
+hartebeest,Do hartebeests have tails?,yes
+hartebeest,Does a hartebeest have horns?,yes
+hartebeest,Does a hartebeest have spots?,no
+hartebeest,Does a hartebeest have paws?,no
+hartebeest,Does a hartebeest have stripes?,no
+gazelle,Do gazelles have wings?,no
+gazelle,Does the gazelle have horns?,yes
+llama,Does the llama have spotted skin?,no
+llama,Does the llama have wings?,no
+weasel,Does the weasel have sharp teeth?,yes
+black-footed ferret,Does the black-footed ferret have a tail?,yes
+skunk,Does the skunk have claws?,yes
+badger,Does a badger have a stripe of white usually?,yes
+badger,Does a badger have translucent wings?,no
+armadillo,Does an armadillo always have a shell?,yes
+three-toed sloth,Does the three-toed sloth have fur on the body?,yes
+orangutan,Does the orangutan have lots of hair on the face?,no
+gorilla,Does the gorilla have wings?,no
+gorilla,Does the gorilla have spikes?,no
+chimpanzee,Does the chimpanzee have a tail or not?,no
+patas,Does a patas have a tail?,yes
+baboon,Do baboons have fur?,yes
+langur,Does the langur have lots of fur on the face?,no
+langur,Does the langur have tails?,yes
+proboscis monkey,Does the proboscis monkey have a tail?,yes
+proboscis monkey,Does the proboscis monkey have wings?,no
+marmoset,Does the marmoset have fur?,yes
+capuchin,Does the capuchin have a tail?,yes
+capuchin,Does the capuchin have wings?,no
+capuchin,Does the capuchin have spots on their back?,no
+howler monkey,Does the howler monkey have a tail?,yes
+howler monkey,Do howler monkeys have horns?,no
+spider monkey,Do spider monkeys have red tails?,no
+spider monkey,Does the spider monkey have fur on its body?,yes
+spider monkey,Do spider monkeys have green arms?,no
+spider monkey,Does the spider monkey have a red nose?,no
+squirrel monkey,Does the squirrel monkey have fur?,yes
+indri,Does an indri have red-spotted patterns on its body?,no
+indri,Do most indris have a green belly?,no
+indri,Do most indris have a red face?,no
+Indian elephant,Does the Indian elephant have four legs?,yes
+barracouta,Does the barracouta have feathers?,no
+coho,Does a coho have eyes?,yes
+coho,Does a coho have wings?,no
+rock beauty,Does a rock beauty have fins?,yes
+rock beauty,Does the rock beauty have four legs?,no
+anemone fish,Does the anemone fish have stripes?,yes
+anemone fish,Does the anemone fish have fur?,no
+lionfish,Does a lionfish have four legs?,no
+lionfish,Does the lionfish have stripes on its body?,yes
+puffer,Does the puffer have spots?,yes
+abaya,Does an abaya have buttons?,no
+abaya,Does an abaya have numbers on it?,no
+academic gown,Does an academic gown have sleeves?,yes
+acoustic guitar,Does an acoustic guitar have strings?,yes
+acoustic guitar,Does the acoustic guitar have fingerboards?,yes
+acoustic guitar,Does an acoustic guitar have a screen?,no
+acoustic guitar,Does the acoustic guitar have rubber sticks?,no
+aircraft carrier,Does the aircraft carrier have antennas?,yes
+aircraft carrier,Does the aircraft carrier have a hole?,no
+aircraft carrier,Does the aircraft carrier have four wheels?,no
+airliner,Does the airliner have wings?,yes
+airliner,Does the airliner have windows?,yes
+airliner,Does the airliner have a flat bottom?,no
+airliner,Does the airliner have rocks?,no
+altar,Does an altar have an area in which to set items?,yes
+altar,Does an altar always have a green roof?,no
+ambulance,Does the ambulance have windows?,yes
+ambulance,Do ambulances have lights?,yes
+ambulance,Does the ambulance have a pointed front?,no
+ambulance,Does the ambulance have petals?,no
+apiary,Does the apiary have wheels?,no
+apron,Does the apron have sleeves?,no
+apron,Does the apron have a hat?,no
+backpack,Does the backpack have handles?,yes
+backpack,Does the backpack have pockets?,yes
+backpack,Does the backpack have zippers?,yes
+backpack,Does the backpack have lights?,no
+backpack,Does the backpack have windows?,no
+bakery,Does a bakery have cakes?,yes
+balloon,Does a balloon have an opening?,yes
+balloon,Does a balloon have a screen?,no
+ballpoint,Do most of the ballpoints have a pressing button at the bottom?,yes
+banjo,Does a banjo have strings?,yes
+barber chair,Do most barber chairs have armrests?,yes
+barber chair,Do most barber chairs have headrests?,yes
+barber chair,Do barber chairs have a foot rest?,yes
+barber chair,Do barber chairs have wheels?,no
+barbershop,Does the barbershop have mirrors?,yes
+barometer,Does a barometer have numbers on it?,yes
+barrel,Does the barrel have lights?,no
+barrel,Does the barrel have lids?,yes
+basketball,Does the basketball have stripes?,yes
+basketball,Does the basketball have handles?,no
+basketball,Does the basketball have an opening?,no
+bassoon,Does the bassoon have strings?,no
+bassoon,Does the bassoon have metal keys?,yes
+bathtub,Does a bathtub have a basin?,yes
+bathtub,Does the bathtub have wheels?,no
+bathtub,Does the bathtub have windows?,no
+beach wagon,Does the beach wagon have windows?,yes
+beaker,Does the beaker have a handle?,no
+beaker,Do beakers have an opening?,yes
+beer bottle,Does a beer bottle have a flat base?,yes
+beer bottle,Does a beer bottle have handles?,no
+binoculars,Does the binocular have a lens?,yes
+birdhouse,Does the birdhouse have a roof?,yes
+birdhouse,Does the birdhouse have a chimney?,no
+birdhouse,Does the birdhouse have handles?,no
+boathouse,Does the boathouse have a steering wheel?,no
+boathouse,Does the boathouse have a roof?,yes
+bookcase,Does a bookcase have shelves?,yes
+bottlecap,Do bottlecaps typically have some sort of printing on them?,yes
+bottlecap,Does a bottlecap have a flat top?,yes
+bottlecap,Does the bottlecap usually have a handle?,no
+brassiere,Does the brassiere have a zip?,no
+broom,Does the broom have a brush?,yes
+broom,Does the broom have a screen?,no
+bucket,Does a bucket have lights?,no
+bucket,Do most buckets have handles?,yes
+bucket,Do most buckets have windows?,no
+bulletproof vest,Do bulletproof vests usually have sleeves?,no
+bullet train,Does the bullet train have windows?,yes
+bullet train,Does the bullet train have wheels?,yes
+bullet train,Does the bullet train have a handle?,no
+bullet train,Does the bullet train have an opening?,no
+cab,Does the cab have four wheels?,yes
+cannon,Does the cannon have wheels?,yes
+cannon,Does the cannon have barrels?,yes
+cannon,Does the cannon have patterns on the surface?,no
+cannon,Does the cannon have handles?,no
+canoe,Does a canoe have a pointed front?,yes
+canoe,Does the canoe have windows?,no
+can opener,Does the can opener have a handle?,yes
+carousel,Does the carousel have wheels?,no
+carousel,Do carousels have bright lights?,yes
+carousel,Does the carousel have windows?,no
+carpenter's kit,Does a carpenter's kit have many compartments?,yes
+cash machine,Do most cash machines have buttons?,yes
+cash machine,Does the cash machine have wheels?,no
+cash machine,Does the cash machine have handles?,no
+cassette player,Does the cassette player have a display?,yes
+cassette player,Does the cassette player have handles?,yes
+catamaran,Does a catamaran have a pointed front?,yes
+catamaran,Does the catamaran have a deck?,yes
+catamaran,Does the catamaran have a wheels?,no
+CD player,Does a CD player have buttons?,yes
+CD player,Does a CD player have a display?,yes
+CD player,Does a CD player have a mouse?,no
+CD player,Does a CD player always have a red keyboard?,no
+cello,Does the cello have strings?,yes
+cello,Does the cello have buttons and keys?,no
+cello,Does the cello have an attached mirror?,no
+cello,Does the cello have handles?,no
+cellular telephone,Does the cellular telephone have a screen?,yes
+cellular telephone,Does the cellular telephone have a keypad?,yes
+cellular telephone,Does the cellular telephone have wheels?,no
+chain saw,Do chain saws have handles?,yes
+china cabinet,Does the china cabinet have wheels?,no
+Christmas stocking,Does a Christmas stocking have a handle?,no
+church,Does the church have a roof?,yes
+church,Does the church have windows?,yes
+church,Does the church have wheels?,no
+cinema,Does a cinema have a blackboard in it?,no
+cleaver,Does the cleaver have a handle?,yes
+cliff dwelling,Does the cliff dwelling have holes?,yes
+cloak,Do most cloaks have a hood?,yes
+cloak,Do most cloaks have a many holes?,no
+cocktail shaker,Does a cocktail shaker have handles?,no
+cocktail shaker,Does a cocktail shaker have many holes?,no
+coffee mug,Does the coffee mug usually have a handle?,yes
+coffeepot,Does a coffeepot have an opening?,yes
+combination lock,Does the combination lock have moveable parts?,yes
+computer keyboard,Does the computer keyboard have a handle?,no
+container ship,Does a container ship have windows?,yes
+container ship,Does the container ship have a deck?,yes
+container ship,Does the container ship have wheels or not?,no
+convertible,Does the convertible have headlights?,yes
+convertible,Do convertibles have tires?,yes
+convertible,Does the convertible have windows?,yes
+convertible,Does the convertible not have any seats?,no
+convertible,Does the convertible have a roof?,no
+convertible,Does the convertible have shelves?,no
+corkscrew,Does a corkscrew have an opening?,no
+corkscrew,Does a corkscrew have buttons?,no
+cowboy boot,Do most cowboy boots have high heels?,no
+cowboy boot,Does a cowboy boot usually have designs on it?,yes
+crash helmet,Does a crash helmet have decorations?,yes
+crash helmet,Does a crash helmet have wooden handles?,no
+crash helmet,Does a crash helmet have wheels?,no
+crib,Does the crib have high fence-like edges?,yes
+crib,Does the crib have legs?,yes
+crib,Does the crib have three legs?,no
+Crock Pot,Does the Crock Pot have a lid?,yes
+Crock Pot,Does the Crock Pot have handles?,yes
+Crock Pot,Does the Crock Pot have holes?,no
+cuirass,Does a cuirass have sleeves?,no
+desktop computer,Does a desktop computer have a screen?,yes
+desktop computer,Does a desktop computer have a opening?,no
+desktop computer,Does a desktop computer have a handles?,no
+diaper,Does the diaper have wheels?,no
+digital watch,Does a digital watch have numbers on it?,yes
+digital watch,Does a digital watch always have a silk strap?,no
+digital watch,Does a digital watch have buttons on it?,yes
+digital watch,Does a digital watch have handles?,no
+drilling platform,Do most of the drilling platforms have pillars?,yes
+drilling platform,Do most of the drilling platforms have a pointed front?,no
+drilling platform,Do most of the drilling platforms have tires?,no
+dumbbell,Does a dumbbell have holes?,no
+Dutch oven,Does a Dutch oven have an opening?,yes
+Dutch oven,Does a Dutch oven have a lid?,yes
+Dutch oven,Does a Dutch oven have holes?,no
+Dutch oven,Does a Dutch oven have transparent lids?,no
+electric guitar,Does the electric guitar have a fingerboard?,yes
+electric locomotive,Does the electric locomotive have wheels?,yes
+electric locomotive,Does the electric locomotive have windows?,yes
+electric locomotive,Does the electric locomotive have an opening?,no
+electric locomotive,Does the electric locomotive have a pointed top?,no
+electric locomotive,Does the electric locomotive have rocks?,no
+entertainment center,Does an entertainment center have shelves?,yes
+envelope,Do the envelopes have corners?,yes
+envelope,Do the envelopes have holes?,no
+espresso maker,Does the espresso maker have a handle?,yes
+espresso maker,Does the espresso maker have switches to operate?,yes
+espresso maker,Does the espresso maker have a handle?,yes
+espresso maker,Does the espresso maker have holes?,no
+espresso maker,Does the espresso maker have windows?,no
+espresso maker,Does the espresso maker have strings?,no
+face powder,Do face powders usually have a lid?,yes
+face powder,Do face powders usually have a mirror?,yes
+face powder,Do face powders usually have a handle?,no
+face powder,Do face powders usually have holes?,no
+file,Does a file have shelves?,yes
+file,Does a file have wooden handles?,no
+file,Does a file have drawers?,yes
+file,Does a file have a handle?,no
+fire screen,Does the fire screen have corners?,yes
+fire screen,Does the fire screen have designs on it?,yes
+fire screen,Does the fire screen have wheels?,no
+fire screen,Does the fire screen have shelves?,no
+flute,Does the flute have holes?,yes
+folding chair,Does the folding chair have legs?,yes
+folding chair,Does the folding chair have 8 legs?,no
+football helmet,Do most football helmets have bars in the front?,yes
+football helmet,Do the football helmets have a handle?,no
+football helmet,Do the football helmets have buttons?,no
+forklift,Does the forklift have glass windows?,no
+forklift,Does a forklift have four wheels?,yes
+fountain,Does the fountain have water?,yes
+fountain,Does the fountain have a stone base?,yes
+fountain,Does the fountain have holes?,yes
+fountain,Can the fountain have a multi-layer display?,yes
+fountain,Does the fountain have buttons?,no
+fountain,Does the fountain have corners?,no
+fountain,Does the fountain have windows?,no
+freight car,Does the freight car have wheels?,yes
+freight car,Does the freight car have holes?,no
+French horn,Does a French horn have an opening?,yes
+French horn,Does the French horn have handles?,yes
+French horn,Does the French horn have corners?,no
+French horn,Does the French horn have windows?,no
+French horn,Does the French horn have a flat bottom?,no
+frying pan,Do frying pans have a flat bottom?,yes
+frying pan,Does the frying pan have a handle?,yes
+frying pan,Does the frying pan have holes?,no
+fur coat,Does the fur coat have green spots on it?,no
+fur coat,Does the fur coat have sleeves?,yes
+garbage truck,Does the garbage truck have wheels or not?,yes
+garbage truck,Do garbage trucks usually have two wheels?,no
+garbage truck,Do garbage trucks usually have windows?,yes
+gas pump,Does the gas pump have a digital meter on it?,yes
+gas pump,Does the gas pump have a hose?,yes
+gas pump,Does the gas pump have legs?,no
+goblet,Do goblets have stems?,yes
+go-kart,Does a go-kart have a seat?,yes
+go-kart,Does a go-kart have 4 seats?,no
+go-kart,Does the go-kart have steering wheel?,yes
+golfcart,Does the golfcart have wheels?,yes
+golfcart,Does the golfcart have steering wheel?,yes
+golfcart,Does the golfcart have numbers on it?,no
+gondola,Does the gondola have wheels?,no
+gondola,Does a gondola have a pointed front?,yes
+grand piano,Does the grand piano have legs?,yes
+grand piano,Does the grand piano have handles?,no
+grocery store,Does a grocery store have shelves?,yes
+hair spray,Does the hair spray bottle have buttons?,yes
+hair spray,Does the hair spray have many holes?,no
+half track,Do half tracks have tank tracks in the back?,yes
+half track,Does the half track have wheels?,yes
+half track,Does the half track have a windshield?,yes
+half track,Does the half track have a deck?,no
+half track,Does the half track have a pointed end?,no
+hamper,Do most hampers have a lid?,yes
+hand blower,Does the hand blower have a handle?,yes
+hand-held computer,Do these hand-held computers have a key pad?,yes
+handkerchief,Do handkerchiefs usually have holes?,no
+harp,Does the harp have strings?,yes
+harvester,Does the harvester have tires?,yes
+home theater,Does the home theater have a screen?,yes
+hoopskirt,Does the hoopskirt have hoops?,yes
+hoopskirt,Does the hoopskirt have buttons?,no
+hoopskirt,Does the hoopskirt have holes?,no
+hoopskirt,Does the hoopskirt have numbers?,no
+horse cart,Do most of the horse carts have wheels?,yes
+horse cart,Do most of the horse carts have strings?,yes
+horse cart,Do most of the horse carts have a windshield?,no
+horse cart,Do most of the horse carts have a digital meter on it?,no
+hourglass,Does the hourglass have two joined bulbs?,yes
+hourglass,Does an hourglass have a fat middle?,no
+iPod,Does the iPod have a screen?,yes
+iPod,Does the iPod have buttons on it?,yes
+iPod,Does the iPod have wheels?,no
+iPod,Does the iPod have handles?,no
+iron,Does an iron have holes?,yes
+iron,Does an iron have spots on it?,no
+jack-o'-lantern,Does the jack-o'-lantern have light inside?,yes
+jack-o'-lantern,Does the jack-o'-lantern have a lens?,no
+jack-o'-lantern,Does the jack-o'-lantern have buttons?,no
+jeep,Does a jeep have a windshield?,yes
+jeep,Does a jeep have only two wheels?,no
+jeep,Does a jeep have an opening?,no
+jigsaw puzzle,Does a jigsaw puzzle have many pieces?,yes
+jigsaw puzzle,Does the jigsaw puzzle have a flat surface?,yes
+jigsaw puzzle,Does a jigsaw puzzle have a hole?,no
+jigsaw puzzle,Does a jigsaw puzzle have a lid?,no
+jinrikisha,Does the jinrikisha have wheels?,yes
+jinrikisha,Does the jinrikisha have handles?,yes
+jinrikisha,Does the jinrikisha have a windshield?,no
+jinrikisha,Does the jinrikisha have a digital meter on it?,no
+lab coat,Do most lab coats have pockets?,yes
+lab coat,Does the lab coat have sleeves?,yes
+lab coat,Does the lab coat have buttons?,yes
+lab coat,Does the lab coat have holes?,no
+lab coat,Does the lab coat have a screen?,no
+lab coat,Does the lab coat have numbers on it?,no
+ladle,Do ladles usually have handles?,yes
+lampshade,Does the lampshade have a light bulb?,yes
+laptop,Does the laptop have a keyboard?,yes
+laptop,Does a laptop have wheels?,no
+lawn mower,Do most lawn mowers have engines?,yes
+lens cap,Do most lens caps have a brand name written on them?,yes
+letter opener,Does the letter opener have handles?,yes
+library,Do people have food in the library?,no
+limousine,Does the limousine have headlights?,yes
+limousine,Does the limousine have a red roof?,no
+limousine,Does the limousine have buttons?,no
+liner,Does the liner have windows?,yes
+lipstick,Does the lipstick have a pointed top?,yes
+Loafer,Does a loafer have an opening?,yes
+Loafer,Do loafers have laces?,no
+lotion,Does the lotion bottle have handles?,no
+loupe,Does the loupe have lenses?,yes
+lumbermill,Does the lumbermill have lots of woods?,yes
+lumbermill,Does the lumbermill have a pointed top?,no
+magnetic compass,Does the magnetic compass have numbers?,yes
+magnetic compass,Does the magnetic compass have an opening?,no
+mailbag,Do mailbags have handles?,yes
+mailbag,Do mailbags have windows?,no
+mailbag,Do mailbags have a display?,no
+mailbox,Does the mailbox have an opening?,yes
+mailbox,Does the mailbox have windows?,no
+maillot(swim),Does a maillot(swim) have sleeves?,no
+manhole cover,Does the manhole cover have holes?,yes
+maraca,Does the maraca have a handle?,yes
+marimba,Does the marimba have handles?,no
+marimba,Does the marimba have stands?,yes
+mask,Does the mask usually have a handle?,no
+matchstick,Does the matchstick have an igniter?,yes
+maze,Does the maze typically have a design?,yes
+maze,Does the maze usually have only one path?,no
+measuring cup,Do most measuring cups have handles?,yes
+medicine chest,Does the medicine chest have shelves?,yes
+military uniform,Does the military uniform have buttons?,yes
+milk can,Does the milk can have a handle?,yes
+milk can,Does the milk can have windows?,no
+minibus,Does a minibus have windows?,yes
+minibus,Does a minibus have a screen?,no
+minibus,Does a minibus have wheels?,yes
+minivan,Does a minivan have windows?,yes
+minivan,Does a minivan have headlights?,yes
+minivan,Does the minivan have an opening on its roof?,no
+minivan,Does a minivan have petals?,no
+missile,Does a missile have a pointed end?,yes
+missile,Does the missile have wheels?,no
+mitten,Does the mitten have five fingers on each?,no
+mixing bowl,Does the mixing bowl have a handle?,no
+mobile home,Does the mobile home have a roof?,yes
+mobile home,Does a mobile home have a basement?,no
+mobile home,Does the mobile home have a window?,yes
+mobile home,Does a mobile home have wheels?,yes
+mobile home,Does a mobile home have barrels?,no
+Model T,Does the Model T have windows?,yes
+Model T,Does the Model T not have wheels?,no
+Model T,Does the Model T have a green roof?,no
+modem,Does the modem have holes?,yes
+monitor,Does the monitor have a screen?,yes
+monitor,Does the monitor have holes?,no
+moped,Does the moped have handlebars?,yes
+moped,Does the moped have seats?,yes
+moped,Does the moped have three wheels?,no
+moped,Does the moped have lights?,yes
+moped,Does the moped have shelves?,no
+mortarboard,Does a mortarboard have spots on it?,no
+mosque,Do most mosques have a dome?,yes
+mosque,Does the mosque have numbers on it?,no
+mosque,Does the mosque have tires?,no
+mountain bike,Do mountain bikes have wheels?,yes
+mountain bike,Does the mountain bike have a seat?,yes
+mountain tent,Does the mountain tent have a roof?,yes
+mountain tent,Does the mountain tent have wheels?,no
+mountain tent,Does the mountain tent have a hole?,no
+mouse,Does the mouse have a flat bottom?,yes
+mouse,Does the mouse have an opening?,no
+muzzle,Does the muzzle have holes?,yes
+muzzle,Does the muzzle have buttons?,no
+nail,Does the nail have handles?,no
+notebook,Does a notebook have a keyboard?,yes
+notebook,Does a notebook have a screen?,yes
+notebook,Does a notebook have a built mouse?,no
+notebook,Does a notebook have an opening?,no
+ocarina,Does the ocarina have holes?,yes
+odometer,Does the odometer have a needle?,yes
+odometer,Does the odometer have numbers?,yes
+odometer,Does the odometer have pointers?,yes
+odometer,Does the odometer have a handle?,no
+odometer,Does the odometer have a keypad?,no
+oil filter,Does the oil filter have holes?,yes
+oscilloscope,Does the oscilloscope have a screen?,yes
+oscilloscope,Does the oscilloscope only have one button?,no
+oxcart,Does the oxcart have wheels or not?,yes
+oxygen mask,Does the oxygen mask have a nose clip?,yes
+oxygen mask,Do the oxygen mask usually have a handle?,no
+oxygen mask,Do oxygen masks usually have lights?,no
+oxygen mask,Do oxygen masks usually have a lens?,no
+packet,Does the packet have corners?,yes
+padlock,Does a padlock have a hole?,yes
+paintbrush,Does the paintbrush have a needle?,no
+parking meter,Does the parking meter have a stand?,yes
+parking meter,Does the parking meter have holes?,no
+passenger car,Does a passenger car have windows?,yes
+pay-phone,Can the pay-phone have a tires?,no
+pay-phone,Can the pay-phone have shelves?,no
+pencil box,Does the pencil box have an opening?,yes
+pencil box,Does the pencil box have wheels?,no
+pencil box,Does the pencil box have a handle?,no
+pencil sharpener,Does the pencil sharpener have a razor inside?,yes
+pencil sharpener,Does the pencil sharpener have a hole?,yes
+pencil sharpener,Does the pencil sharpener have buttons?,no
+pencil sharpener,Does the pencil sharpener have a keyboard?,no
+Petri dish,Does a petri dish have a flat bottom?,yes
+photocopier,Does the photocopier have buttons?,yes
+photocopier,Does the photocopier have seats?,no
+pickelhaube,Does the pickelhaube have a pointy top?,yes
+pickelhaube,Does the pickelhaube have designed patterns?,yes
+pickelhaube,Does the pickelhaube have headlights?,no
+picket fence,Does the picket fence have vertical boards?,yes
+pickup,Does the pickup have windows?,yes
+pickup,Does the pickup have antennas?,no
+piggy bank,Does the piggy bank have legs?,yes
+piggy bank,Does a piggy bank have three legs?,no
+piggy bank,Does a piggy bank have windows?,no
+pill bottle,Do pill bottles have pills in them?,yes
+pinwheel,Does the pinwheel usually have strings?,no
+pinwheel,Does the pinwheel usually have a lid?,no
+pitcher,Does the pitcher have a handle?,yes
+plastic bag,Do most plastic bags have handles?,yes
+plastic bag,Do most plastic bags have zippers?,no
+pole,Does the pole have holes?,no
+police van,Does a police van have lights?,yes
+pool table,Does a pool table have only two pockets?,no
+pop bottle,Does the pop bottle have handles?,no
+pot,Does a pot have a flat bottom?,yes
+pot,Does a pot have a sharp tip?,no
+potter's wheel,Does the potter's wheel have a flat surface?,yes
+power drill,Does the power drill have a sharp tip?,yes
+power drill,Does the power drill have a handle?,yes
+power drill,Does the power drill have a press button on the handle?,yes
+power drill,Does the power drill have lights?,no
+power drill,Does the power drill have a lid?,no
+prayer rug,Does the prayer rug typically have a design?,yes
+prayer rug,Does the prayer rug have buttons?,no
+prayer rug,Does the prayer rug have a hole?,no
+printer,Do printers have plastic coverings?,yes
+printer,Do the printer have a handle?,no
+prison,Does the prison have bars?,yes
+projectile,Does the projectile have wings?,yes
+projector,Does the projector have a lens?,yes
+purse,Does a purse always have a handle?,no
+quill,Does the quill have a metal body?,no
+racer,Does a racer always have a windshield?,yes
+racket,Does the racket have handles?,yes
+radio telescope,Does the radio telescope always have a base?,yes
+rain barrel,Does the rain barrel have an opening?,yes
+rain barrel,Does the rain barrel have handles?,no
+reflex camera,Does the reflex camera have a lens?,yes
+reflex camera,Does the reflex camera have buttons?,yes
+reflex camera,Does the reflex camera have handles?,yes
+refrigerator,Does the refrigerator have light inside?,yes
+remote control,Does the remote control have buttons?,yes
+revolver,Does the revolver have a trigger?,yes
+revolver,Does the revolver have a hole?,yes
+revolver,Does the revolver have a glass handle?,no
+rifle,Does the rifle have a trigger?,yes
+rocking chair,Does the rocking chair have armrests?,yes
+rocking chair,Do most of the rocking chairs have backrests?,yes
+rocking chair,Does a rocking chair usually have legs?,yes
+rocking chair,Does the rocking chair have pockets?,no
+rocking chair,Does the rocking chair have a hood?,no
+running shoe,Do running shoes always have laces?,yes
+safe,Does the safe have a lock?,yes
+safe,Do most safes have a keypad?,yes
+safe,Does the safe have shelves inside?,yes
+safe,Do most safes have wheels?,no
+safe,Does the safe have windows?,no
+saltshaker,Does the saltshaker have holes?,yes
+sandal,Does the sandal have holes?,yes
+scale,Does the scale have a digital meter on it?,yes
+school bus,Does the school bus have windows?,yes
+school bus,Does the school bus have wheels?,yes
+school bus,Does the school bus have a pointed top?,no
+schooner,Does a schooner usually have one sail?,no
+scoreboard,Does the scoreboard have numbers?,yes
+screen,Does the screen have corners?,yes
+screw,Do most screws have openings?,no
+screwdriver,Do both ends of a screwdriver have a flat bottom?,no
+sewing machine,Does a sewing machine have a base?,yes
+sewing machine,Does the old sewing machine have wheels?,yes
+sewing machine,Does a sewing machine have mirrors?,no
+shield,Does a shield have a handle?,yes
+shield,Does a shield have openings?,no
+shoe shop,Does a shoe shop have multiple shoes?,yes
+shopping basket,Does a shopping basket have wheels?,no
+shopping basket,Does the shopping basket have a handle?,yes
+shopping basket,Does the shopping basket have an opening?,yes
+shopping basket,Does the shopping basket have windows?,no
+shopping cart,Does the shopping cart have handles?,yes
+shopping cart,Does the shopping cart usually have wheels?,yes
+shovel,Does a shovel have a handle?,yes
+shower curtain,Does the shower curtain have hooks?,yes
+shower curtain,Does the shower curtain have handles?,no
+ski mask,Does a ski mask have holes?,yes
+sleeping bag,Does a sleeping bag have an opening?,yes
+sleeping bag,Does a sleeping bag have a screen?,no
+slide rule,Do slide rules have numbers on them?,yes
+slot,Does the slot have designed patterns?,yes
+snowmobile,Does the snowmobile have wheels?,no
+snowmobile,Does the snowmobile have windshields?,yes
+space shuttle,Do space shuttles have wings?,yes
+space shuttle,Do space shuttles have openings?,no
+spatula,Does the spatula have a handle?,yes
+spatula,Does a spatula have holes?,yes
+spatula,Does a spatula have a sharp tip?,no
+speedboat,Does a speedboat have a pointed front?,yes
+speedboat,Do most speedboats have roofs?,no
+spindle,Does a spindle have handles?,yes
+sports car,Does a sports car have a low profile?,yes
+stage,Does the stage usually have lights?,yes
+steam locomotive,Does the steam locomotive have chimney?,yes
+steel arch bridge,Does the steel arch bridge have pillars?,yes
+steel drum,Does the steel drum have strings?,no
+stopwatch,Does a stopwatch have numbers on it?,yes
+stove,Does a stove have an opening?,yes
+strainer,Do the strainers have holes?,yes
+strainer,Does a strainer have a basin?,yes
+strainer,Do the strainers have a lid?,no
+strainer,Do the strainers have a flat surface?,no
+streetcar,Does the streetcar have windshields?,yes
+streetcar,Does the streetcar have wheels?,yes
+streetcar,Does the streetcar have leaves?,no
+stupa,Does a stupa dome have a pointed top?,yes
+stupa,Does the stupa have an opening on its roof?,no
+sundial,Does a sundial have numbers on it?,yes
+sunscreen,Does the sunscreen have handles?,no
+suspension bridge,Do suspension bridges have wire cords?,yes
+sweatshirt,Does a sweatshirt have armholes?,yes
+sweatshirt,Does the sweatshirt have a hood?,yes
+sweatshirt,Does the sweatshirt have buttons on it?,no
+swimming trunks,Do swimming trunks have holes?,yes
+swimming trunks,Do swimming trunks have sleeves?,no
+switch,Does the switch have buttons?,yes
+switch,Does the switch have lights on it?,no
+syringe,Does the syringe have numbers?,yes
+syringe,Does the syringe have a needle?,yes
+syringe,Does the syringe have corners?,no
+syringe,Does the syringe have a flat surface?,no
+tank,Does a tank have wheels?,yes
+tank,Does the tank have windows?,no
+tank,Does the tank have headlights?,no
+tape player,Does the tape player have handles?,yes
+tape player,Does the tape player have buttons?,yes
+tape player,Does the tape player have armrests?,no
+teapot,Do teapots have lids?,yes
+teapot,Do teapots have spouts?,yes
+teapot,Does the teapot have handles?,yes
+teapot,Does the teapot have a screen?,no
+teapot,Does the teapot have light inside?,no
+television,Does the television have a screen?,yes
+thatch,Does the thatch have a red roof?,no
+thresher,Do threshers have wheels?,yes
+thresher,Does the thresher have an axle?,yes
+thresher,Do threshers have a windshield?,no
+thresher,Does the thresher have a seat?,no
+throne,Does the throne only have two legs?,no
+toaster,Do toasters usually have wheels?,no
+tobacco shop,Does the tobacco shop have shelves?,yes
+totem pole,Do totem poles have decorations?,yes
+totem pole,Do totem poles have a seat?,no
+tractor,Does a tractor have a seating area?,yes
+tractor,Does a tractor have a steering wheel?,yes
+tractor,Does a tractor have only two wheels?,no
+trailer truck,Does the trailer truck have wheels?,yes
+trench coat,Does the trench coat have buttons?,yes
+tricycle,Does the tricycle have only two wheels?,no
+trimaran,Does the trimaran have wheels?,no
+tripod,Does the tripod have four legs?,no
+trombone,Does the trombone have holes?,yes
+trombone,Does the trombone have two speakers?,no
+vacuum,Does the vacuum have a sucking tube?,yes
+vacuum,Does the vacuum have handles?,yes
+vacuum,Does the vacuum have a lens?,no
+vending machine,Do most vending machines have glass windows?,yes
+vending machine,Does the vending machine have wheels?,no
+viaduct,Does the viaduct have more than one arch?,yes
+viaduct,Does the viaduct have an opening between it?,yes
+viaduct,Does the viaduct have arches?,yes
+viaduct,Does the viaduct have a roof?,no
+viaduct,Does the viaduct have antennas?,no
+violin,Does the violin have strings?,yes
+waffle iron,Does the waffle iron have handles?,yes
+wall clock,Does the wall clock have numbers on it?,yes
+wall clock,Do most wall clocks have eyes?,no
+wall clock,Do most wall clocks have fingerboards?,no
+wallet,Do wallets have separate sections?,yes
+wallet,Does the wallet have a mirror?,no
+warplane,Does a warplane have wheels?,yes
+warplane,Does a warplane have wings?,yes
+warplane,Does a warplane have a flat base?,no
+warplane,Does a warplane have a stone base?,no
+washer,Does every washer have a window?,no
+water bottle,Does a water bottle have a hole?,yes
+water bottle,Does a water bottle have handles?,no
+water bottle,Does a water bottle have a metal body?,no
+water jug,Do most water jugs have a handle?,yes
+whiskey jug,Does a whiskey jug have a handle?,yes
+whiskey jug,Does a whiskey jug have zippers?,no
+whiskey jug,Does a whiskey jug have engines?,no
+whistle,Does the whistle have antennas?,no
+wine bottle,Does the wine bottle have a slender neck?,yes
+wine bottle,Does the wine bottle have a flat bottom?,yes
+wine bottle,Does the wine bottle have a light bulb?,no
+wine bottle,Does the wine bottle have a pressing button at the bottom?,no
+wok,Does the wok have handles?,yes
+wok,Does the wok have eyes?,no
+yurt,Does the yurt have a flat top?,no
+web site,Do many web sites have menus?,yes
+street sign,Does the street sign have words on it?,yes
+book jacket,Does a book jacket have headrests?,no
+bagel,Does a bagel always have a hole?,yes
+pretzel,Do most pretzels have two circles?,yes
+pretzel,Do most pretzels have leaves?,no
+hotdog,Do most hotdogs have toppings?,yes
+hotdog,Does the hotdog have apples in it?,no
+head cabbage,Does the head cabbage have leaves?,yes
+spaghetti squash,Does the spaghetti squash have seeds?,yes
+spaghetti squash,Does the spaghetti squash have holes?,no
+butternut squash,Does the butternut squash have seeds?,yes
+butternut squash,Does the butternut squash have spots on it?,no
+artichoke,Does the artichoke have petals?,yes
+orange,Does the orange have an opening?,no
+lemon,Does the lemon have a pointed end?,yes
+lemon,Do lemons have a shiny surface?,yes
+lemon,Do lemons have cheese in it?,no
+pineapple,Does the pineapple have spikes?,yes
+pineapple,Does the pineapple have a shiny surface?,no
+banana,Does the banana have skin?,yes
+banana,Does the banana have many pieces?,no
+custard apple,Does the custard apple have seeds?,yes
+pomegranate,Does a pomegranate have green seeds?,no
+pizza,Does a pizza have a sharp bottom?,no
+pizza,Does the pizza have cheese in it?,yes
+cup,Does the cup have a handle?,yes
+cup,Does the cup have eyes?,no
+cliff,Does the cliff have grass on it?,yes
+cliff,Do most cliffs have fountains on them?,no
+coral reef,Does the coral reef have a bumpy surface?,yes
+promontory,Does the promontory have rocks?,yes
+seashore,Do some seashores have rocks?,yes
+seashore,Do most seashores have green sand?,no
+seashore,Does the seashore have icebergs?,no
+volcano,Does the volcano have a roof?,no
+rapeseed,Does the rapeseed have leaves?,yes
+daisy,Does the daisy have petals?,yes
+daisy,Does a daisy have three petals?,no
+acorn,Does an acorn have holes on it?,no
+buckeye,Does the buckeye have a shell?,yes
+agaric,Does the agaric have a rectangular top?,no
+agaric,Does the agaric have a rugged surface?,yes
+gyromitra,Does a gyromitra have a spotted cover?,no
+hen-of-the-woods,Do hen-of-the-woods have multiple layers?,yes
+hen-of-the-woods,Do hen-of-the-woods have stems?,yes
+hen-of-the-woods,Do hen-of-the-woods have lots of woods?,no
+ground beetle,Do ground beetles have shiny shells?,yes
+German short-haired pointer,Does the German short-haired pointer have a short snout?,no
+German short-haired pointer,Does the German short-haired pointer have a long tail?,no
+German short-haired pointer,Does the German short-haired pointer have horns?,no
+German short-haired pointer,Does the German short-haired pointer have scales?,no
+vulture,Are there many feathers on the head of a vulture?,no
+Arctic fox,Is the Arctic fox furry?,yes
+tabby,Are most tabbies striped?,yes
+tiger cat,Is the tiger cat striped?,yes
+Siamese cat,Is the Siamese cat furry?,yes
+snow leopard,Are there any spots on the fur of the snow leopard?,yes
+leaf beetle,Is the leaf beetle furry?,no
+coho,Is the coho furry?,no
+analog clock,Are there always numbers on the analog clock?,yes
+baseball,Are there stitchings on the baseball?,yes
+baseball,Are there red stitches on most baseballs?,yes
+baseball,Is there an opening on the baseball?,no
+baseball,Is there a handle on the baseball?,no
+buckle,Is there a head portrait on the surface of the buckle?,no
+cloak,Is the cloak normally spotted?,no
+cloak,Are all cloaks furry?,no
+combination lock,Are there always numbers written on the combination lock?,yes
+scale,Are there screens on most scales?,yes
+scale,Does it usually show numbers on the scale?,no
+thatch,Is there always a balloon on the top of the thatch?,no
+viaduct,Are there windows on the viaduct?,no
+volcano,Are there many plants near a volcano?,no
+Saluki,Does the Saluki have slim legs?,yes
+French bulldog,Does the French bulldog have long legs?,no
+Cardigan,Do Cardigans have erect ears?,yes
+jaguar,Does the jaguar have a spotted pattern on its body?,yes
+digital clock,Are there numbers on the digital clock?,yes
+typewriter keyboard,Are there letters on the typewriter keyboard keys?,yes
