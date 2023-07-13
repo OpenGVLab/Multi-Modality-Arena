@@ -72,7 +72,7 @@ For the evalution tasks can not using the default settings, here is the list:
 
 
 ## Datasets
-For dataset preparation, you can download and process the datasets we use personally or use the version we provided in [here](A cloud disk link). Then please organize the datasets as follows and then replace the variable `DATA_DIR` in the `task_datasets/__init__.py` with the directory you save these datasets.
+For dataset preparation, you can download and process the datasets we use personally or use the version we provided in [here (passwd:1puw)](https://pan.baidu.com/s/1lvNLpCjZbReB_FAJOnR3PQ?pwd=1puw). Then please organize the datasets as follows and then replace the variable `DATA_DIR` in the `task_datasets/__init__.py` with the directory you save these datasets.
 
 ```bash
 /path/to/DATA_DIR
