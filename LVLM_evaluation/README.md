@@ -151,7 +151,9 @@ For dataset preparation, you can download and process the datasets we use person
         ├── all_vsr_validated_data.jsonl
         └── images
 ```
-
+* For POPE datasets(object hallucinations),
+    - Use MSCOCO val2014 images
+    - For questions and answers, please download from [POPE](https://github.com/RUCAIBox/POPE)
 * For Caption datasets,
     - Flickr_30k, please obtain the [flickr30k-images](https://uofi.box.com/s/1cpolrtkckn4hxr1zhmfg0ln9veo6jpl) and get the [results_20130124.token](http://shannon.cs.illinois.edu/DenotationGraph/data/flickr30k.tar.gz).
     - NoCaps, please download [nocaps_val_4500_captions.json](https://nocaps.s3.amazonaws.com/nocaps_val_4500_captions.json) at first and then download the images from the urls provided in nocaps_val_4500_captions.json and save them in `DATA_DIR/Caption_Datasets/NoCaps/val_imgs` with the filename provided in nocaps_val_4500_captions.json.
