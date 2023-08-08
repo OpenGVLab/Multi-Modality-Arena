@@ -2,17 +2,9 @@
 
 ## Environments
 
-* Setup a new conda env for LLaMA-Adapter-v2
 ```bash
-cd env_info
-conda create -n llama_adapter_v2 python=3.8 -y
-pip install -r llama_requirements.txt
-```
-
-* Setup a new conda env for the rest models
-```bash
-cd env_info
-conda env create -f VLP_web.yaml
+conda create -n lvlm_eval python=3.8 -y
+pip install -r requirements.txt
 ```
 
 
