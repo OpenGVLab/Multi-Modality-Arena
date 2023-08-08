@@ -619,4 +619,3 @@ class MSCOCO_OCDataset(Dataset):
             "image_path": img_path,
             "question": question,
             "gt_answers": answers}
-
