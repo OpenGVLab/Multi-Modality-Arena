@@ -13,17 +13,30 @@
 **Multi-Modality Arena** is an evaluation platform for large multi-modality models. Following [Fastchat](https://chat.lmsys.org/), two anonymous models side-by-side are compared on a visual question-answering task. We release the  [**Demo**](http://vlarena.opengvlab.com)  and welcome the participation of everyone in this evaluation initiative.
 
 [![⚔️ LVLM Arena](https://img.shields.io/badge/LVLM%20Arena-blue.svg?label=%E2%9A%94%EF%B8%8F)](http://vlarena.opengvlab.com)
-[![arXiv](https://img.shields.io/badge/arXiv-2306.09265-b31b1b.svg)](https://arxiv.org/abs/2306.09265)
+[![arXiv](https://img.shields.io/badge/LVLM%20eHub-2306.09265-b31b1b.svg)](https://arxiv.org/abs/2306.09265)
+[![arXiv](https://img.shields.io/badge/Tiny%20LVLM%20eHub-2308.03729-b31b1b.svg)](https://arxiv.org/abs/2308.03729)
 [![GitHub Stars](https://img.shields.io/github/stars/OpenGVLab/Multi-modality-Arena.svg?style=social&label=Star&maxAge=60)](https://github.com/OpenGVLab/Multi-modality-Arena)🔥🔥🔥
                 
 
  <p  align="center"><img  src="./CVLAB/style/img/demo1.jpg"  width="800"></p>
 
-## LVLM-eHub - An Evaluation Benchmark for Large Vision-Language Models 🚀
+## Holistic Evaluation of Large Multimodal Models
+
+### Tiny LVLM-eHub: Early Multimodal Experiments with Bard
+
+- Tiny datasets: only 50 randomly selected sampels for each dataset, i.e., 42 text-related visual benchmarks and 2.1K samples in total for ease of use.
+- More models: another 4 models, i.e., 12 models in total, including **Google Bard**.
+- *ChatGPT Ensemble Evalution*: improved agreement with human evaluation than previous word matching approach.
+
+<p  align="center"><img  src="./assets/tiny_lvlm_ehub_6_12.png"  width="500"></p>
+
+### LVLM-eHub: An Evaluation Benchmark for Large Vision-Language Models 🚀
+
 LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
  <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
 
 ## Update
+- 🔥 Aug. 8, 2023. We released [**[Tiny LVLM-eHub]**](https://arxiv.org/abs/2308.03729), while the corresponding source code and inference/evaluation results are coming soon. Please stay tuned!
 - Jun. 15, 2023. We release [**[LVLM-eHub]**](https://arxiv.org/abs/2306.09265), an evaluation benchmark for large vision-language models. The code is coming soon.
 - Jun. 8, 2023. Thanks, Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues when re-implementing VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
 - May. 22, 2023. Thanks, Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.
