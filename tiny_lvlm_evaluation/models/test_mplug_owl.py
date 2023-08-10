@@ -52,6 +52,26 @@ class TestMplugOwl:
         return generated_text
 
     @torch.no_grad()
+    def pure_generate(self, image, question, max_new_tokens=256):
+        prompts = [question]
+        image = get_image(image)
+        inputs = self.processor(text=prompts, images=[image], return_tensors='pt')
+        inputs = {k: v.to(self.device, dtype=self.dtype) if v.dtype == torch.float else v for k, v in inputs.items()}
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
+
+        generate_kwargs = {
+            'do_sample': True,
+            'top_k': 5,
+            'max_length': max_new_tokens
+        }
+
+        with torch.no_grad():
+            res = self.model.generate(**inputs, **generate_kwargs)
+        generated_text = self.tokenizer.decode(res.tolist()[0], skip_special_tokens=True)
+
+        return generated_text
+
+    @torch.no_grad()
     def batch_generate(self, image_list, question_list, max_new_tokens=256):
         images = [get_image(image) for image in image_list]
         images = [self.image_processor(image, return_tensors='pt').pixel_values for image in images]

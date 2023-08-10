@@ -142,6 +142,16 @@ class TestLLaVA:
         output = self.do_generate([prompt], [image], stop_str=stop_str, dtype=self.dtype, max_new_tokens=max_new_tokens)[0]
 
         return output
+
+    @torch.no_grad()
+    def pure_generate(self, image, question, max_new_tokens=256):
+        image = get_image(image)
+        conv = self.conv.copy()
+        prompt = question
+        stop_str = conv.sep if conv.sep_style in [SeparatorStyle.SINGLE, SeparatorStyle.MPT] else conv.sep2
+        output = self.do_generate([prompt], [image], stop_str=stop_str, dtype=self.dtype, max_new_tokens=max_new_tokens)[0]
+
+        return output
     
     @torch.no_grad()
     def batch_generate(self, image_list, question_list, max_new_tokens=256):

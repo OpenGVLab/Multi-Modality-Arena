@@ -44,6 +44,16 @@ class TestBlip2:
         }, max_length=max_new_tokens)
 
         return answer[0]
+
+    @torch.no_grad()
+    def pure_generate(self, image, question, max_new_tokens=30):
+        image = get_image(image)
+        image = self.vis_processors["eval"](image).unsqueeze(0).to(self.device, dtype=self.dtype)
+        answer = self.model.generate({
+            "image": image, "prompt": question
+        }, max_length=max_new_tokens)
+
+        return answer[0]
     
     @torch.no_grad()
     def batch_generate(self, image_list, question_list, max_new_tokens=30):

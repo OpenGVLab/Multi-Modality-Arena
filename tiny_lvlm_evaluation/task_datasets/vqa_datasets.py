@@ -285,8 +285,11 @@ class IconQADataset(Dataset):
             image_path = f"{dataset_dir}/{sample}/image.png"
             self.image_list.append(image_path)
             data = json.load(open(f"{dataset_dir}/{sample}/data.json", 'r'))
+            # question = f"Question: {data['question']}\n" \
+            #            f"Options: {' '.join(data['choices'])}\n"
+            options = '\n- '.join(data['choices'])
             question = f"Question: {data['question']}\n" \
-                       f"Options: {' '.join(data['choices'])}\n"
+                       f"Choose the best answer from the following choices:\n- {options}\n"
             self.question_list.append(question)
             self.answer_list.append(data['choices'][data['answer']])
 

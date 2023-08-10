@@ -25,7 +25,18 @@ class TestLLamaAdapterV2:
         result = results[0].strip()
 
         return result
-    
+
+    @torch.no_grad()
+    def pure_generate(self, image, question, max_new_tokens=256):
+        imgs = [get_BGR_image(image)]
+        imgs = [self.img_transform(x) for x in imgs]
+        imgs = torch.stack(imgs, dim=0).to(self.device)
+        prompts = [question]
+        results = self.model.generate(imgs, prompts, max_gen_len=max_new_tokens)
+        result = results[0].strip()
+
+        return result
+
     @torch.no_grad()
     def batch_generate(self, image_list, question_list, max_new_tokens=256):
         imgs = [get_BGR_image(img) for img in image_list]
