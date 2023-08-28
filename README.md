@@ -101,6 +101,28 @@ This is the user interface that users will interact with.
 By following these steps, you will be able to serve your models using the web UI. You can open your browser and chat with a model now.
 If the models do not show up, try to reboot the gradio web server.
 
+## Contribution Guidelines
+We deeply value all contributions aimed at enhancing the quality of our evaluations. This section comprises two key segments: `Contributions to LVLM Evaluation` and `Contributions to LVLM Arena`.
+
+### Contributing to LVLM Evaluation
+You can access the most recent version of our evaluation code in the LVLM_evaluation folder. This directory encompasses a comprehensive set of evaluation code, accompanied by the necessary datasets. If you're enthusiastic about partaking in the evaluation process, please don't hesitate to share your evaluation outcomes or the model inference API with us via email at xupeng@pjlab.org.cn.
+
+### Contributions to LVLM Arena
+We extend our gratitude for your interest in integrating your model into our LVLM Arena! Should you wish to incorporate your model into our Arena, kindly prepare a model tester structured as follows:
+
+``` python
+class ModelTester:
+    def __init__(self, device=None) -> None:
+        # TODO: initialization of model and required pre processors
+    
+    def move_to_device(self, device) -> None:
+        # TODO: this function is used to transfer the model between CPU and GPU (optional)
+    
+    def generate(self, image, question) -> str:
+       # TODO: model inference code 
+```
+
+Furthermore, we are open to online model inference links, such as those provided by platforms like Gradio. Your contributions are wholeheartedly appreciated.
 
 ## Acknowledgement
 We express our gratitude to the esteemed team at [ChatBot Arena](https://arena.lmsys.org/) and their paper [Judging LLM-as-a-judge](https://arxiv.org/abs/2306.05685) for their influential work, which served as inspiration for our LVLM evaluation endeavors. We would also like to extend our sincere appreciation to the providers of LVLMs, whose valuable contributions have significantly contributed to the progress and advancement of large vision-language models. Finally, we thank the providers of datasets used in our LVLM-eHub.
