@@ -54,3 +54,22 @@ python eval_tiny.py \
 ```
 
 The datasets used in Tiny LVLM Evaluation are the subset of the datasets used in LVLM Evaluation. Therefore, you can download the sampled subset in [here (password: 9svo)](https://pan.baidu.com/s/1JJXpS2XylwvpE9kKXnilSQ?pwd=9svo) and use it directly. The script sample_dataset.py is used to sample the subsets used in Tiny LVLM Evaluation and save it.
+
+Besides, the inference results on 42 datasets of all 12 multimodal models studied in Tiny LVLM-eHub, including Bard, are downloadable from [Google Drive](https://drive.google.com/file/d/1yhtKbIRcnLO3RaUl6UoRSlSS2bsKmBkW/view?usp=sharing).
+
+## Prompt Engineering
+
+The table below shows prompts used for each dataset and across all multimodal models under study.
+
+| Prompt | Dataset |
+|---|---|
+| Classify the main object in the image. | ImageNet1K, CIFAR10 |
+| What breed is the flower in the image? | Flowers102 |
+| What breed is the pet in the image? | OxfordIIITPet |
+| What is written in the image? | All 12 OCR datasets |
+| Question: {question}\nChoose the best answer from the following choices:\n- option#1\n- option#2\n- option#3\n | IconQA |
+| Context:\n{context}\n\nQuestion: {question}\nChoose the best answer from the following choices:\n- option#1\n- option#2\n- option#3 | ScienceQA |
+| Question: {question}\n\nChoose the single most likely answer from the following choices \<choice>:\n- Yes\n- No\n\nThe output format follows exactly as below:\nAnswer: \<choice> | MSCOCO_MCI, VCR_MCI |
+| Question: Is the caption "{caption}" correctly describing the image?\n\nChoose the single most likely answer from the following choices \<choice>:\n- Yes\n- No\n\nThe output format follows exactly as below:\nAnswer: \<choice> | VSR |
+| use original questions | other datasets |
+
