@@ -53,7 +53,7 @@ python eval_tiny.py \
 # please check the name of models/datasets in (models/task_datasets)/__init__.py
 ```
 
-The datasets used in Tiny LVLM Evaluation are the subset of the datasets used in LVLM Evaluation. Therefore, you can download the sampled subset in [here (password: 9svo)](https://pan.baidu.com/s/1JJXpS2XylwvpE9kKXnilSQ?pwd=9svo) and use it directly. The script sample_dataset.py is used to sample the subsets used in Tiny LVLM Evaluation and save it.
+The datasets used in Tiny LVLM Evaluation are the subset of the datasets used in LVLM Evaluation. Therefore, you can download the sampled subset in [here](https://drive.google.com/file/d/1K7vLSBH9qi-OHQSBxxKKQkD3JseCae8y/view?usp=sharing) and use it directly. The script sample_dataset.py is used to sample the subsets used in Tiny LVLM Evaluation and save it.
 
 Besides, the inference results on 42 datasets of all 12 multimodal models studied in Tiny LVLM-eHub, including Bard, are downloadable from [Google Drive](https://drive.google.com/file/d/1yhtKbIRcnLO3RaUl6UoRSlSS2bsKmBkW/view?usp=sharing).
 
