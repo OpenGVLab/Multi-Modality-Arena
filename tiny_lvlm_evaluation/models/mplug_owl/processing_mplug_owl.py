@@ -21,6 +21,7 @@ class MplugOwlProcessor(ProcessorMixin):
         self.image_processor = image_processor
         self.tokenizer = tokenizer
         self.add_BOS = True
+        self.size = image_processor.size.get('shortest_edge',224)
 
     def __call__(self, text=None, images=None, return_tensors=None, **kwargs):
         if text is None and images is None:
@@ -38,6 +39,7 @@ class MplugOwlProcessor(ProcessorMixin):
             # encoding = self.tokenizer(text, return_tensors=return_tensors, **kwargs)
 
         if images is not None:
+            images = [_.resize((self.size,self.size),3) for _ in images]
             image_features = self.image_processor(images, return_tensors=return_tensors, **kwargs)
 
         if text is not None and images is not None:
@@ -165,9 +167,9 @@ def _tokenize_prompts_and_batch(prompts, tokens_to_generate, add_BOS, tokenizer,
     # Number of tokens in the each sample of the batch.
     samples_length = max_prompt_len + tokens_to_generate
     # Now update the list of list to be of the same size: samples_length.
-    for prompt_index in range(len(prompts_tokens)):
-        padding_size = samples_length - prompts_length[prompt_index]
-        prompts_tokens[prompt_index] = [tokenizer.eos_token_id] * padding_size + prompts_tokens[prompt_index]
+    for prompt_tokens, prompt_length in zip(prompts_tokens, prompts_length):
+        padding_size = samples_length - prompt_length
+        prompt_tokens.extend([tokenizer.eos_token_id] * padding_size)
 
     # Now we are in a structured format, we can convert to tensors.
     prompts_tokens_tensor = torch.LongTensor(prompts_tokens)

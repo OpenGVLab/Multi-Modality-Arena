@@ -31,6 +31,8 @@ def sample_dataset(dataset, dataset_name, max_sample_num=50, seed=0):
     np.random.seed(seed)
     if dataset_name in new_dataset_indices:
         selected_indices = new_dataset_indices[dataset_name]
+        selected_indices = selected_indices
+        selected_indices = [x for x in range(max(selected_indices) + 1, max(selected_indices) + 1 + 100)]
         max_sample_num = max(selected_indices) + 1
         random_indices = np.random.choice(
             len(dataset), max_sample_num, replace=False

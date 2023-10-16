@@ -2,19 +2,20 @@ import torch
 
 from .mplug_owl.processing_mplug_owl import MplugOwlProcessor, MplugOwlImageProcessor
 from .mplug_owl.modeling_mplug_owl import MplugOwlForConditionalGeneration
-from transformers import AutoTokenizer
+from .mplug_owl.tokenization_mplug_owl import MplugOwlTokenizer
 from . import get_image
 
-prompt_template = "The following is a conversation between a curious human and AI assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\nHuman: <image>\nHuman: {}\nAI:"
+prompt_template = "The following is a conversation between a curious human and AI assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\nHuman: <image>\nHuman: {}\nAI: "
 
 
 class TestMplugOwl:
     def __init__(self, device):
         self.device = device
         model_path='MAGAer13/mplug-owl-llama-7b'
+        # model_path='MAGAer13/mplug-owl-llama-7b-ft'
         self.model = MplugOwlForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.float32)
         self.image_processor = MplugOwlImageProcessor.from_pretrained(model_path)
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.tokenizer = MplugOwlTokenizer.from_pretrained(model_path)
         self.processor = MplugOwlProcessor(self.image_processor, self.tokenizer)
         self.model.eval()
         self.move_to_device()

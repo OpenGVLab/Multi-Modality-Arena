@@ -66,5 +66,21 @@ def get_model(model_name, device=None):
         _, version = model_name.split('_')
         from .test_OFv2 import OFv2
         return OFv2(version, device)
+    elif 'LaVIN' in model_name:
+        from .test_lavin import TestLaVIN
+        return TestLaVIN(device)
+    elif model_name == 'Lynx':
+        from .test_lynx import TestLynx
+        return TestLynx(device)
+    elif model_name == 'Cheetah':
+        from .test_cheetah import TestCheetah
+        return TestCheetah(device)
+    elif model_name == 'BLIVA':
+        from .test_bliva import TestBLIVA
+        return TestBLIVA(device)
+    elif model_name == 'MIC':
+        from .test_mic import TestMIC
+        return TestMIC(device)
     else:
-        raise ValueError(f"Invalid model_name: {model_name}")
+        from .test_automodel import TestAutoModel
+        return TestAutoModel(model_name, device)

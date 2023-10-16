@@ -38,6 +38,7 @@ class GeneralDataset(Dataset):
 
 
 dataset_class_dict = {
+    # NOTE: Visual Perception (400)
     # classification
     'ImageNet': ImageNetDataset,
     'CIFAR10': CIFAR10Dataset,
@@ -48,6 +49,8 @@ dataset_class_dict = {
     'VCR1_MCI': VCR_MCIDataset,
     'MSCOCO_OC': MSCOCO_OCDataset,
     'MSCOCO_MCI': MSCOCO_MCIDataset,
+
+    # NOTE: Visual Knowledge Acquisition (700)
     # OCR
     "IIIT5K": partial(ocrDataset, dataset_name="IIIT5K"),
     "IC13": partial(ocrDataset, dataset_name="IC13"),
@@ -64,6 +67,8 @@ dataset_class_dict = {
     # KIE Datasets
     'SROIE': SROIEDataset,
     'FUNSD': FUNSDDataset,
+
+    # NOTE: Visual Reasoning (550)
     # VQA Datasets
     'DocVQA': DocVQADataset,
     'TextVQA': TextVQADataset,
@@ -76,16 +81,21 @@ dataset_class_dict = {
     'WHOOPS': WHOOPSDataset,
     'ScienceQA': ScienceQADataset,
     'VizWiz': VizWizDataset,
+
+    # NOTE: Visual Commonsense (250) -> 500
     # ImageNetVC
     'ImageNetVC_color': partial(ImageNetVC, task='color'),
     'ImageNetVC_shape': partial(ImageNetVC, task='shape'),
     'ImageNetVC_material': partial(ImageNetVC, task='material'),
     'ImageNetVC_component': partial(ImageNetVC, task='component'),
     'ImageNetVC_others': partial(ImageNetVC, task='others'),
+
+    # NOTE: Object Hallucination (150) -> 300
     # Object Hallucination
     'MSCOCO_pope_random': MSCOCO_POPEDataset_random,
     'MSCOCO_pope_popular': MSCOCO_POPEDataset_popular,
     'MSCOCO_pope_adversarial': MSCOCO_POPEDataset_adversarial,
+
     # Embodied Datasets
     "MetaWorld": partial(EmbodiedDataset, dataset_name="MetaWorld"),
     "FrankaKitchen": partial(EmbodiedDataset, dataset_name="FrankaKitchen"),

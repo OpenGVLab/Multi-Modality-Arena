@@ -9,14 +9,14 @@ model_path = f'{DATA_DIR}/llama_checkpoints/llama_adapter_v2_LORA-BIAS-7B.pth' #
 class TestLLamaAdapterV2:
     def __init__(self, device=None) -> None:
         # choose from BIAS-7B, LORA-BIAS-7B
-        model, preprocess = llama.load(model_path, llama_dir, device, max_seq_len=256, max_batch_size=16)
+        model, preprocess = llama.load(model_path, llama_dir, device, max_seq_len=512, max_batch_size=16)
         model.eval()
         self.img_transform = preprocess
         self.model = model
         self.device = device
 
     @torch.no_grad()
-    def generate(self, image, question, max_new_tokens=256):
+    def generate(self, image, question, max_new_tokens=512):
         imgs = [get_BGR_image(image)]
         imgs = [self.img_transform(x) for x in imgs]
         imgs = torch.stack(imgs, dim=0).to(self.device)
@@ -27,7 +27,7 @@ class TestLLamaAdapterV2:
         return result
 
     @torch.no_grad()
-    def pure_generate(self, image, question, max_new_tokens=256):
+    def pure_generate(self, image, question, max_new_tokens=512):
         imgs = [get_BGR_image(image)]
         imgs = [self.img_transform(x) for x in imgs]
         imgs = torch.stack(imgs, dim=0).to(self.device)
@@ -38,7 +38,7 @@ class TestLLamaAdapterV2:
         return result
 
     @torch.no_grad()
-    def batch_generate(self, image_list, question_list, max_new_tokens=256):
+    def batch_generate(self, image_list, question_list, max_new_tokens=512):
         imgs = [get_BGR_image(img) for img in image_list]
         imgs = [self.img_transform(x) for x in imgs]
         imgs = torch.stack(imgs, dim=0).to(self.device)
