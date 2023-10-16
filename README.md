@@ -36,7 +36,8 @@ LVLM-eHub is a comprehensive evaluation benchmark for publicly available large m
  <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
 
 ## Update
-- 🔥 Aug. 8, 2023. We released [**[Tiny LVLM-eHub]**](https://arxiv.org/abs/2308.03729). Evaluation source codes and model inference results are open-sourced under [tiny_lvlm_evaluation](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation) ✅.
+- 🔥 Oct. 16, 2023. We present an ability-level dataset split derived from the LVLM-eHub, complemented by the inclusion of eight recently released models. For access to the dataset splits, evaluation code, model inference results, and comprehensive performance tables, please visit the [tiny_lvlm_evaluation](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation) ✅.
+- Aug. 8, 2023. We released [**[Tiny LVLM-eHub]**](https://arxiv.org/abs/2308.03729). Evaluation source codes and model inference results are open-sourced under [tiny_lvlm_evaluation](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation).
 - Jun. 15, 2023. We release [**[LVLM-eHub]**](https://arxiv.org/abs/2306.09265), an evaluation benchmark for large vision-language models. The code is coming soon.
 - Jun. 8, 2023. Thanks, Dr. Zhang, the author of VPGTrans, for his corrections. The authors of VPGTrans mainly come from NUS and Tsinghua University. We previously had some minor issues when re-implementing VPGTrans, but we found that its performance is actually better. For more model authors, please contact me for discussion at the [Email](shaowenqi@pjlab.org.cn). Also, please follow our model ranking list, where more accurate results will be available.
 - May. 22, 2023. Thanks, Dr. Ye, the author of mPLUG-Owl, for his corrections. We fix some minor issues in our implementation of mPLIG-Owl.

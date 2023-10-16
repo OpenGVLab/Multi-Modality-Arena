@@ -89,6 +89,30 @@ python updated_eval_tiny.py
 ```
 
 For detailed performance metrics, please refer to following tables.
+### Overall Score
+| Rank | Model | Version | Score |
+| :--: | :--: | :--: | :--: |
+| 🏅️ | **[Bard](https://bard.google.com/)** | Bard | **319.59** |
+| 🥈 | **[Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL)** | Qwen-VL-Chat | **316.81** |
+| 🥉 | **[InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip)** | Vicuna-7B | **300.64** |
+| 4 | [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer) | InternLM-XComposer-7B | 288.89 |
+| 5 | [BLIP2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | FlanT5xl | 284.72 |
+| 6 | [BLIVA](https://github.com/mlpc-ucsd/BLIVA) | Vicuna-7B | 284.17 |
+| 7 | [Lynx](https://github.com/bytedance/lynx-llm) | Vicuna-7B | 279.24 |
+| 8 | [Cheetah](https://github.com/DCDmllm/Cheetah) | Vicuna-7B | 258.91 |
+| 9 | [LLaMA-Adapter-v2](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/llama_adapter_v2_multimodal7b) | LLaMA-7B | 229.16 |
+| 10 | [VPGTrans](https://github.com/VPGTrans/VPGTrans) | Vicuna-7B | 218.91 |
+| 11 | [Otter-Image](https://github.com/Luodian/Otter) | Otter-9B-LA-InContext | 216.43 |
+| 12 | [VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B) | VisualGLM-6B | 211.98 |
+| 13 | [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl) | LLaMA-7B | 209.40 |
+| 14 | [LLaVA](https://github.com/haotian-liu/LLaVA) | MPT-7B | 197.00 |
+| 15 | [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) | Vicuna-7B | 192.62 |
+| 16 | [Otter](https://github.com/Luodian/Otter) | Otter-9B | 180.87 |
+| 17 | [OFv2_4BI](https://github.com/mlfoundations/open_flamingo) | RedPajama-INCITE-Instruct-3B-v1 | 176.37 |
+| 18 | [PandaGPT](https://github.com/yxuansu/PandaGPT) | Vicuna-7B | 174.25 |
+| 19 | [LaVIN](https://github.com/luogen1996/LaVIN) | LLaMA-7B | 97.51 |
+| 20 | [MIC](https://github.com/HaozheZhao/MIC) | FlanT5xl | 94.09 |
+
 ### Visual Reasoning
 | Rank | Model | Version | Score |
 | :--: | :--: | :--: | :--: |
@@ -208,27 +232,3 @@ For detailed performance metrics, please refer to following tables.
 | 18 | [OFv2_4BI](https://github.com/mlfoundations/open_flamingo) | RedPajama-INCITE-Instruct-3B-v1 | 49.00 |
 | 19 | [LLaVA](https://github.com/haotian-liu/LLaVA) | MPT-7B | 49.00 |
 | 20 | [LaVIN](https://github.com/luogen1996/LaVIN) | LLaMA-7B | 20.00 |
-
-### Overall Score
-| Rank | Model | Version | Score |
-| :--: | :--: | :--: | :--: |
-| 🏅️ | **[Bard](https://bard.google.com/)** | Bard | **319.59** |
-| 🥈 | **[Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL)** | Qwen-VL-Chat | **316.81** |
-| 🥉 | **[InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip)** | Vicuna-7B | **300.64** |
-| 4 | [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer) | InternLM-XComposer-7B | 288.89 |
-| 5 | [BLIP2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | FlanT5xl | 284.72 |
-| 6 | [BLIVA](https://github.com/mlpc-ucsd/BLIVA) | Vicuna-7B | 284.17 |
-| 7 | [Lynx](https://github.com/bytedance/lynx-llm) | Vicuna-7B | 279.24 |
-| 8 | [Cheetah](https://github.com/DCDmllm/Cheetah) | Vicuna-7B | 258.91 |
-| 9 | [LLaMA-Adapter-v2](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/llama_adapter_v2_multimodal7b) | LLaMA-7B | 229.16 |
-| 10 | [VPGTrans](https://github.com/VPGTrans/VPGTrans) | Vicuna-7B | 218.91 |
-| 11 | [Otter-Image](https://github.com/Luodian/Otter) | Otter-9B-LA-InContext | 216.43 |
-| 12 | [VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B) | VisualGLM-6B | 211.98 |
-| 13 | [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl) | LLaMA-7B | 209.40 |
-| 14 | [LLaVA](https://github.com/haotian-liu/LLaVA) | MPT-7B | 197.00 |
-| 15 | [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) | Vicuna-7B | 192.62 |
-| 16 | [Otter](https://github.com/Luodian/Otter) | Otter-9B | 180.87 |
-| 17 | [OFv2_4BI](https://github.com/mlfoundations/open_flamingo) | RedPajama-INCITE-Instruct-3B-v1 | 176.37 |
-| 18 | [PandaGPT](https://github.com/yxuansu/PandaGPT) | Vicuna-7B | 174.25 |
-| 19 | [LaVIN](https://github.com/luogen1996/LaVIN) | LLaMA-7B | 97.51 |
-| 20 | [MIC](https://github.com/HaozheZhao/MIC) | FlanT5xl | 94.09 |
