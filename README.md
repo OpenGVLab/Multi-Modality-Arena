@@ -35,6 +35,41 @@
 LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).  It extensively evaluates $8$ LVLMs in terms of $6$ categories of multimodal capabilities with $47$ datasets and $1$ arena online platform.
  <p  align="center"><img  src="./CVLAB/style/img/lvlm-ehub.png"  width="800"></p>
 
+## LVLM Leaderboard
+The LVLM Leaderboard systematically categorizes the datasets featured in the Tiny LVLM Evaluation according to their specific targeted abilities including visual perception, visual reasoning, visual commonsense, visual knowledge acquisition, and object hallucination.
+This leaderboard includes recently released models to bolster its comprehensiveness.
+
+You can download the benchmark from [here](https://drive.google.com/file/d/1PuFC612XzOmKwzRldtBb1CFZnIjiR7we/view?usp=sharing), and more details can be found in [here](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation).
+
+| Rank | Model | Version | Score |
+| :--: | :--: | :--: | :--: |
+| 🏅️ | **[InternVL](https://github.com/OpenGVLab/InternVL)** | InternVL-Chat | **327.61** |
+| 🥈 | **[InternLM-XComposer-VL](https://github.com/InternLM/InternLM-XComposer)** | InternLM-XComposer-VL-7B | **322.51** |
+| 🥉  | **[Bard](https://bard.google.com/)** | Bard | **319.59** |
+| 4 | [Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL) | Qwen-VL-Chat | 316.81 |
+| 5 | [LLaVA-1.5](https://github.com/haotian-liu/LLaVA) | Vicuna-7B | 307.17 |
+| 6 | [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) | Vicuna-7B | 300.64 |
+| 7 | [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer) | InternLM-XComposer-7B | 288.89 |
+| 8 | [BLIP2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | FlanT5xl | 284.72 |
+| 9 | [BLIVA](https://github.com/mlpc-ucsd/BLIVA) | Vicuna-7B | 284.17 |
+| 10 | [Lynx](https://github.com/bytedance/lynx-llm) | Vicuna-7B | 279.24 |
+| 11 | [Cheetah](https://github.com/DCDmllm/Cheetah) | Vicuna-7B | 258.91 |
+| 12 | [LLaMA-Adapter-v2](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/llama_adapter_v2_multimodal7b) | LLaMA-7B | 229.16 |
+| 13 | [VPGTrans](https://github.com/VPGTrans/VPGTrans) | Vicuna-7B | 218.91 |
+| 14 | [Otter-Image](https://github.com/Luodian/Otter) | Otter-9B-LA-InContext | 216.43 |
+| 15 | [VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B) | VisualGLM-6B | 211.98 |
+| 16 | [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl) | LLaMA-7B | 209.40 |
+| 17 | [LLaVA](https://github.com/haotian-liu/LLaVA) | Vicuna-7B | 200.93 |
+| 18 | [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) | Vicuna-7B | 192.62 |
+| 19 | [Otter](https://github.com/Luodian/Otter) | Otter-9B | 180.87 |
+| 20 | [OFv2_4BI](https://github.com/mlfoundations/open_flamingo) | RedPajama-INCITE-Instruct-3B-v1 | 176.37 |
+| 21 | [PandaGPT](https://github.com/yxuansu/PandaGPT) | Vicuna-7B | 174.25 |
+| 22 | [LaVIN](https://github.com/luogen1996/LaVIN) | LLaMA-7B | 97.51 |
+| 23 | [MIC](https://github.com/HaozheZhao/MIC) | FlanT5xl | 94.09 |
+
+
+
+
 ## Update
 - 🔥 Oct. 16, 2023. We present an ability-level dataset split derived from the LVLM-eHub, complemented by the inclusion of eight recently released models. For access to the dataset splits, evaluation code, model inference results, and comprehensive performance tables, please visit the [tiny_lvlm_evaluation](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation) ✅.
 - Aug. 8, 2023. We released [**[Tiny LVLM-eHub]**](https://arxiv.org/abs/2308.03729). Evaluation source codes and model inference results are open-sourced under [tiny_lvlm_evaluation](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/tiny_lvlm_evaluation).
