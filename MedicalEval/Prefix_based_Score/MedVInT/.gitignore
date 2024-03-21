@@ -1,0 +1,17 @@
+.vscode
+.idea
+# custom
+*.pkl
+# Pytorch
+*.json
+*.pth
+*.pt
+*.jpg
+*.pth
+*.png
+vis*
+*.zip
+*.csv
+*.pyc
+*.so
+batchscript-*
