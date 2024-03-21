@@ -101,7 +101,7 @@ bash MedVInT/src/MedVInT_TE/test.sh
 ### Question_answering_scores:
 * For MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med, you just need to modifty `Question_answering_scores/scripts/run_eval.sh` file to spectify the MODEL you want to evaluate and the path of the evaluated DATA json file from OmniMedVQA.
 * For Radfm, Med-flamingo, MedVInT, you should prepare a `test_path.json` file in `VLP_web_data` to specify the path list of the evaluated json file from OmniMedVQA.
-
+ 
 ####  MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med
 ```bash
 cd Question_answering_scores
