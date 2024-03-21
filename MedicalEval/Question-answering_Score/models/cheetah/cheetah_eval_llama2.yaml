@@ -1,0 +1,24 @@
+model:
+  arch: cheetah_llama2
+  model_type: pretrain_llama2
+  freeze_vit: true
+  freeze_qformer: true
+  freeze_llama_proj: true
+  max_txt_len: 360
+  end_sym: </s>
+  prompt_template: '[INST] <<SYS>>\n\n<</SYS>>\n\n{} [/INST]'
+  ckpt: 'path_to_cheetah_llama2_7b'
+
+preprocess:
+  vis_processor:
+    train:
+      name: "blip_image_train"
+      image_size: 224
+    eval:
+      name: "blip_image_eval"
+      image_size: 224
+  text_processor:
+    train:
+      name: "blip_caption"
+    eval:
+      name: "blip_caption"

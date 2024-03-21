@@ -1,0 +1,6 @@
+datasets:
+  stvqa:
+    data_type: images
+    build_info:
+      storage: bliva/data/STVQA
+      vis_root: bliva/data/STVQA/train

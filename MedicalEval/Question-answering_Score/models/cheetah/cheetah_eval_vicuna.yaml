@@ -1,0 +1,24 @@
+model:
+  arch: cheetah_vicuna
+  model_type: pretrain_vicuna
+  freeze_vit: true
+  freeze_qformer: true
+  freeze_llama_proj: true
+  max_txt_len: 160
+  end_sym: '###'
+  prompt_template: '###Human: {} ###Assistant: '
+  ckpt: '/nvme/share/VLP_web_data/Cheetah/cheetah_vicuna_7b.pth'
+
+preprocess:
+  vis_processor:
+    train:
+      name: "blip_image_train"
+      image_size: 224
+    eval:
+      name: "blip_image_eval"
+      image_size: 224
+  text_processor:
+    train:
+      name: "blip_caption"
+    eval:
+      name: "blip_caption"

@@ -1,0 +1,6 @@
+datasets:
+  textcaps:
+    data_type: images # [images|videos|features]
+    build_info:
+      storage: bliva/data/textCaps
+      vis_root: bliva/data/textCaps/train_images
