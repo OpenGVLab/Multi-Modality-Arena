@@ -1,11 +1,9 @@
 # Specify a model to be evaluated: MiniGPT-4 BLIP2 InstructBLIP LLaMA-Adapter-v2 LLaVA Otter mPLUG-Owl VPGTrans llava-med
 MODEL=llava-med
-
-
-exp_name=blip2
-mkdir -p output/"$exp_name"
-
 DATA=/path/to/dataset
+
+exp_name=$MODEL
+mkdir -p output/"$exp_name"
 
 
 if [ "$MODEL" == 'MiniGPT-4' ]; then
@@ -31,4 +29,4 @@ else
 fi
 
 echo Evaluating $MODEL 
-python $runpath --dataset_path /path/to/dataset
+python $runpath --dataset_path $DATA

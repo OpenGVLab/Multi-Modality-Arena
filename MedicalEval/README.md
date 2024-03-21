@@ -8,7 +8,7 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 │   │   ├── checklist.chk
 │   │   ├── consolidated.00.pth
 │   │   └── params.json
-│   └── tokenizer.model
+│   ├── tokenizer.model
 │   ├── 7B_hf
 │   │   ├── config.json
 │   │   ├── generation_config.json
@@ -38,10 +38,10 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 │   └── pytorch_model.bin
 │
 ├── MedVInT
-│   └── MedVInT-TD
+│   ├── MedVInT-TD
 │   └── MedVInT-TE
 │
-└── otter-9b-hf
+├── otter-9b-hf
 │
 └── test_path.json
 ```
@@ -69,17 +69,59 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 
 
 
+## How to evaluation
+### Prefix_based_scores:
+* For MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med, you just need to modifty `Prefix_based_Score/scripts/run_eval_loss.sh` file to spectify the MODEL you want to evaluate and the path of the evaluated DATA json file from OmniMedVQA.
+* For Radfm, Med-flamingo, MedVInT, you should prepare a `test_path.json` file in `VLP_web_data` to specify the path list of the evaluated json file from OmniMedVQA.
+
+####  MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med
+```bash
+cd Prefix_based_Score
+bash scripts/run_eval_loss.sh
+```
+#### Radfm:
+```bash
+cd Prefix_based_Score
+bash Radfm/test/test.sh
+```
+ 
+#### Med-flamingo:
+```bash
+cd Prefix_based_Score
+bash Med-flamingo/scripts/test.sh
+```
+ 
+#### MedVInT:
+```bash
+cd Prefix_based_Score
+bash MedVInT/src/MedVInT_TE/test.sh
+```
 
 
-* Radfm:
-* Radfm/test/test.sh
+### Question_answering_scores:
+* For MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med, you just need to modifty `Question_answering_scores/scripts/run_eval.sh` file to spectify the MODEL you want to evaluate and the path of the evaluated DATA json file from OmniMedVQA.
+* For Radfm, Med-flamingo, MedVInT, you should prepare a `test_path.json` file in `VLP_web_data` to specify the path list of the evaluated json file from OmniMedVQA.
+
+####  MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med
+```bash
+cd Question_answering_scores
+bash scripts/run_eval_loss.sh
+```
+#### Radfm:
+```bash
+cd Question_answering_scores
+bash Radfm/test/test.sh
+```
  
-* Med-flamingo:
-* Med-flamingo/scripts/test.sh
- 
-* MedVInT:
-* Prefix_based_scores:
-* MedVInT/src/MedVInT_TE/test.sh
-* Question_answering_scores:
-* MedVInT/src/MedVInT_TD/test.sh
+#### Med-flamingo:
+```bash
+cd Question_answering_scores
+bash Med-flamingo/scripts/test.sh
+```
+
+#### MedVInT:
+```bash
+cd Question_answering_scores
+bash MedVInT/src/MedVInT_TD/test.sh
+```
 
