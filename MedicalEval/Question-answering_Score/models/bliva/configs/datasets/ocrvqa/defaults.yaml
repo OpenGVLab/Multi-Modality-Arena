@@ -1,0 +1,6 @@
+datasets:
+  ocrvqa:
+    data_type: images
+    build_info:
+      storage: bliva/data/ocrVQA
+      vis_root: bliva/data/ocrVQA/images
