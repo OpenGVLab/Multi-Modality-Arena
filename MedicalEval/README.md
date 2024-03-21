@@ -90,7 +90,7 @@ bash Radfm/test/test.sh
 cd Prefix_based_Score
 bash Med-flamingo/scripts/test.sh
 ```
- 
+
 #### MedVInT:
 ```bash
 cd Prefix_based_Score
