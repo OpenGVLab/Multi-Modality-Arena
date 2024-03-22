@@ -67,8 +67,9 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 
 * We strongly thank all the authors of the evaluated methods. We appreciate their contributions in building the LVLMs. If you utilize the above models for evaluation, remember to cite these works accordingly. Thanks for their wonderful works.
 
-
-
+## Dataset
+* You can download the dataset from [Here](https://openxlab.org.cn/datasets/GMAI/OmniMedVQA).
+  
 ## How to evaluation
 ### Prefix_based_scores:
 * For MiniGPT-4, BLIP2, InstructBLIP, LLaMA-Adapter-v2, LLaVA, Otter, mPLUG-Owl, VPGTrans, llava-med, you just need to modifty `Prefix_based_Score/scripts/run_eval_loss.sh` file to spectify the MODEL you want to evaluate and the path of the evaluated DATA json file from OmniMedVQA.
