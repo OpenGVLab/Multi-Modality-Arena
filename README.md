@@ -22,6 +22,10 @@
 
 ## Holistic Evaluation of Large Multimodal Models
 
+### OmniMedVQA: A New Large-Scale Comprehensive Evaluation Benchmark for Medical LVLM
+- OmniMedVQA dataset: contains 118,010 images with 127,995 QA-items, covering 12 different modalities and referring to more than 20 human anatomical regions. Dataset could be download from here.
+- 12 models: 8 general-domain LVLMs and 4 medical-specialized LVLMs
+
 ### Tiny LVLM-eHub: Early Multimodal Experiments with Bard
 
 - Tiny datasets: only 50 randomly selected sampels for each dataset, i.e., 42 text-related visual benchmarks and 2.1K samples in total for ease of use.
