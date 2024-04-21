@@ -68,7 +68,7 @@ Most weights and checkpoint files will be downloaded automatically when initiali
 * We strongly thank all the authors of the evaluated methods. We appreciate their contributions in building the LVLMs. If you utilize the above models for evaluation, remember to cite these works accordingly. Thanks for their wonderful works.
 
 ## Dataset
-* You can download the dataset from [Here](https://openxlab.org.cn/datasets/GMAI/OmniMedVQA).
+* You can download the dataset from [OpenDataLab](https://openxlab.org.cn/datasets/GMAI/OmniMedVQA) or [huggingface](https://huggingface.co/datasets/foreverbeliever/OmniMedVQA/tree/main).
   
 ## How to evaluation
 ### Prefix_based_scores:
